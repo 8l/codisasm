@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf"
+        name="0">
+      <df name="libelf-0.8.13">
+        <df name="lib">
+          <in>32.fsize.c</in>
+          <in>32.getehdr.c</in>
+          <in>32.getphdr.c</in>
+          <in>32.getshdr.c</in>
+          <in>32.newehdr.c</in>
+          <in>32.newphdr.c</in>
+          <in>32.xlatetof.c</in>
+          <in>64.xlatetof.c</in>
+          <in>assert.c</in>
+          <in>begin.c</in>
+          <in>byteswap.h</in>
+          <in>checksum.c</in>
+          <in>cntl.c</in>
+          <in>cook.c</in>
+          <in>data.c</in>
+          <in>elf_repl.h</in>
+          <in>end.c</in>
+          <in>errmsg.c</in>
+          <in>errno.c</in>
+          <in>errors.h</in>
+          <in>ext_types.h</in>
+          <in>fill.c</in>
+          <in>flag.c</in>
+          <in>gelf.h</in>
+          <in>gelfehdr.c</in>
+          <in>gelfphdr.c</in>
+          <in>gelfshdr.c</in>
+          <in>gelftrans.c</in>
+          <in>getarhdr.c</in>
+          <in>getaroff.c</in>
+          <in>getarsym.c</in>
+          <in>getbase.c</in>
+          <in>getdata.c</in>
+          <in>getident.c</in>
+          <in>getscn.c</in>
+          <in>hash.c</in>
+          <in>input.c</in>
+          <in>kind.c</in>
+          <in>libelf.def</in>
+          <in>libelf.h</in>
+          <in>memset.c</in>
+          <in>ndxscn.c</in>
+          <in>newdata.c</in>
+          <in>newscn.c</in>
+          <in>next.c</in>
+          <in>nextscn.c</in>
+          <in>nlist.c</in>
+          <in>nlist.h</in>
+          <in>opt.delscn.c</in>
+          <in>private.h</in>
+          <in>rand.c</in>
+          <in>rawdata.c</in>
+          <in>rawfile.c</in>
+          <in>strptr.c</in>
+          <in>swap64.c</in>
+          <in>update.c</in>
+          <in>verdef.h</in>
+          <in>verdef_32_tof.c</in>
+          <in>verdef_32_tom.c</in>
+          <in>verdef_64_tof.c</in>
+          <in>verdef_64_tom.c</in>
+          <in>verneed.h</in>
+          <in>version.c</in>
+          <in>x.elfext.c</in>
+          <in>x.movscn.c</in>
+          <in>x.remscn.c</in>
+        </df>
+        <df name="po">
+          <in>gmo2msg.c</in>
+        </df>
+        <in>acconfig.h</in>
+      </df>
+      <in>CMakeLists.txt</in>
+      <in>config.h</in>
+      <in>sys_elf.h</in>
+    </df>
+  </logicalFolder>
+  <projectmakefile>/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

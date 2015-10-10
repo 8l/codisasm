@@ -1,0 +1,1191 @@
+0x401000: 55                                              push ebp
+0x401001: 89 E5                                           mov ebp, esp
+0x401003: 83 EC 08                                        sub esp, 0x8
+0x401006: E8 87 10 00 00                                  call 0x108c
+0x40100B: C9                                              leave 
+0x40100C: C3                                              ret 
+0x40100D: 55                                              push ebp
+0x40100E: 89 E5                                           mov ebp, esp
+0x401010: 83 EC 10                                        sub esp, 0x10
+0x401013: 83 7D 08 00                                     cmp dword ptr [ebp+0x8], 0x0
+0x401017: 78 08                                           js 0xa
+0x401019: 8B 45 08                                        mov eax, dword ptr [ebp+0x8]
+0x40101C: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x40101F: EB 08                                           jmp 0xa
+0x401021: 8B 45 08                                        mov eax, dword ptr [ebp+0x8]
+0x401024: F7 D8                                           neg eax
+0x401026: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x401029: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x40102C: C9                                              leave 
+0x40102D: C3                                              ret 
+0x40102E: 55                                              push ebp
+0x40102F: 89 E5                                           mov ebp, esp
+0x401031: 83 EC 10                                        sub esp, 0x10
+0x401034: 83 7D 08 00                                     cmp dword ptr [ebp+0x8], 0x0
+0x401038: 78 08                                           js 0xa
+0x40103A: 8B 45 08                                        mov eax, dword ptr [ebp+0x8]
+0x40103D: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x401040: EB 08                                           jmp 0xa
+0x401042: 8B 45 08                                        mov eax, dword ptr [ebp+0x8]
+0x401045: F7 D8                                           neg eax
+0x401047: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x40104A: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x40104D: C9                                              leave 
+0x40104E: C3                                              ret 
+0x40104F: 55                                              push ebp
+0x401050: 89 E5                                           mov ebp, esp
+0x401052: 83 EC 14                                        sub esp, 0x14
+0x401055: C7 45 F8 00 00 00 00                            mov dword ptr [ebp-0x8], 0x0
+0x40105C: C7 45 F4 01 00 00 00                            mov dword ptr [ebp-0xc], 0x1
+0x401063: EB 07                                           jmp 0x9
+0x401065: 81 6D 08 8A 18 00 00                            sub dword ptr [ebp+0x8], 0x188a
+0x40106C: 81 7D 08 8A 18 00 00                            cmp dword ptr [ebp+0x8], 0x188a
+0x401073: 7F F0                                           jnle 0xfffffff2
+0x401075: EB 07                                           jmp 0x9
+0x401077: 81 45 08 8A 18 00 00                            add dword ptr [ebp+0x8], 0x188a
+0x40107E: 81 7D 08 76 E7 FF FF                            cmp dword ptr [ebp+0x8], 0xffffe776
+0x401085: 7C F0                                           jl 0xfffffff2
+0x401087: 8B 45 08                                        mov eax, dword ptr [ebp+0x8]
+0x40108A: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x40108D: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401090: 89 45 F8                                        mov dword ptr [ebp-0x8], eax
+0x401093: 8B 45 08                                        mov eax, dword ptr [ebp+0x8]
+0x401096: 0F AF 45 08                                     imul eax, dword ptr [ebp+0x8]
+0x40109A: F7 D8                                           neg eax
+0x40109C: 0F AF 45 FC                                     imul eax, dword ptr [ebp-0x4]
+0x4010A0: 8B 55 F4                                        mov edx, dword ptr [ebp-0xc]
+0x4010A3: 8D 0C 12                                        lea ecx, ptr [edx+edx*1]
+0x4010A6: 8B 55 F4                                        mov edx, dword ptr [ebp-0xc]
+0x4010A9: 01 D2                                           add edx, edx
+0x4010AB: 83 C2 01                                        add edx, 0x1
+0x4010AE: 0F AF CA                                        imul ecx, edx
+0x4010B1: 99                                              cdq 
+0x4010B2: F7 F9                                           idiv ecx
+0x4010B4: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x4010B7: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x4010BA: 01 45 F8                                        add dword ptr [ebp-0x8], eax
+0x4010BD: 83 45 F4 01                                     add dword ptr [ebp-0xc], 0x1
+0x4010C1: EB 2E                                           jmp 0x30
+0x4010C3: 8B 45 08                                        mov eax, dword ptr [ebp+0x8]
+0x4010C6: 0F AF 45 08                                     imul eax, dword ptr [ebp+0x8]
+0x4010CA: F7 D8                                           neg eax
+0x4010CC: 0F AF 45 FC                                     imul eax, dword ptr [ebp-0x4]
+0x4010D0: 8B 55 F4                                        mov edx, dword ptr [ebp-0xc]
+0x4010D3: 8D 0C 12                                        lea ecx, ptr [edx+edx*1]
+0x4010D6: 8B 55 F4                                        mov edx, dword ptr [ebp-0xc]
+0x4010D9: 01 D2                                           add edx, edx
+0x4010DB: 83 C2 01                                        add edx, 0x1
+0x4010DE: 0F AF CA                                        imul ecx, edx
+0x4010E1: 99                                              cdq 
+0x4010E2: F7 F9                                           idiv ecx
+0x4010E4: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x4010E7: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x4010EA: 01 45 F8                                        add dword ptr [ebp-0x8], eax
+0x4010ED: 83 45 F4 01                                     add dword ptr [ebp-0xc], 0x1
+0x4010F1: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x4010F4: 89 04 24                                        mov dword ptr [esp], eax
+0x4010F7: E8 32 FF FF FF                                  call 0xffffff37
+0x4010FC: 85 C0                                           test eax, eax
+0x4010FE: 7F C3                                           jnle 0xffffffc5
+0x401100: 8B 45 F8                                        mov eax, dword ptr [ebp-0x8]
+0x401103: C9                                              leave 
+0x401104: C3                                              ret 
+0x401105: 55                                              push ebp
+0x401106: 89 E5                                           mov ebp, esp
+0x401108: 83 EC 04                                        sub esp, 0x4
+0x40110B: B8 22 06 00 00                                  mov eax, 0x622
+0x401110: 2B 45 08                                        sub eax, dword ptr [ebp+0x8]
+0x401113: 89 04 24                                        mov dword ptr [esp], eax
+0x401116: E8 34 FF FF FF                                  call 0xffffff39
+0x40111B: C9                                              leave 
+0x40111C: C3                                              ret 
+0x40111D: 55                                              push ebp
+0x40111E: 89 E5                                           mov ebp, esp
+0x401120: 56                                              push esi
+0x401121: 53                                              push ebx
+0x401122: 83 EC 40                                        sub esp, 0x40
+0x401125: C7 45 F0 00 30 40 00                            mov dword ptr [ebp-0x10], 0x403000
+0x40112C: C7 45 EC 40 71 40 00                            mov dword ptr [ebp-0x14], 0x407140
+0x401133: 8B 45 EC                                        mov eax, dword ptr [ebp-0x14]
+0x401136: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x401139: 89 55 EC                                        mov dword ptr [ebp-0x14], edx
+0x40113C: 8B 08                                           mov ecx, dword ptr [eax]
+0x40113E: 8B 45 F0                                        mov eax, dword ptr [ebp-0x10]
+0x401141: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x401144: 89 55 F0                                        mov dword ptr [ebp-0x10], edx
+0x401147: 8B 00                                           mov eax, dword ptr [eax]
+0x401149: 0F AF C1                                        imul eax, ecx
+0x40114C: 89 45 E4                                        mov dword ptr [ebp-0x1c], eax
+0x40114F: 8B 45 EC                                        mov eax, dword ptr [ebp-0x14]
+0x401152: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x401155: 89 55 EC                                        mov dword ptr [ebp-0x14], edx
+0x401158: 8B 08                                           mov ecx, dword ptr [eax]
+0x40115A: 8B 45 F0                                        mov eax, dword ptr [ebp-0x10]
+0x40115D: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x401160: 89 55 F0                                        mov dword ptr [ebp-0x10], edx
+0x401163: 8B 00                                           mov eax, dword ptr [eax]
+0x401165: 0F AF C1                                        imul eax, ecx
+0x401168: 89 45 E0                                        mov dword ptr [ebp-0x20], eax
+0x40116B: C7 45 F4 00 00 00 00                            mov dword ptr [ebp-0xc], 0x0
+0x401172: EB 3C                                           jmp 0x3e
+0x401174: 8B 45 EC                                        mov eax, dword ptr [ebp-0x14]
+0x401177: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x40117A: 89 55 EC                                        mov dword ptr [ebp-0x14], edx
+0x40117D: 8B 08                                           mov ecx, dword ptr [eax]
+0x40117F: 8B 45 F0                                        mov eax, dword ptr [ebp-0x10]
+0x401182: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x401185: 89 55 F0                                        mov dword ptr [ebp-0x10], edx
+0x401188: 8B 00                                           mov eax, dword ptr [eax]
+0x40118A: 0F AF C1                                        imul eax, ecx
+0x40118D: 01 45 E4                                        add dword ptr [ebp-0x1c], eax
+0x401190: 8B 45 EC                                        mov eax, dword ptr [ebp-0x14]
+0x401193: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x401196: 89 55 EC                                        mov dword ptr [ebp-0x14], edx
+0x401199: 8B 08                                           mov ecx, dword ptr [eax]
+0x40119B: 8B 45 F0                                        mov eax, dword ptr [ebp-0x10]
+0x40119E: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x4011A1: 89 55 F0                                        mov dword ptr [ebp-0x10], edx
+0x4011A4: 8B 00                                           mov eax, dword ptr [eax]
+0x4011A6: 0F AF C1                                        imul eax, ecx
+0x4011A9: 01 45 E0                                        add dword ptr [ebp-0x20], eax
+0x4011AC: 83 45 F4 01                                     add dword ptr [ebp-0xc], 0x1
+0x4011B0: 83 7D F4 09                                     cmp dword ptr [ebp-0xc], 0x9
+0x4011B4: 7E BE                                           jle 0xffffffc0
+0x4011B6: 8B 45 EC                                        mov eax, dword ptr [ebp-0x14]
+0x4011B9: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x4011BC: 89 55 EC                                        mov dword ptr [ebp-0x14], edx
+0x4011BF: 8B 08                                           mov ecx, dword ptr [eax]
+0x4011C1: 8B 45 F0                                        mov eax, dword ptr [ebp-0x10]
+0x4011C4: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x4011C7: 89 55 F0                                        mov dword ptr [ebp-0x10], edx
+0x4011CA: 8B 00                                           mov eax, dword ptr [eax]
+0x4011CC: 0F AF C1                                        imul eax, ecx
+0x4011CF: 01 45 E4                                        add dword ptr [ebp-0x1c], eax
+0x4011D2: 8B 45 EC                                        mov eax, dword ptr [ebp-0x14]
+0x4011D5: 8B 08                                           mov ecx, dword ptr [eax]
+0x4011D7: 8B 45 F0                                        mov eax, dword ptr [ebp-0x10]
+0x4011DA: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x4011DD: 89 55 F0                                        mov dword ptr [ebp-0x10], edx
+0x4011E0: 8B 00                                           mov eax, dword ptr [eax]
+0x4011E2: 0F AF C1                                        imul eax, ecx
+0x4011E5: 01 45 E0                                        add dword ptr [ebp-0x20], eax
+0x4011E8: 8B 45 EC                                        mov eax, dword ptr [ebp-0x14]
+0x4011EB: 83 E8 08                                        sub eax, 0x8
+0x4011EE: 89 45 E8                                        mov dword ptr [ebp-0x18], eax
+0x4011F1: C7 45 F4 00 00 00 00                            mov dword ptr [ebp-0xc], 0x0
+0x4011F8: EB 1A                                           jmp 0x1c
+0x4011FA: 8B 45 EC                                        mov eax, dword ptr [ebp-0x14]
+0x4011FD: 8D 50 FC                                        lea edx, ptr [eax-0x4]
+0x401200: 89 55 EC                                        mov dword ptr [ebp-0x14], edx
+0x401203: 8B 55 E8                                        mov edx, dword ptr [ebp-0x18]
+0x401206: 8D 4A FC                                        lea ecx, ptr [edx-0x4]
+0x401209: 89 4D E8                                        mov dword ptr [ebp-0x18], ecx
+0x40120C: 8B 12                                           mov edx, dword ptr [edx]
+0x40120E: 89 10                                           mov dword ptr [eax], edx
+0x401210: 83 45 F4 01                                     add dword ptr [ebp-0xc], 0x1
+0x401214: 83 7D F4 15                                     cmp dword ptr [ebp-0xc], 0x15
+0x401218: 7E E0                                           jle 0xffffffe2
+0x40121A: 8B 45 EC                                        mov eax, dword ptr [ebp-0x14]
+0x40121D: 8D 50 FC                                        lea edx, ptr [eax-0x4]
+0x401220: 89 55 EC                                        mov dword ptr [ebp-0x14], edx
+0x401223: 8B 55 08                                        mov edx, dword ptr [ebp+0x8]
+0x401226: 89 10                                           mov dword ptr [eax], edx
+0x401228: 8B 45 EC                                        mov eax, dword ptr [ebp-0x14]
+0x40122B: 8B 55 0C                                        mov edx, dword ptr [ebp+0xc]
+0x40122E: 89 10                                           mov dword ptr [eax], edx
+0x401230: 8B 55 E4                                        mov edx, dword ptr [ebp-0x1c]
+0x401233: 8B 45 E0                                        mov eax, dword ptr [ebp-0x20]
+0x401236: 01 D0                                           add eax, edx
+0x401238: C1 F8 0F                                        sar eax, 0xf
+0x40123B: A3 B4 71 40 00                                  mov dword ptr [0x4071b4], eax
+0x401240: 8B 45 E4                                        mov eax, dword ptr [ebp-0x1c]
+0x401243: 2B 45 E0                                        sub eax, dword ptr [ebp-0x20]
+0x401246: C1 F8 0F                                        sar eax, 0xf
+0x401249: A3 A4 71 40 00                                  mov dword ptr [0x4071a4], eax
+0x40124E: C7 44 24 04 78 70 40 00                         mov dword ptr [esp+0x4], 0x407078
+0x401256: C7 04 24 40 70 40 00                            mov dword ptr [esp], 0x407040
+0x40125D: E8 7B 0A 00 00                                  call 0xa80
+0x401262: A3 F4 71 40 00                                  mov dword ptr [0x4071f4], eax
+0x401267: 8B 1D 98 70 40 00                               mov ebx, dword ptr [0x407098]
+0x40126D: 8B 0D BC 72 40 00                               mov ecx, dword ptr [0x4072bc]
+0x401273: 8B 15 38 71 40 00                               mov edx, dword ptr [0x407138]
+0x401279: A1 C0 71 40 00                                  mov eax, dword ptr [0x4071c0]
+0x40127E: 89 5C 24 0C                                     mov dword ptr [esp+0xc], ebx
+0x401282: 89 4C 24 08                                     mov dword ptr [esp+0x8], ecx
+0x401286: 89 54 24 04                                     mov dword ptr [esp+0x4], edx
+0x40128A: 89 04 24                                        mov dword ptr [esp], eax
+0x40128D: E8 A4 0A 00 00                                  call 0xaa9
+0x401292: A3 E8 71 40 00                                  mov dword ptr [0x4071e8], eax
+0x401297: 8B 15 F4 71 40 00                               mov edx, dword ptr [0x4071f4]
+0x40129D: A1 E8 71 40 00                                  mov eax, dword ptr [0x4071e8]
+0x4012A2: 01 D0                                           add eax, edx
+0x4012A4: A3 58 70 40 00                                  mov dword ptr [0x407058], eax
+0x4012A9: 8B 15 B4 71 40 00                               mov edx, dword ptr [0x4071b4]
+0x4012AF: A1 58 70 40 00                                  mov eax, dword ptr [0x407058]
+0x4012B4: 29 C2                                           sub edx, eax
+0x4012B6: 89 D0                                           mov eax, edx
+0x4012B8: A3 C0 72 40 00                                  mov dword ptr [0x4072c0], eax
+0x4012BD: 8B 15 9C 72 40 00                               mov edx, dword ptr [0x40729c]
+0x4012C3: A1 C0 72 40 00                                  mov eax, dword ptr [0x4072c0]
+0x4012C8: 89 54 24 04                                     mov dword ptr [esp+0x4], edx
+0x4012CC: 89 04 24                                        mov dword ptr [esp], eax
+0x4012CF: E8 94 0A 00 00                                  call 0xa99
+0x4012D4: A3 B4 72 40 00                                  mov dword ptr [0x4072b4], eax
+0x4012D9: A1 B4 72 40 00                                  mov eax, dword ptr [0x4072b4]
+0x4012DE: C1 F8 02                                        sar eax, 0x2
+0x4012E1: 8B 14 85 80 30 40 00                            mov edx, dword ptr [eax*4+0x403080]
+0x4012E8: A1 9C 72 40 00                                  mov eax, dword ptr [0x40729c]
+0x4012ED: 0F AF C2                                        imul eax, edx
+0x4012F0: C1 F8 0F                                        sar eax, 0xf
+0x4012F3: A3 68 72 40 00                                  mov dword ptr [0x407268], eax
+0x4012F8: 8B 15 C8 70 40 00                               mov edx, dword ptr [0x4070c8]
+0x4012FE: A1 B4 72 40 00                                  mov eax, dword ptr [0x4072b4]
+0x401303: 89 54 24 04                                     mov dword ptr [esp+0x4], edx
+0x401307: 89 04 24                                        mov dword ptr [esp], eax
+0x40130A: E8 C5 0A 00 00                                  call 0xaca
+0x40130F: A3 C8 70 40 00                                  mov dword ptr [0x4070c8], eax
+0x401314: A1 C8 70 40 00                                  mov eax, dword ptr [0x4070c8]
+0x401319: C7 44 24 04 08 00 00 00                         mov dword ptr [esp+0x4], 0x8
+0x401321: 89 04 24                                        mov dword ptr [esp], eax
+0x401324: E8 F8 0A 00 00                                  call 0xafd
+0x401329: A3 9C 72 40 00                                  mov dword ptr [0x40729c], eax
+0x40132E: 8B 15 68 72 40 00                               mov edx, dword ptr [0x407268]
+0x401334: A1 F4 71 40 00                                  mov eax, dword ptr [0x4071f4]
+0x401339: 01 D0                                           add eax, edx
+0x40133B: A3 6C 72 40 00                                  mov dword ptr [0x40726c], eax
+0x401340: A1 68 72 40 00                                  mov eax, dword ptr [0x407268]
+0x401345: C7 44 24 08 40 70 40 00                         mov dword ptr [esp+0x8], 0x407040
+0x40134D: C7 44 24 04 78 70 40 00                         mov dword ptr [esp+0x4], 0x407078
+0x401355: 89 04 24                                        mov dword ptr [esp], eax
+0x401358: E8 03 0B 00 00                                  call 0xb08
+0x40135D: 8B 35 A8 71 40 00                               mov esi, dword ptr [0x4071a8]
+0x401363: 8B 1D B0 71 40 00                               mov ebx, dword ptr [0x4071b0]
+0x401369: 8B 0D 6C 72 40 00                               mov ecx, dword ptr [0x40726c]
+0x40136F: 8B 15 98 70 40 00                               mov edx, dword ptr [0x407098]
+0x401375: A1 38 71 40 00                                  mov eax, dword ptr [0x407138]
+0x40137A: 89 74 24 10                                     mov dword ptr [esp+0x10], esi
+0x40137E: 89 5C 24 0C                                     mov dword ptr [esp+0xc], ebx
+0x401382: 89 4C 24 08                                     mov dword ptr [esp+0x8], ecx
+0x401386: 89 54 24 04                                     mov dword ptr [esp+0x4], edx
+0x40138A: 89 04 24                                        mov dword ptr [esp], eax
+0x40138D: E8 D1 0B 00 00                                  call 0xbd6
+0x401392: A3 98 70 40 00                                  mov dword ptr [0x407098], eax
+0x401397: 8B 1D B0 71 40 00                               mov ebx, dword ptr [0x4071b0]
+0x40139D: 8B 0D 6C 72 40 00                               mov ecx, dword ptr [0x40726c]
+0x4013A3: 8B 15 98 70 40 00                               mov edx, dword ptr [0x407098]
+0x4013A9: A1 38 71 40 00                                  mov eax, dword ptr [0x407138]
+0x4013AE: 89 5C 24 0C                                     mov dword ptr [esp+0xc], ebx
+0x4013B2: 89 4C 24 08                                     mov dword ptr [esp+0x8], ecx
+0x4013B6: 89 54 24 04                                     mov dword ptr [esp+0x4], edx
+0x4013BA: 89 04 24                                        mov dword ptr [esp], eax
+0x4013BD: E8 1D 0C 00 00                                  call 0xc22
+0x4013C2: A3 38 71 40 00                                  mov dword ptr [0x407138], eax
+0x4013C7: 8B 15 58 70 40 00                               mov edx, dword ptr [0x407058]
+0x4013CD: A1 68 72 40 00                                  mov eax, dword ptr [0x407268]
+0x4013D2: 01 D0                                           add eax, edx
+0x4013D4: A3 4C 72 40 00                                  mov dword ptr [0x40724c], eax
+0x4013D9: A1 C0 71 40 00                                  mov eax, dword ptr [0x4071c0]
+0x4013DE: A3 BC 72 40 00                                  mov dword ptr [0x4072bc], eax
+0x4013E3: A1 4C 72 40 00                                  mov eax, dword ptr [0x40724c]
+0x4013E8: A3 C0 71 40 00                                  mov dword ptr [0x4071c0], eax
+0x4013ED: A1 B0 71 40 00                                  mov eax, dword ptr [0x4071b0]
+0x4013F2: A3 A8 71 40 00                                  mov dword ptr [0x4071a8], eax
+0x4013F7: A1 6C 72 40 00                                  mov eax, dword ptr [0x40726c]
+0x4013FC: A3 B0 71 40 00                                  mov dword ptr [0x4071b0], eax
+0x401401: C7 44 24 04 F0 70 40 00                         mov dword ptr [esp+0x4], 0x4070f0
+0x401409: C7 04 24 08 71 40 00                            mov dword ptr [esp], 0x407108
+0x401410: E8 C8 08 00 00                                  call 0x8cd
+0x401415: A3 60 70 40 00                                  mov dword ptr [0x407060], eax
+0x40141A: 8B 1D 94 70 40 00                               mov ebx, dword ptr [0x407094]
+0x401420: 8B 0D 68 70 40 00                               mov ecx, dword ptr [0x407068]
+0x401426: 8B 15 B8 71 40 00                               mov edx, dword ptr [0x4071b8]
+0x40142C: A1 F8 71 40 00                                  mov eax, dword ptr [0x4071f8]
+0x401431: 89 5C 24 0C                                     mov dword ptr [esp+0xc], ebx
+0x401435: 89 4C 24 08                                     mov dword ptr [esp+0x8], ecx
+0x401439: 89 54 24 04                                     mov dword ptr [esp+0x4], edx
+0x40143D: 89 04 24                                        mov dword ptr [esp], eax
+0x401440: E8 F1 08 00 00                                  call 0x8f6
+0x401445: A3 30 71 40 00                                  mov dword ptr [0x407130], eax
+0x40144A: 8B 15 30 71 40 00                               mov edx, dword ptr [0x407130]
+0x401450: A1 60 70 40 00                                  mov eax, dword ptr [0x407060]
+0x401455: 01 D0                                           add eax, edx
+0x401457: A3 CC 70 40 00                                  mov dword ptr [0x4070cc], eax
+0x40145C: 8B 15 A4 71 40 00                               mov edx, dword ptr [0x4071a4]
+0x401462: A1 CC 70 40 00                                  mov eax, dword ptr [0x4070cc]
+0x401467: 29 C2                                           sub edx, eax
+0x401469: 89 D0                                           mov eax, edx
+0x40146B: A3 6C 70 40 00                                  mov dword ptr [0x40706c], eax
+0x401470: A1 6C 70 40 00                                  mov eax, dword ptr [0x40706c]
+0x401475: 85 C0                                           test eax, eax
+0x401477: 78 0C                                           js 0xe
+0x401479: C7 05 E8 70 40 00 03 00 00 00                   mov dword ptr [0x4070e8], 0x3
+0x401483: EB 0A                                           jmp 0xc
+0x401485: C7 05 E8 70 40 00 01 00 00 00                   mov dword ptr [0x4070e8], 0x1
+0x40148F: A1 28 71 40 00                                  mov eax, dword ptr [0x407128]
+0x401494: 69 C0 34 02 00 00                               imul eax, eax, 0x234
+0x40149A: C1 F8 0C                                        sar eax, 0xc
+0x40149D: 89 45 DC                                        mov dword ptr [ebp-0x24], eax
+0x4014A0: A1 6C 70 40 00                                  mov eax, dword ptr [0x40706c]
+0x4014A5: 89 04 24                                        mov dword ptr [esp], eax
+0x4014A8: E8 60 FB FF FF                                  call 0xfffffb65
+0x4014AD: 3B 45 DC                                        cmp eax, dword ptr [ebp-0x24]
+0x4014B0: 7E 0D                                           jle 0xf
+0x4014B2: A1 E8 70 40 00                                  mov eax, dword ptr [0x4070e8]
+0x4014B7: 83 E8 01                                        sub eax, 0x1
+0x4014BA: A3 E8 70 40 00                                  mov dword ptr [0x4070e8], eax
+0x4014BF: A1 E8 70 40 00                                  mov eax, dword ptr [0x4070e8]
+0x4014C4: 8B 14 85 BC 34 40 00                            mov edx, dword ptr [eax*4+0x4034bc]
+0x4014CB: A1 28 71 40 00                                  mov eax, dword ptr [0x407128]
+0x4014D0: 0F AF C2                                        imul eax, edx
+0x4014D3: C1 F8 0F                                        sar eax, 0xf
+0x4014D6: A3 E0 71 40 00                                  mov dword ptr [0x4071e0], eax
+0x4014DB: 8B 15 F0 71 40 00                               mov edx, dword ptr [0x4071f0]
+0x4014E1: A1 E8 70 40 00                                  mov eax, dword ptr [0x4070e8]
+0x4014E6: 89 54 24 04                                     mov dword ptr [esp+0x4], edx
+0x4014EA: 89 04 24                                        mov dword ptr [esp], eax
+0x4014ED: E8 56 0B 00 00                                  call 0xb5b
+0x4014F2: A3 F0 71 40 00                                  mov dword ptr [0x4071f0], eax
+0x4014F7: A1 F0 71 40 00                                  mov eax, dword ptr [0x4071f0]
+0x4014FC: C7 44 24 04 0A 00 00 00                         mov dword ptr [esp+0x4], 0xa
+0x401504: 89 04 24                                        mov dword ptr [esp], eax
+0x401507: E8 15 09 00 00                                  call 0x91a
+0x40150C: A3 28 71 40 00                                  mov dword ptr [0x407128], eax
+0x401511: 8B 15 E0 71 40 00                               mov edx, dword ptr [0x4071e0]
+0x401517: A1 60 70 40 00                                  mov eax, dword ptr [0x407060]
+0x40151C: 01 D0                                           add eax, edx
+0x40151E: A3 A0 70 40 00                                  mov dword ptr [0x4070a0], eax
+0x401523: A1 E0 71 40 00                                  mov eax, dword ptr [0x4071e0]
+0x401528: C7 44 24 08 08 71 40 00                         mov dword ptr [esp+0x8], 0x407108
+0x401530: C7 44 24 04 F0 70 40 00                         mov dword ptr [esp+0x4], 0x4070f0
+0x401538: 89 04 24                                        mov dword ptr [esp], eax
+0x40153B: E8 20 09 00 00                                  call 0x925
+0x401540: 8B 35 20 71 40 00                               mov esi, dword ptr [0x407120]
+0x401546: 8B 1D 0C 73 40 00                               mov ebx, dword ptr [0x40730c]
+0x40154C: 8B 0D A0 70 40 00                               mov ecx, dword ptr [0x4070a0]
+0x401552: 8B 15 94 70 40 00                               mov edx, dword ptr [0x407094]
+0x401558: A1 B8 71 40 00                                  mov eax, dword ptr [0x4071b8]
+0x40155D: 89 74 24 10                                     mov dword ptr [esp+0x10], esi
+0x401561: 89 5C 24 0C                                     mov dword ptr [esp+0xc], ebx
+0x401565: 89 4C 24 08                                     mov dword ptr [esp+0x8], ecx
+0x401569: 89 54 24 04                                     mov dword ptr [esp+0x4], edx
+0x40156D: 89 04 24                                        mov dword ptr [esp], eax
+0x401570: E8 EE 09 00 00                                  call 0x9f3
+0x401575: A3 94 70 40 00                                  mov dword ptr [0x407094], eax
+0x40157A: 8B 1D 0C 73 40 00                               mov ebx, dword ptr [0x40730c]
+0x401580: 8B 0D A0 70 40 00                               mov ecx, dword ptr [0x4070a0]
+0x401586: 8B 15 94 70 40 00                               mov edx, dword ptr [0x407094]
+0x40158C: A1 B8 71 40 00                                  mov eax, dword ptr [0x4071b8]
+0x401591: 89 5C 24 0C                                     mov dword ptr [esp+0xc], ebx
+0x401595: 89 4C 24 08                                     mov dword ptr [esp+0x8], ecx
+0x401599: 89 54 24 04                                     mov dword ptr [esp+0x4], edx
+0x40159D: 89 04 24                                        mov dword ptr [esp], eax
+0x4015A0: E8 3A 0A 00 00                                  call 0xa3f
+0x4015A5: A3 B8 71 40 00                                  mov dword ptr [0x4071b8], eax
+0x4015AA: 8B 15 CC 70 40 00                               mov edx, dword ptr [0x4070cc]
+0x4015B0: A1 E0 71 40 00                                  mov eax, dword ptr [0x4071e0]
+0x4015B5: 01 D0                                           add eax, edx
+0x4015B7: A3 C0 70 40 00                                  mov dword ptr [0x4070c0], eax
+0x4015BC: A1 F8 71 40 00                                  mov eax, dword ptr [0x4071f8]
+0x4015C1: A3 68 70 40 00                                  mov dword ptr [0x407068], eax
+0x4015C6: A1 C0 70 40 00                                  mov eax, dword ptr [0x4070c0]
+0x4015CB: A3 F8 71 40 00                                  mov dword ptr [0x4071f8], eax
+0x4015D0: A1 0C 73 40 00                                  mov eax, dword ptr [0x40730c]
+0x4015D5: A3 20 71 40 00                                  mov dword ptr [0x407120], eax
+0x4015DA: A1 A0 70 40 00                                  mov eax, dword ptr [0x4070a0]
+0x4015DF: A3 0C 73 40 00                                  mov dword ptr [0x40730c], eax
+0x4015E4: A1 E8 70 40 00                                  mov eax, dword ptr [0x4070e8]
+0x4015E9: C1 E0 06                                        shl eax, 0x6
+0x4015EC: 89 C2                                           mov edx, eax
+0x4015EE: A1 B4 72 40 00                                  mov eax, dword ptr [0x4072b4]
+0x4015F3: 09 D0                                           or eax, edx
+0x4015F5: 83 C4 40                                        add esp, 0x40
+0x4015F8: 5B                                              pop ebx
+0x4015F9: 5E                                              pop esi
+0x4015FA: 5D                                              pop ebp
+0x4015FB: C3                                              ret 
+0x4015FC: 55                                              push ebp
+0x4015FD: 89 E5                                           mov ebp, esp
+0x4015FF: 56                                              push esi
+0x401600: 53                                              push ebx
+0x401601: 83 EC 40                                        sub esp, 0x40
+0x401604: 8B 45 08                                        mov eax, dword ptr [ebp+0x8]
+0x401607: 83 E0 3F                                        and eax, 0x3f
+0x40160A: A3 70 70 40 00                                  mov dword ptr [0x407070], eax
+0x40160F: 8B 45 08                                        mov eax, dword ptr [ebp+0x8]
+0x401612: C1 F8 06                                        sar eax, 0x6
+0x401615: A3 E8 70 40 00                                  mov dword ptr [0x4070e8], eax
+0x40161A: C7 44 24 04 50 72 40 00                         mov dword ptr [esp+0x4], 0x407250
+0x401622: C7 04 24 A8 70 40 00                            mov dword ptr [esp], 0x4070a8
+0x401629: E8 AF 06 00 00                                  call 0x6b4
+0x40162E: A3 2C 71 40 00                                  mov dword ptr [0x40712c], eax
+0x401633: 8B 1D 90 72 40 00                               mov ebx, dword ptr [0x407290]
+0x401639: 8B 0D EC 71 40 00                               mov ecx, dword ptr [0x4071ec]
+0x40163F: 8B 15 A4 70 40 00                               mov edx, dword ptr [0x4070a4]
+0x401645: A1 70 72 40 00                                  mov eax, dword ptr [0x407270]
+0x40164A: 89 5C 24 0C                                     mov dword ptr [esp+0xc], ebx
+0x40164E: 89 4C 24 08                                     mov dword ptr [esp+0x8], ecx
+0x401652: 89 54 24 04                                     mov dword ptr [esp+0x4], edx
+0x401656: 89 04 24                                        mov dword ptr [esp], eax
+0x401659: E8 D8 06 00 00                                  call 0x6dd
+0x40165E: A3 5C 70 40 00                                  mov dword ptr [0x40705c], eax
+0x401663: 8B 15 5C 70 40 00                               mov edx, dword ptr [0x40705c]
+0x401669: A1 2C 71 40 00                                  mov eax, dword ptr [0x40712c]
+0x40166E: 01 D0                                           add eax, edx
+0x401670: A3 DC 70 40 00                                  mov dword ptr [0x4070dc], eax
+0x401675: A1 70 70 40 00                                  mov eax, dword ptr [0x407070]
+0x40167A: C1 F8 02                                        sar eax, 0x2
+0x40167D: 8B 14 85 80 30 40 00                            mov edx, dword ptr [eax*4+0x403080]
+0x401684: A1 E0 70 40 00                                  mov eax, dword ptr [0x4070e0]
+0x401689: 0F AF C2                                        imul eax, edx
+0x40168C: C1 F8 0F                                        sar eax, 0xf
+0x40168F: A3 C4 71 40 00                                  mov dword ptr [0x4071c4], eax
+0x401694: A1 B4 72 40 00                                  mov eax, dword ptr [0x4072b4]
+0x401699: 8B 14 85 40 31 40 00                            mov edx, dword ptr [eax*4+0x403140]
+0x4016A0: A1 E0 70 40 00                                  mov eax, dword ptr [0x4070e0]
+0x4016A5: 0F AF C2                                        imul eax, edx
+0x4016A8: C1 F8 0F                                        sar eax, 0xf
+0x4016AB: A3 B0 72 40 00                                  mov dword ptr [0x4072b0], eax
+0x4016B0: 8B 15 B0 72 40 00                               mov edx, dword ptr [0x4072b0]
+0x4016B6: A1 DC 70 40 00                                  mov eax, dword ptr [0x4070dc]
+0x4016BB: 01 D0                                           add eax, edx
+0x4016BD: A3 B8 72 40 00                                  mov dword ptr [0x4072b8], eax
+0x4016C2: 8B 15 64 70 40 00                               mov edx, dword ptr [0x407064]
+0x4016C8: A1 70 70 40 00                                  mov eax, dword ptr [0x407070]
+0x4016CD: 89 54 24 04                                     mov dword ptr [esp+0x4], edx
+0x4016D1: 89 04 24                                        mov dword ptr [esp], eax
+0x4016D4: E8 FB 06 00 00                                  call 0x700
+0x4016D9: A3 64 70 40 00                                  mov dword ptr [0x407064], eax
+0x4016DE: A1 64 70 40 00                                  mov eax, dword ptr [0x407064]
+0x4016E3: C7 44 24 04 08 00 00 00                         mov dword ptr [esp+0x4], 0x8
+0x4016EB: 89 04 24                                        mov dword ptr [esp], eax
+0x4016EE: E8 2E 07 00 00                                  call 0x733
+0x4016F3: A3 E0 70 40 00                                  mov dword ptr [0x4070e0], eax
+0x4016F8: 8B 15 C4 71 40 00                               mov edx, dword ptr [0x4071c4]
+0x4016FE: A1 2C 71 40 00                                  mov eax, dword ptr [0x40712c]
+0x401703: 01 D0                                           add eax, edx
+0x401705: A3 98 72 40 00                                  mov dword ptr [0x407298], eax
+0x40170A: A1 C4 71 40 00                                  mov eax, dword ptr [0x4071c4]
+0x40170F: C7 44 24 08 A8 70 40 00                         mov dword ptr [esp+0x8], 0x4070a8
+0x401717: C7 44 24 04 50 72 40 00                         mov dword ptr [esp+0x4], 0x407250
+0x40171F: 89 04 24                                        mov dword ptr [esp], eax
+0x401722: E8 39 07 00 00                                  call 0x73e
+0x401727: 8B 35 E4 71 40 00                               mov esi, dword ptr [0x4071e4]
+0x40172D: 8B 1D D0 70 40 00                               mov ebx, dword ptr [0x4070d0]
+0x401733: 8B 0D 98 72 40 00                               mov ecx, dword ptr [0x407298]
+0x401739: 8B 15 90 72 40 00                               mov edx, dword ptr [0x407290]
+0x40173F: A1 A4 70 40 00                                  mov eax, dword ptr [0x4070a4]
+0x401744: 89 74 24 10                                     mov dword ptr [esp+0x10], esi
+0x401748: 89 5C 24 0C                                     mov dword ptr [esp+0xc], ebx
+0x40174C: 89 4C 24 08                                     mov dword ptr [esp+0x8], ecx
+0x401750: 89 54 24 04                                     mov dword ptr [esp+0x4], edx
+0x401754: 89 04 24                                        mov dword ptr [esp], eax
+0x401757: E8 07 08 00 00                                  call 0x80c
+0x40175C: A3 90 72 40 00                                  mov dword ptr [0x407290], eax
+0x401761: 8B 1D D0 70 40 00                               mov ebx, dword ptr [0x4070d0]
+0x401767: 8B 0D 98 72 40 00                               mov ecx, dword ptr [0x407298]
+0x40176D: 8B 15 90 72 40 00                               mov edx, dword ptr [0x407290]
+0x401773: A1 A4 70 40 00                                  mov eax, dword ptr [0x4070a4]
+0x401778: 89 5C 24 0C                                     mov dword ptr [esp+0xc], ebx
+0x40177C: 89 4C 24 08                                     mov dword ptr [esp+0x8], ecx
+0x401780: 89 54 24 04                                     mov dword ptr [esp+0x4], edx
+0x401784: 89 04 24                                        mov dword ptr [esp], eax
+0x401787: E8 53 08 00 00                                  call 0x858
+0x40178C: A3 A4 70 40 00                                  mov dword ptr [0x4070a4], eax
+0x401791: 8B 15 DC 70 40 00                               mov edx, dword ptr [0x4070dc]
+0x401797: A1 C4 71 40 00                                  mov eax, dword ptr [0x4071c4]
+0x40179C: 01 D0                                           add eax, edx
+0x40179E: A3 08 72 40 00                                  mov dword ptr [0x407208], eax
+0x4017A3: A1 70 72 40 00                                  mov eax, dword ptr [0x407270]
+0x4017A8: A3 EC 71 40 00                                  mov dword ptr [0x4071ec], eax
+0x4017AD: A1 08 72 40 00                                  mov eax, dword ptr [0x407208]
+0x4017B2: A3 70 72 40 00                                  mov dword ptr [0x407270], eax
+0x4017B7: A1 D0 70 40 00                                  mov eax, dword ptr [0x4070d0]
+0x4017BC: A3 E4 71 40 00                                  mov dword ptr [0x4071e4], eax
+0x4017C1: A1 98 72 40 00                                  mov eax, dword ptr [0x407298]
+0x4017C6: A3 D0 70 40 00                                  mov dword ptr [0x4070d0], eax
+0x4017CB: C7 44 24 04 74 72 40 00                         mov dword ptr [esp+0x4], 0x407274
+0x4017D3: C7 04 24 C8 71 40 00                            mov dword ptr [esp], 0x4071c8
+0x4017DA: E8 FE 04 00 00                                  call 0x503
+0x4017DF: A3 A8 72 40 00                                  mov dword ptr [0x4072a8], eax
+0x4017E4: 8B 1D FC 71 40 00                               mov ebx, dword ptr [0x4071fc]
+0x4017EA: 8B 0D E4 70 40 00                               mov ecx, dword ptr [0x4070e4]
+0x4017F0: 8B 15 AC 71 40 00                               mov edx, dword ptr [0x4071ac]
+0x4017F6: A1 24 71 40 00                                  mov eax, dword ptr [0x407124]
+0x4017FB: 89 5C 24 0C                                     mov dword ptr [esp+0xc], ebx
+0x4017FF: 89 4C 24 08                                     mov dword ptr [esp+0x8], ecx
+0x401803: 89 54 24 04                                     mov dword ptr [esp+0x4], edx
+0x401807: 89 04 24                                        mov dword ptr [esp], eax
+0x40180A: E8 27 05 00 00                                  call 0x52c
+0x40180F: A3 AC 72 40 00                                  mov dword ptr [0x4072ac], eax
+0x401814: 8B 15 AC 72 40 00                               mov edx, dword ptr [0x4072ac]
+0x40181A: A1 A8 72 40 00                                  mov eax, dword ptr [0x4072a8]
+0x40181F: 01 D0                                           add eax, edx
+0x401821: A3 34 71 40 00                                  mov dword ptr [0x407134], eax
+0x401826: A1 E8 70 40 00                                  mov eax, dword ptr [0x4070e8]
+0x40182B: 8B 14 85 BC 34 40 00                            mov edx, dword ptr [eax*4+0x4034bc]
+0x401832: A1 A0 72 40 00                                  mov eax, dword ptr [0x4072a0]
+0x401837: 0F AF C2                                        imul eax, edx
+0x40183A: C1 F8 0F                                        sar eax, 0xf
+0x40183D: A3 9C 70 40 00                                  mov dword ptr [0x40709c], eax
+0x401842: 8B 15 BC 71 40 00                               mov edx, dword ptr [0x4071bc]
+0x401848: A1 E8 70 40 00                                  mov eax, dword ptr [0x4070e8]
+0x40184D: 89 54 24 04                                     mov dword ptr [esp+0x4], edx
+0x401851: 89 04 24                                        mov dword ptr [esp], eax
+0x401854: E8 EF 07 00 00                                  call 0x7f4
+0x401859: A3 BC 71 40 00                                  mov dword ptr [0x4071bc], eax
+0x40185E: A1 BC 71 40 00                                  mov eax, dword ptr [0x4071bc]
+0x401863: C7 44 24 04 0A 00 00 00                         mov dword ptr [esp+0x4], 0xa
+0x40186B: 89 04 24                                        mov dword ptr [esp], eax
+0x40186E: E8 AE 05 00 00                                  call 0x5b3
+0x401873: A3 A0 72 40 00                                  mov dword ptr [0x4072a0], eax
+0x401878: 8B 15 9C 70 40 00                               mov edx, dword ptr [0x40709c]
+0x40187E: A1 A8 72 40 00                                  mov eax, dword ptr [0x4072a8]
+0x401883: 01 D0                                           add eax, edx
+0x401885: A3 04 72 40 00                                  mov dword ptr [0x407204], eax
+0x40188A: A1 9C 70 40 00                                  mov eax, dword ptr [0x40709c]
+0x40188F: C7 44 24 08 C8 71 40 00                         mov dword ptr [esp+0x8], 0x4071c8
+0x401897: C7 44 24 04 74 72 40 00                         mov dword ptr [esp+0x4], 0x407274
+0x40189F: 89 04 24                                        mov dword ptr [esp], eax
+0x4018A2: E8 B9 05 00 00                                  call 0x5be
+0x4018A7: 8B 35 D8 70 40 00                               mov esi, dword ptr [0x4070d8]
+0x4018AD: 8B 1D 90 70 40 00                               mov ebx, dword ptr [0x407090]
+0x4018B3: 8B 0D 04 72 40 00                               mov ecx, dword ptr [0x407204]
+0x4018B9: 8B 15 FC 71 40 00                               mov edx, dword ptr [0x4071fc]
+0x4018BF: A1 AC 71 40 00                                  mov eax, dword ptr [0x4071ac]
+0x4018C4: 89 74 24 10                                     mov dword ptr [esp+0x10], esi
+0x4018C8: 89 5C 24 0C                                     mov dword ptr [esp+0xc], ebx
+0x4018CC: 89 4C 24 08                                     mov dword ptr [esp+0x8], ecx
+0x4018D0: 89 54 24 04                                     mov dword ptr [esp+0x4], edx
+0x4018D4: 89 04 24                                        mov dword ptr [esp], eax
+0x4018D7: E8 87 06 00 00                                  call 0x68c
+0x4018DC: A3 FC 71 40 00                                  mov dword ptr [0x4071fc], eax
+0x4018E1: 8B 1D 90 70 40 00                               mov ebx, dword ptr [0x407090]
+0x4018E7: 8B 0D 04 72 40 00                               mov ecx, dword ptr [0x407204]
+0x4018ED: 8B 15 FC 71 40 00                               mov edx, dword ptr [0x4071fc]
+0x4018F3: A1 AC 71 40 00                                  mov eax, dword ptr [0x4071ac]
+0x4018F8: 89 5C 24 0C                                     mov dword ptr [esp+0xc], ebx
+0x4018FC: 89 4C 24 08                                     mov dword ptr [esp+0x8], ecx
+0x401900: 89 54 24 04                                     mov dword ptr [esp+0x4], edx
+0x401904: 89 04 24                                        mov dword ptr [esp], eax
+0x401907: E8 D3 06 00 00                                  call 0x6d8
+0x40190C: A3 AC 71 40 00                                  mov dword ptr [0x4071ac], eax
+0x401911: 8B 15 34 71 40 00                               mov edx, dword ptr [0x407134]
+0x401917: A1 9C 70 40 00                                  mov eax, dword ptr [0x40709c]
+0x40191C: 01 D0                                           add eax, edx
+0x40191E: A3 74 70 40 00                                  mov dword ptr [0x407074], eax
+0x401923: A1 24 71 40 00                                  mov eax, dword ptr [0x407124]
+0x401928: A3 E4 70 40 00                                  mov dword ptr [0x4070e4], eax
+0x40192D: A1 74 70 40 00                                  mov eax, dword ptr [0x407074]
+0x401932: A3 24 71 40 00                                  mov dword ptr [0x407124], eax
+0x401937: A1 90 70 40 00                                  mov eax, dword ptr [0x407090]
+0x40193C: A3 D8 70 40 00                                  mov dword ptr [0x4070d8], eax
+0x401941: A1 04 72 40 00                                  mov eax, dword ptr [0x407204]
+0x401946: A3 90 70 40 00                                  mov dword ptr [0x407090], eax
+0x40194B: 8B 15 B8 72 40 00                               mov edx, dword ptr [0x4072b8]
+0x401951: A1 74 70 40 00                                  mov eax, dword ptr [0x407074]
+0x401956: 29 C2                                           sub edx, eax
+0x401958: 89 D0                                           mov eax, edx
+0x40195A: A3 94 72 40 00                                  mov dword ptr [0x407294], eax
+0x40195F: 8B 15 B8 72 40 00                               mov edx, dword ptr [0x4072b8]
+0x401965: A1 74 70 40 00                                  mov eax, dword ptr [0x407074]
+0x40196A: 01 D0                                           add eax, edx
+0x40196C: A3 EC 70 40 00                                  mov dword ptr [0x4070ec], eax
+0x401971: C7 45 E8 00 30 40 00                            mov dword ptr [ebp-0x18], 0x403000
+0x401978: C7 45 E4 E0 72 40 00                            mov dword ptr [ebp-0x1c], 0x4072e0
+0x40197F: C7 45 DC 20 72 40 00                            mov dword ptr [ebp-0x24], 0x407220
+0x401986: 8B 45 E8                                        mov eax, dword ptr [ebp-0x18]
+0x401989: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x40198C: 89 55 E8                                        mov dword ptr [ebp-0x18], edx
+0x40198F: 8B 10                                           mov edx, dword ptr [eax]
+0x401991: A1 94 72 40 00                                  mov eax, dword ptr [0x407294]
+0x401996: 0F AF C2                                        imul eax, edx
+0x401999: 89 45 F0                                        mov dword ptr [ebp-0x10], eax
+0x40199C: 8B 45 E8                                        mov eax, dword ptr [ebp-0x18]
+0x40199F: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x4019A2: 89 55 E8                                        mov dword ptr [ebp-0x18], edx
+0x4019A5: 8B 10                                           mov edx, dword ptr [eax]
+0x4019A7: A1 EC 70 40 00                                  mov eax, dword ptr [0x4070ec]
+0x4019AC: 0F AF C2                                        imul eax, edx
+0x4019AF: 89 45 EC                                        mov dword ptr [ebp-0x14], eax
+0x4019B2: C7 45 F4 00 00 00 00                            mov dword ptr [ebp-0xc], 0x0
+0x4019B9: EB 3C                                           jmp 0x3e
+0x4019BB: 8B 45 E4                                        mov eax, dword ptr [ebp-0x1c]
+0x4019BE: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x4019C1: 89 55 E4                                        mov dword ptr [ebp-0x1c], edx
+0x4019C4: 8B 08                                           mov ecx, dword ptr [eax]
+0x4019C6: 8B 45 E8                                        mov eax, dword ptr [ebp-0x18]
+0x4019C9: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x4019CC: 89 55 E8                                        mov dword ptr [ebp-0x18], edx
+0x4019CF: 8B 00                                           mov eax, dword ptr [eax]
+0x4019D1: 0F AF C1                                        imul eax, ecx
+0x4019D4: 01 45 F0                                        add dword ptr [ebp-0x10], eax
+0x4019D7: 8B 45 DC                                        mov eax, dword ptr [ebp-0x24]
+0x4019DA: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x4019DD: 89 55 DC                                        mov dword ptr [ebp-0x24], edx
+0x4019E0: 8B 08                                           mov ecx, dword ptr [eax]
+0x4019E2: 8B 45 E8                                        mov eax, dword ptr [ebp-0x18]
+0x4019E5: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x4019E8: 89 55 E8                                        mov dword ptr [ebp-0x18], edx
+0x4019EB: 8B 00                                           mov eax, dword ptr [eax]
+0x4019ED: 0F AF C1                                        imul eax, ecx
+0x4019F0: 01 45 EC                                        add dword ptr [ebp-0x14], eax
+0x4019F3: 83 45 F4 01                                     add dword ptr [ebp-0xc], 0x1
+0x4019F7: 83 7D F4 09                                     cmp dword ptr [ebp-0xc], 0x9
+0x4019FB: 7E BE                                           jle 0xffffffc0
+0x4019FD: 8B 45 E4                                        mov eax, dword ptr [ebp-0x1c]
+0x401A00: 8B 08                                           mov ecx, dword ptr [eax]
+0x401A02: 8B 45 E8                                        mov eax, dword ptr [ebp-0x18]
+0x401A05: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x401A08: 89 55 E8                                        mov dword ptr [ebp-0x18], edx
+0x401A0B: 8B 00                                           mov eax, dword ptr [eax]
+0x401A0D: 0F AF C1                                        imul eax, ecx
+0x401A10: 01 45 F0                                        add dword ptr [ebp-0x10], eax
+0x401A13: 8B 45 DC                                        mov eax, dword ptr [ebp-0x24]
+0x401A16: 8B 08                                           mov ecx, dword ptr [eax]
+0x401A18: 8B 45 E8                                        mov eax, dword ptr [ebp-0x18]
+0x401A1B: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x401A1E: 89 55 E8                                        mov dword ptr [ebp-0x18], edx
+0x401A21: 8B 00                                           mov eax, dword ptr [eax]
+0x401A23: 0F AF C1                                        imul eax, ecx
+0x401A26: 01 45 EC                                        add dword ptr [ebp-0x14], eax
+0x401A29: 8B 45 F0                                        mov eax, dword ptr [ebp-0x10]
+0x401A2C: C1 F8 0E                                        sar eax, 0xe
+0x401A2F: A3 D4 70 40 00                                  mov dword ptr [0x4070d4], eax
+0x401A34: 8B 45 EC                                        mov eax, dword ptr [ebp-0x14]
+0x401A37: C1 F8 0E                                        sar eax, 0xe
+0x401A3A: A3 A4 72 40 00                                  mov dword ptr [0x4072a4], eax
+0x401A3F: 8B 45 E4                                        mov eax, dword ptr [ebp-0x1c]
+0x401A42: 83 E8 04                                        sub eax, 0x4
+0x401A45: 89 45 E0                                        mov dword ptr [ebp-0x20], eax
+0x401A48: 8B 45 DC                                        mov eax, dword ptr [ebp-0x24]
+0x401A4B: 83 E8 04                                        sub eax, 0x4
+0x401A4E: 89 45 D8                                        mov dword ptr [ebp-0x28], eax
+0x401A51: C7 45 F4 00 00 00 00                            mov dword ptr [ebp-0xc], 0x0
+0x401A58: EB 30                                           jmp 0x32
+0x401A5A: 8B 45 E4                                        mov eax, dword ptr [ebp-0x1c]
+0x401A5D: 8D 50 FC                                        lea edx, ptr [eax-0x4]
+0x401A60: 89 55 E4                                        mov dword ptr [ebp-0x1c], edx
+0x401A63: 8B 55 E0                                        mov edx, dword ptr [ebp-0x20]
+0x401A66: 8D 4A FC                                        lea ecx, ptr [edx-0x4]
+0x401A69: 89 4D E0                                        mov dword ptr [ebp-0x20], ecx
+0x401A6C: 8B 12                                           mov edx, dword ptr [edx]
+0x401A6E: 89 10                                           mov dword ptr [eax], edx
+0x401A70: 8B 45 DC                                        mov eax, dword ptr [ebp-0x24]
+0x401A73: 8D 50 FC                                        lea edx, ptr [eax-0x4]
+0x401A76: 89 55 DC                                        mov dword ptr [ebp-0x24], edx
+0x401A79: 8B 55 D8                                        mov edx, dword ptr [ebp-0x28]
+0x401A7C: 8D 4A FC                                        lea ecx, ptr [edx-0x4]
+0x401A7F: 89 4D D8                                        mov dword ptr [ebp-0x28], ecx
+0x401A82: 8B 12                                           mov edx, dword ptr [edx]
+0x401A84: 89 10                                           mov dword ptr [eax], edx
+0x401A86: 83 45 F4 01                                     add dword ptr [ebp-0xc], 0x1
+0x401A8A: 83 7D F4 09                                     cmp dword ptr [ebp-0xc], 0x9
+0x401A8E: 7E CA                                           jle 0xffffffcc
+0x401A90: 8B 15 94 72 40 00                               mov edx, dword ptr [0x407294]
+0x401A96: 8B 45 E4                                        mov eax, dword ptr [ebp-0x1c]
+0x401A99: 89 10                                           mov dword ptr [eax], edx
+0x401A9B: 8B 15 EC 70 40 00                               mov edx, dword ptr [0x4070ec]
+0x401AA1: 8B 45 DC                                        mov eax, dword ptr [ebp-0x24]
+0x401AA4: 89 10                                           mov dword ptr [eax], edx
+0x401AA6: 90                                              nop 
+0x401AA7: 83 C4 40                                        add esp, 0x40
+0x401AAA: 5B                                              pop ebx
+0x401AAB: 5E                                              pop esi
+0x401AAC: 5D                                              pop ebp
+0x401AAD: C3                                              ret 
+0x401AAE: 55                                              push ebp
+0x401AAF: 89 E5                                           mov ebp, esp
+0x401AB1: 83 EC 10                                        sub esp, 0x10
+0x401AB4: C7 05 E0 70 40 00 20 00 00 00                   mov dword ptr [0x4070e0], 0x20
+0x401ABE: A1 E0 70 40 00                                  mov eax, dword ptr [0x4070e0]
+0x401AC3: A3 9C 72 40 00                                  mov dword ptr [0x40729c], eax
+0x401AC8: C7 05 A0 72 40 00 08 00 00 00                   mov dword ptr [0x4072a0], 0x8
+0x401AD2: A1 A0 72 40 00                                  mov eax, dword ptr [0x4072a0]
+0x401AD7: A3 28 71 40 00                                  mov dword ptr [0x407128], eax
+0x401ADC: C7 05 BC 72 40 00 00 00 00 00                   mov dword ptr [0x4072bc], 0x0
+0x401AE6: A1 BC 72 40 00                                  mov eax, dword ptr [0x4072bc]
+0x401AEB: A3 C0 71 40 00                                  mov dword ptr [0x4071c0], eax
+0x401AF0: A1 C0 71 40 00                                  mov eax, dword ptr [0x4071c0]
+0x401AF5: A3 A8 71 40 00                                  mov dword ptr [0x4071a8], eax
+0x401AFA: A1 A8 71 40 00                                  mov eax, dword ptr [0x4071a8]
+0x401AFF: A3 B0 71 40 00                                  mov dword ptr [0x4071b0], eax
+0x401B04: A1 B0 71 40 00                                  mov eax, dword ptr [0x4071b0]
+0x401B09: A3 98 70 40 00                                  mov dword ptr [0x407098], eax
+0x401B0E: A1 98 70 40 00                                  mov eax, dword ptr [0x407098]
+0x401B13: A3 38 71 40 00                                  mov dword ptr [0x407138], eax
+0x401B18: A1 38 71 40 00                                  mov eax, dword ptr [0x407138]
+0x401B1D: A3 C8 70 40 00                                  mov dword ptr [0x4070c8], eax
+0x401B22: C7 05 68 70 40 00 00 00 00 00                   mov dword ptr [0x407068], 0x0
+0x401B2C: A1 68 70 40 00                                  mov eax, dword ptr [0x407068]
+0x401B31: A3 F8 71 40 00                                  mov dword ptr [0x4071f8], eax
+0x401B36: A1 F8 71 40 00                                  mov eax, dword ptr [0x4071f8]
+0x401B3B: A3 20 71 40 00                                  mov dword ptr [0x407120], eax
+0x401B40: A1 20 71 40 00                                  mov eax, dword ptr [0x407120]
+0x401B45: A3 0C 73 40 00                                  mov dword ptr [0x40730c], eax
+0x401B4A: A1 0C 73 40 00                                  mov eax, dword ptr [0x40730c]
+0x401B4F: A3 94 70 40 00                                  mov dword ptr [0x407094], eax
+0x401B54: A1 94 70 40 00                                  mov eax, dword ptr [0x407094]
+0x401B59: A3 B8 71 40 00                                  mov dword ptr [0x4071b8], eax
+0x401B5E: A1 B8 71 40 00                                  mov eax, dword ptr [0x4071b8]
+0x401B63: A3 F0 71 40 00                                  mov dword ptr [0x4071f0], eax
+0x401B68: C7 05 EC 71 40 00 00 00 00 00                   mov dword ptr [0x4071ec], 0x0
+0x401B72: A1 EC 71 40 00                                  mov eax, dword ptr [0x4071ec]
+0x401B77: A3 70 72 40 00                                  mov dword ptr [0x407270], eax
+0x401B7C: A1 70 72 40 00                                  mov eax, dword ptr [0x407270]
+0x401B81: A3 E4 71 40 00                                  mov dword ptr [0x4071e4], eax
+0x401B86: A1 E4 71 40 00                                  mov eax, dword ptr [0x4071e4]
+0x401B8B: A3 D0 70 40 00                                  mov dword ptr [0x4070d0], eax
+0x401B90: A1 D0 70 40 00                                  mov eax, dword ptr [0x4070d0]
+0x401B95: A3 90 72 40 00                                  mov dword ptr [0x407290], eax
+0x401B9A: A1 90 72 40 00                                  mov eax, dword ptr [0x407290]
+0x401B9F: A3 A4 70 40 00                                  mov dword ptr [0x4070a4], eax
+0x401BA4: A1 A4 70 40 00                                  mov eax, dword ptr [0x4070a4]
+0x401BA9: A3 64 70 40 00                                  mov dword ptr [0x407064], eax
+0x401BAE: C7 05 E4 70 40 00 00 00 00 00                   mov dword ptr [0x4070e4], 0x0
+0x401BB8: A1 E4 70 40 00                                  mov eax, dword ptr [0x4070e4]
+0x401BBD: A3 24 71 40 00                                  mov dword ptr [0x407124], eax
+0x401BC2: A1 24 71 40 00                                  mov eax, dword ptr [0x407124]
+0x401BC7: A3 D8 70 40 00                                  mov dword ptr [0x4070d8], eax
+0x401BCC: A1 D8 70 40 00                                  mov eax, dword ptr [0x4070d8]
+0x401BD1: A3 90 70 40 00                                  mov dword ptr [0x407090], eax
+0x401BD6: A1 90 70 40 00                                  mov eax, dword ptr [0x407090]
+0x401BDB: A3 FC 71 40 00                                  mov dword ptr [0x4071fc], eax
+0x401BE0: A1 FC 71 40 00                                  mov eax, dword ptr [0x4071fc]
+0x401BE5: A3 AC 71 40 00                                  mov dword ptr [0x4071ac], eax
+0x401BEA: A1 AC 71 40 00                                  mov eax, dword ptr [0x4071ac]
+0x401BEF: A3 BC 71 40 00                                  mov dword ptr [0x4071bc], eax
+0x401BF4: C7 45 FC 00 00 00 00                            mov dword ptr [ebp-0x4], 0x0
+0x401BFB: EB 3C                                           jmp 0x3e
+0x401BFD: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401C00: C7 04 85 78 70 40 00 00 00 00 00                mov dword ptr [eax*4+0x407078], 0x0
+0x401C0B: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401C0E: C7 04 85 F0 70 40 00 00 00 00 00                mov dword ptr [eax*4+0x4070f0], 0x0
+0x401C19: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401C1C: C7 04 85 50 72 40 00 00 00 00 00                mov dword ptr [eax*4+0x407250], 0x0
+0x401C27: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401C2A: C7 04 85 74 72 40 00 00 00 00 00                mov dword ptr [eax*4+0x407274], 0x0
+0x401C35: 83 45 FC 01                                     add dword ptr [ebp-0x4], 0x1
+0x401C39: 83 7D FC 05                                     cmp dword ptr [ebp-0x4], 0x5
+0x401C3D: 7E BE                                           jle 0xffffffc0
+0x401C3F: C7 45 FC 00 00 00 00                            mov dword ptr [ebp-0x4], 0x0
+0x401C46: EB 3C                                           jmp 0x3e
+0x401C48: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401C4B: C7 04 85 40 70 40 00 00 00 00 00                mov dword ptr [eax*4+0x407040], 0x0
+0x401C56: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401C59: C7 04 85 08 71 40 00 00 00 00 00                mov dword ptr [eax*4+0x407108], 0x0
+0x401C64: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401C67: C7 04 85 A8 70 40 00 00 00 00 00                mov dword ptr [eax*4+0x4070a8], 0x0
+0x401C72: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401C75: C7 04 85 C8 71 40 00 00 00 00 00                mov dword ptr [eax*4+0x4071c8], 0x0
+0x401C80: 83 45 FC 01                                     add dword ptr [ebp-0x4], 0x1
+0x401C84: 83 7D FC 05                                     cmp dword ptr [ebp-0x4], 0x5
+0x401C88: 7E BE                                           jle 0xffffffc0
+0x401C8A: C7 45 FC 00 00 00 00                            mov dword ptr [ebp-0x4], 0x0
+0x401C91: EB 12                                           jmp 0x14
+0x401C93: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401C96: C7 04 85 40 71 40 00 00 00 00 00                mov dword ptr [eax*4+0x407140], 0x0
+0x401CA1: 83 45 FC 01                                     add dword ptr [ebp-0x4], 0x1
+0x401CA5: 83 7D FC 16                                     cmp dword ptr [ebp-0x4], 0x16
+0x401CA9: 7E E8                                           jle 0xffffffea
+0x401CAB: C7 45 FC 00 00 00 00                            mov dword ptr [ebp-0x4], 0x0
+0x401CB2: EB 20                                           jmp 0x22
+0x401CB4: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401CB7: C7 04 85 E0 72 40 00 00 00 00 00                mov dword ptr [eax*4+0x4072e0], 0x0
+0x401CC2: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401CC5: C7 04 85 20 72 40 00 00 00 00 00                mov dword ptr [eax*4+0x407220], 0x0
+0x401CD0: 83 45 FC 01                                     add dword ptr [ebp-0x4], 0x1
+0x401CD4: 83 7D FC 0A                                     cmp dword ptr [ebp-0x4], 0xa
+0x401CD8: 7E DA                                           jle 0xffffffdc
+0x401CDA: 90                                              nop 
+0x401CDB: C9                                              leave 
+0x401CDC: C3                                              ret 
+0x401CDD: 55                                              push ebp
+0x401CDE: 89 E5                                           mov ebp, esp
+0x401CE0: 83 EC 10                                        sub esp, 0x10
+0x401CE3: 8B 45 08                                        mov eax, dword ptr [ebp+0x8]
+0x401CE6: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x401CE9: 89 55 08                                        mov dword ptr [ebp+0x8], edx
+0x401CEC: 8B 08                                           mov ecx, dword ptr [eax]
+0x401CEE: 8B 45 0C                                        mov eax, dword ptr [ebp+0xc]
+0x401CF1: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x401CF4: 89 55 0C                                        mov dword ptr [ebp+0xc], edx
+0x401CF7: 8B 00                                           mov eax, dword ptr [eax]
+0x401CF9: 0F AF C1                                        imul eax, ecx
+0x401CFC: 89 45 F8                                        mov dword ptr [ebp-0x8], eax
+0x401CFF: C7 45 FC 01 00 00 00                            mov dword ptr [ebp-0x4], 0x1
+0x401D06: EB 20                                           jmp 0x22
+0x401D08: 8B 45 08                                        mov eax, dword ptr [ebp+0x8]
+0x401D0B: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x401D0E: 89 55 08                                        mov dword ptr [ebp+0x8], edx
+0x401D11: 8B 08                                           mov ecx, dword ptr [eax]
+0x401D13: 8B 45 0C                                        mov eax, dword ptr [ebp+0xc]
+0x401D16: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x401D19: 89 55 0C                                        mov dword ptr [ebp+0xc], edx
+0x401D1C: 8B 00                                           mov eax, dword ptr [eax]
+0x401D1E: 0F AF C1                                        imul eax, ecx
+0x401D21: 01 45 F8                                        add dword ptr [ebp-0x8], eax
+0x401D24: 83 45 FC 01                                     add dword ptr [ebp-0x4], 0x1
+0x401D28: 83 7D FC 05                                     cmp dword ptr [ebp-0x4], 0x5
+0x401D2C: 7E DA                                           jle 0xffffffdc
+0x401D2E: 8B 45 F8                                        mov eax, dword ptr [ebp-0x8]
+0x401D31: C1 F8 0E                                        sar eax, 0xe
+0x401D34: C9                                              leave 
+0x401D35: C3                                              ret 
+0x401D36: 55                                              push ebp
+0x401D37: 89 E5                                           mov ebp, esp
+0x401D39: 83 EC 10                                        sub esp, 0x10
+0x401D3C: 8B 45 08                                        mov eax, dword ptr [ebp+0x8]
+0x401D3F: 01 C0                                           add eax, eax
+0x401D41: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x401D44: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401D47: 0F AF 45 0C                                     imul eax, dword ptr [ebp+0xc]
+0x401D4B: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x401D4E: 8B 45 10                                        mov eax, dword ptr [ebp+0x10]
+0x401D51: 01 C0                                           add eax, eax
+0x401D53: 89 45 F8                                        mov dword ptr [ebp-0x8], eax
+0x401D56: 8B 45 14                                        mov eax, dword ptr [ebp+0x14]
+0x401D59: 0F AF 45 F8                                     imul eax, dword ptr [ebp-0x8]
+0x401D5D: 01 45 FC                                        add dword ptr [ebp-0x4], eax
+0x401D60: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401D63: C1 F8 0F                                        sar eax, 0xf
+0x401D66: C9                                              leave 
+0x401D67: C3                                              ret 
+0x401D68: 55                                              push ebp
+0x401D69: 89 E5                                           mov ebp, esp
+0x401D6B: 83 EC 14                                        sub esp, 0x14
+0x401D6E: 8B 45 08                                        mov eax, dword ptr [ebp+0x8]
+0x401D71: 89 04 24                                        mov dword ptr [esp], eax
+0x401D74: E8 94 F2 FF FF                                  call 0xfffff299
+0x401D79: 89 45 F4                                        mov dword ptr [ebp-0xc], eax
+0x401D7C: C7 45 F8 00 00 00 00                            mov dword ptr [ebp-0x8], 0x0
+0x401D83: EB 22                                           jmp 0x24
+0x401D85: 8B 45 F8                                        mov eax, dword ptr [ebp-0x8]
+0x401D88: 8B 04 85 40 33 40 00                            mov eax, dword ptr [eax*4+0x403340]
+0x401D8F: 0F AF 45 0C                                     imul eax, dword ptr [ebp+0xc]
+0x401D93: C1 F8 0F                                        sar eax, 0xf
+0x401D96: 89 45 F0                                        mov dword ptr [ebp-0x10], eax
+0x401D99: 8B 45 F4                                        mov eax, dword ptr [ebp-0xc]
+0x401D9C: 3B 45 F0                                        cmp eax, dword ptr [ebp-0x10]
+0x401D9F: 7F 02                                           jnle 0x4
+0x401DA1: EB 0A                                           jmp 0xc
+0x401DA3: 83 45 F8 01                                     add dword ptr [ebp-0x8], 0x1
+0x401DA7: 83 7D F8 1D                                     cmp dword ptr [ebp-0x8], 0x1d
+0x401DAB: 7E D8                                           jle 0xffffffda
+0x401DAD: 83 7D 08 00                                     cmp dword ptr [ebp+0x8], 0x0
+0x401DB1: 78 0F                                           js 0x11
+0x401DB3: 8B 45 F8                                        mov eax, dword ptr [ebp-0x8]
+0x401DB6: 8B 04 85 C0 33 40 00                            mov eax, dword ptr [eax*4+0x4033c0]
+0x401DBD: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x401DC0: EB 0D                                           jmp 0xf
+0x401DC2: 8B 45 F8                                        mov eax, dword ptr [ebp-0x8]
+0x401DC5: 8B 04 85 40 34 40 00                            mov eax, dword ptr [eax*4+0x403440]
+0x401DCC: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x401DCF: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401DD2: C9                                              leave 
+0x401DD3: C3                                              ret 
+0x401DD4: 55                                              push ebp
+0x401DD5: 89 E5                                           mov ebp, esp
+0x401DD7: 83 EC 10                                        sub esp, 0x10
+0x401DDA: 8B 55 0C                                        mov edx, dword ptr [ebp+0xc]
+0x401DDD: 89 D0                                           mov eax, edx
+0x401DDF: C1 E0 07                                        shl eax, 0x7
+0x401DE2: 29 D0                                           sub eax, edx
+0x401DE4: C1 F8 07                                        sar eax, 0x7
+0x401DE7: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x401DEA: 8B 45 08                                        mov eax, dword ptr [ebp+0x8]
+0x401DED: C1 F8 02                                        sar eax, 0x2
+0x401DF0: 8B 14 85 40 32 40 00                            mov edx, dword ptr [eax*4+0x403240]
+0x401DF7: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401DFA: 01 D0                                           add eax, edx
+0x401DFC: 89 45 0C                                        mov dword ptr [ebp+0xc], eax
+0x401DFF: 83 7D 0C 00                                     cmp dword ptr [ebp+0xc], 0x0
+0x401E03: 79 07                                           jns 0x9
+0x401E05: C7 45 0C 00 00 00 00                            mov dword ptr [ebp+0xc], 0x0
+0x401E0C: 81 7D 0C 00 48 00 00                            cmp dword ptr [ebp+0xc], 0x4800
+0x401E13: 7E 07                                           jle 0x9
+0x401E15: C7 45 0C 00 48 00 00                            mov dword ptr [ebp+0xc], 0x4800
+0x401E1C: 8B 45 0C                                        mov eax, dword ptr [ebp+0xc]
+0x401E1F: C9                                              leave 
+0x401E20: C3                                              ret 
+0x401E21: 55                                              push ebp
+0x401E22: 89 E5                                           mov ebp, esp
+0x401E24: 83 EC 10                                        sub esp, 0x10
+0x401E27: 8B 45 08                                        mov eax, dword ptr [ebp+0x8]
+0x401E2A: C1 F8 06                                        sar eax, 0x6
+0x401E2D: 83 E0 1F                                        and eax, 0x1f
+0x401E30: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x401E33: 8B 45 08                                        mov eax, dword ptr [ebp+0x8]
+0x401E36: C1 F8 0B                                        sar eax, 0xb
+0x401E39: 89 45 F8                                        mov dword ptr [ebp-0x8], eax
+0x401E3C: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401E3F: 8B 14 85 C0 32 40 00                            mov edx, dword ptr [eax*4+0x4032c0]
+0x401E46: 8B 45 0C                                        mov eax, dword ptr [ebp+0xc]
+0x401E49: 83 C0 01                                        add eax, 0x1
+0x401E4C: 2B 45 F8                                        sub eax, dword ptr [ebp-0x8]
+0x401E4F: 89 C1                                           mov ecx, eax
+0x401E51: D3 FA                                           sar edx, cl
+0x401E53: 89 D0                                           mov eax, edx
+0x401E55: 89 45 F4                                        mov dword ptr [ebp-0xc], eax
+0x401E58: 8B 45 F4                                        mov eax, dword ptr [ebp-0xc]
+0x401E5B: C1 E0 03                                        shl eax, 0x3
+0x401E5E: C9                                              leave 
+0x401E5F: C3                                              ret 
+0x401E60: 55                                              push ebp
+0x401E61: 89 E5                                           mov ebp, esp
+0x401E63: 83 EC 10                                        sub esp, 0x10
+0x401E66: 83 7D 08 00                                     cmp dword ptr [ebp+0x8], 0x0
+0x401E6A: 75 42                                           jnz 0x44
+0x401E6C: C7 45 FC 00 00 00 00                            mov dword ptr [ebp-0x4], 0x0
+0x401E73: EB 31                                           jmp 0x33
+0x401E75: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401E78: 8D 14 85 00 00 00 00                            lea edx, ptr [eax*4]
+0x401E7F: 8B 45 10                                        mov eax, dword ptr [ebp+0x10]
+0x401E82: 8D 0C 02                                        lea ecx, ptr [edx+eax*1]
+0x401E85: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401E88: 8D 14 85 00 00 00 00                            lea edx, ptr [eax*4]
+0x401E8F: 8B 45 10                                        mov eax, dword ptr [ebp+0x10]
+0x401E92: 01 D0                                           add eax, edx
+0x401E94: 8B 10                                           mov edx, dword ptr [eax]
+0x401E96: 89 D0                                           mov eax, edx
+0x401E98: C1 E0 08                                        shl eax, 0x8
+0x401E9B: 29 D0                                           sub eax, edx
+0x401E9D: C1 F8 08                                        sar eax, 0x8
+0x401EA0: 89 01                                           mov dword ptr [ecx], eax
+0x401EA2: 83 45 FC 01                                     add dword ptr [ebp-0x4], 0x1
+0x401EA6: 83 7D FC 05                                     cmp dword ptr [ebp-0x4], 0x5
+0x401EAA: 7E C9                                           jle 0xffffffcb
+0x401EAC: EB 73                                           jmp 0x75
+0x401EAE: C7 45 FC 00 00 00 00                            mov dword ptr [ebp-0x4], 0x0
+0x401EB5: EB 64                                           jmp 0x66
+0x401EB7: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401EBA: 8D 14 85 00 00 00 00                            lea edx, ptr [eax*4]
+0x401EC1: 8B 45 0C                                        mov eax, dword ptr [ebp+0xc]
+0x401EC4: 01 D0                                           add eax, edx
+0x401EC6: 8B 00                                           mov eax, dword ptr [eax]
+0x401EC8: 0F AF 45 08                                     imul eax, dword ptr [ebp+0x8]
+0x401ECC: 85 C0                                           test eax, eax
+0x401ECE: 78 09                                           js 0xb
+0x401ED0: C7 45 F8 80 00 00 00                            mov dword ptr [ebp-0x8], 0x80
+0x401ED7: EB 07                                           jmp 0x9
+0x401ED9: C7 45 F8 80 FF FF FF                            mov dword ptr [ebp-0x8], 0xffffff80
+0x401EE0: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401EE3: 8D 14 85 00 00 00 00                            lea edx, ptr [eax*4]
+0x401EEA: 8B 45 10                                        mov eax, dword ptr [ebp+0x10]
+0x401EED: 01 D0                                           add eax, edx
+0x401EEF: 8B 10                                           mov edx, dword ptr [eax]
+0x401EF1: 89 D0                                           mov eax, edx
+0x401EF3: C1 E0 08                                        shl eax, 0x8
+0x401EF6: 29 D0                                           sub eax, edx
+0x401EF8: C1 F8 08                                        sar eax, 0x8
+0x401EFB: 89 45 F4                                        mov dword ptr [ebp-0xc], eax
+0x401EFE: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401F01: 8D 14 85 00 00 00 00                            lea edx, ptr [eax*4]
+0x401F08: 8B 45 10                                        mov eax, dword ptr [ebp+0x10]
+0x401F0B: 01 D0                                           add eax, edx
+0x401F0D: 8B 4D F8                                        mov ecx, dword ptr [ebp-0x8]
+0x401F10: 8B 55 F4                                        mov edx, dword ptr [ebp-0xc]
+0x401F13: 01 CA                                           add edx, ecx
+0x401F15: 89 10                                           mov dword ptr [eax], edx
+0x401F17: 83 45 FC 01                                     add dword ptr [ebp-0x4], 0x1
+0x401F1B: 83 7D FC 05                                     cmp dword ptr [ebp-0x4], 0x5
+0x401F1F: 7E 96                                           jle 0xffffff98
+0x401F21: 8B 45 0C                                        mov eax, dword ptr [ebp+0xc]
+0x401F24: 8D 50 14                                        lea edx, ptr [eax+0x14]
+0x401F27: 8B 45 0C                                        mov eax, dword ptr [ebp+0xc]
+0x401F2A: 8B 40 10                                        mov eax, dword ptr [eax+0x10]
+0x401F2D: 89 02                                           mov dword ptr [edx], eax
+0x401F2F: 8B 45 0C                                        mov eax, dword ptr [ebp+0xc]
+0x401F32: 8D 50 10                                        lea edx, ptr [eax+0x10]
+0x401F35: 8B 45 0C                                        mov eax, dword ptr [ebp+0xc]
+0x401F38: 8B 40 0C                                        mov eax, dword ptr [eax+0xc]
+0x401F3B: 89 02                                           mov dword ptr [edx], eax
+0x401F3D: 8B 45 0C                                        mov eax, dword ptr [ebp+0xc]
+0x401F40: 8D 50 0C                                        lea edx, ptr [eax+0xc]
+0x401F43: 8B 45 0C                                        mov eax, dword ptr [ebp+0xc]
+0x401F46: 8B 40 08                                        mov eax, dword ptr [eax+0x8]
+0x401F49: 89 02                                           mov dword ptr [edx], eax
+0x401F4B: 8B 45 0C                                        mov eax, dword ptr [ebp+0xc]
+0x401F4E: 8D 50 04                                        lea edx, ptr [eax+0x4]
+0x401F51: 8B 45 0C                                        mov eax, dword ptr [ebp+0xc]
+0x401F54: 8B 00                                           mov eax, dword ptr [eax]
+0x401F56: 89 02                                           mov dword ptr [edx], eax
+0x401F58: 8B 45 0C                                        mov eax, dword ptr [ebp+0xc]
+0x401F5B: 8B 55 08                                        mov edx, dword ptr [ebp+0x8]
+0x401F5E: 89 10                                           mov dword ptr [eax], edx
+0x401F60: 90                                              nop 
+0x401F61: C9                                              leave 
+0x401F62: C3                                              ret 
+0x401F63: 55                                              push ebp
+0x401F64: 89 E5                                           mov ebp, esp
+0x401F66: 83 EC 10                                        sub esp, 0x10
+0x401F69: 8B 45 08                                        mov eax, dword ptr [ebp+0x8]
+0x401F6C: C1 E0 02                                        shl eax, 0x2
+0x401F6F: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x401F72: 8B 45 10                                        mov eax, dword ptr [ebp+0x10]
+0x401F75: 0F AF 45 14                                     imul eax, dword ptr [ebp+0x14]
+0x401F79: 85 C0                                           test eax, eax
+0x401F7B: 78 03                                           js 0x5
+0x401F7D: F7 5D FC                                        neg dword ptr [ebp-0x4]
+0x401F80: C1 7D FC 07                                     sar dword ptr [ebp-0x4], 0x7
+0x401F84: 8B 45 10                                        mov eax, dword ptr [ebp+0x10]
+0x401F87: 0F AF 45 18                                     imul eax, dword ptr [ebp+0x18]
+0x401F8B: 85 C0                                           test eax, eax
+0x401F8D: 78 0B                                           js 0xd
+0x401F8F: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401F92: 83 E8 80                                        sub eax, 0xffffff80
+0x401F95: 89 45 F8                                        mov dword ptr [ebp-0x8], eax
+0x401F98: EB 09                                           jmp 0xb
+0x401F9A: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x401F9D: 83 C0 80                                        add eax, 0xffffff80
+0x401FA0: 89 45 F8                                        mov dword ptr [ebp-0x8], eax
+0x401FA3: 8B 55 0C                                        mov edx, dword ptr [ebp+0xc]
+0x401FA6: 89 D0                                           mov eax, edx
+0x401FA8: C1 E0 07                                        shl eax, 0x7
+0x401FAB: 29 D0                                           sub eax, edx
+0x401FAD: C1 F8 07                                        sar eax, 0x7
+0x401FB0: 89 C2                                           mov edx, eax
+0x401FB2: 8B 45 F8                                        mov eax, dword ptr [ebp-0x8]
+0x401FB5: 01 D0                                           add eax, edx
+0x401FB7: 89 45 F4                                        mov dword ptr [ebp-0xc], eax
+0x401FBA: 81 7D F4 00 30 00 00                            cmp dword ptr [ebp-0xc], 0x3000
+0x401FC1: 7E 07                                           jle 0x9
+0x401FC3: C7 45 F4 00 30 00 00                            mov dword ptr [ebp-0xc], 0x3000
+0x401FCA: 81 7D F4 00 D0 FF FF                            cmp dword ptr [ebp-0xc], 0xffffd000
+0x401FD1: 7D 07                                           jnl 0x9
+0x401FD3: C7 45 F4 00 D0 FF FF                            mov dword ptr [ebp-0xc], 0xffffd000
+0x401FDA: 8B 45 F4                                        mov eax, dword ptr [ebp-0xc]
+0x401FDD: C9                                              leave 
+0x401FDE: C3                                              ret 
+0x401FDF: 55                                              push ebp
+0x401FE0: 89 E5                                           mov ebp, esp
+0x401FE2: 83 EC 10                                        sub esp, 0x10
+0x401FE5: 8B 55 08                                        mov edx, dword ptr [ebp+0x8]
+0x401FE8: 89 D0                                           mov eax, edx
+0x401FEA: C1 E0 08                                        shl eax, 0x8
+0x401FED: 29 D0                                           sub eax, edx
+0x401FEF: C1 F8 08                                        sar eax, 0x8
+0x401FF2: 89 45 F8                                        mov dword ptr [ebp-0x8], eax
+0x401FF5: 8B 45 10                                        mov eax, dword ptr [ebp+0x10]
+0x401FF8: 0F AF 45 14                                     imul eax, dword ptr [ebp+0x14]
+0x401FFC: 85 C0                                           test eax, eax
+0x401FFE: 78 0D                                           js 0xf
+0x402000: 8B 45 F8                                        mov eax, dword ptr [ebp-0x8]
+0x402003: 05 C0 00 00 00                                  add eax, 0xc0
+0x402008: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x40200B: EB 0B                                           jmp 0xd
+0x40200D: 8B 45 F8                                        mov eax, dword ptr [ebp-0x8]
+0x402010: 2D C0 00 00 00                                  sub eax, 0xc0
+0x402015: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x402018: B8 00 3C 00 00                                  mov eax, 0x3c00
+0x40201D: 2B 45 0C                                        sub eax, dword ptr [ebp+0xc]
+0x402020: 89 45 F4                                        mov dword ptr [ebp-0xc], eax
+0x402023: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x402026: 3B 45 F4                                        cmp eax, dword ptr [ebp-0xc]
+0x402029: 7E 06                                           jle 0x8
+0x40202B: 8B 45 F4                                        mov eax, dword ptr [ebp-0xc]
+0x40202E: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x402031: 8B 45 F4                                        mov eax, dword ptr [ebp-0xc]
+0x402034: F7 D8                                           neg eax
+0x402036: 3B 45 FC                                        cmp eax, dword ptr [ebp-0x4]
+0x402039: 7E 08                                           jle 0xa
+0x40203B: 8B 45 F4                                        mov eax, dword ptr [ebp-0xc]
+0x40203E: F7 D8                                           neg eax
+0x402040: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x402043: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x402046: C9                                              leave 
+0x402047: C3                                              ret 
+0x402048: 55                                              push ebp
+0x402049: 89 E5                                           mov ebp, esp
+0x40204B: 83 EC 10                                        sub esp, 0x10
+0x40204E: 8B 55 0C                                        mov edx, dword ptr [ebp+0xc]
+0x402051: 89 D0                                           mov eax, edx
+0x402053: C1 E0 07                                        shl eax, 0x7
+0x402056: 29 D0                                           sub eax, edx
+0x402058: C1 F8 07                                        sar eax, 0x7
+0x40205B: 89 45 FC                                        mov dword ptr [ebp-0x4], eax
+0x40205E: 8B 45 08                                        mov eax, dword ptr [ebp+0x8]
+0x402061: 8B 14 85 CC 34 40 00                            mov edx, dword ptr [eax*4+0x4034cc]
+0x402068: 8B 45 FC                                        mov eax, dword ptr [ebp-0x4]
+0x40206B: 01 D0                                           add eax, edx
+0x40206D: 89 45 0C                                        mov dword ptr [ebp+0xc], eax
+0x402070: 83 7D 0C 00                                     cmp dword ptr [ebp+0xc], 0x0
+0x402074: 79 07                                           jns 0x9
+0x402076: C7 45 0C 00 00 00 00                            mov dword ptr [ebp+0xc], 0x0
+0x40207D: 81 7D 0C 00 58 00 00                            cmp dword ptr [ebp+0xc], 0x5800
+0x402084: 7E 07                                           jle 0x9
+0x402086: C7 45 0C 00 58 00 00                            mov dword ptr [ebp+0xc], 0x5800
+0x40208D: 8B 45 0C                                        mov eax, dword ptr [ebp+0xc]
+0x402090: C9                                              leave 
+0x402091: C3                                              ret 
+0x402092: 55                                              push ebp
+0x402093: 89 E5                                           mov ebp, esp
+0x402095: 53                                              push ebx
+0x402096: 83 EC 24                                        sub esp, 0x24
+0x402099: E8 10 FA FF FF                                  call 0xfffffa15
+0x40209E: C7 45 F0 0A 00 00 00                            mov dword ptr [ebp-0x10], 0xa
+0x4020A5: C7 45 EC D0 07 00 00                            mov dword ptr [ebp-0x14], 0x7d0
+0x4020AC: C7 45 F4 00 00 00 00                            mov dword ptr [ebp-0xc], 0x0
+0x4020B3: EB 29                                           jmp 0x2b
+0x4020B5: 8B 45 EC                                        mov eax, dword ptr [ebp-0x14]
+0x4020B8: 69 C0 45 0C 00 00                               imul eax, eax, 0xc45
+0x4020BE: 0F AF 45 F4                                     imul eax, dword ptr [ebp-0xc]
+0x4020C2: 89 04 24                                        mov dword ptr [esp], eax
+0x4020C5: E8 3B F0 FF FF                                  call 0xfffff040
+0x4020CA: 0F AF 45 F0                                     imul eax, dword ptr [ebp-0x10]
+0x4020CE: 89 C2                                           mov edx, eax
+0x4020D0: 8B 45 F4                                        mov eax, dword ptr [ebp-0xc]
+0x4020D3: 89 14 85 00 70 40 00                            mov dword ptr [eax*4+0x407000], edx
+0x4020DA: 83 45 F4 01                                     add dword ptr [ebp-0xc], 0x1
+0x4020DE: 83 7D F4 02                                     cmp dword ptr [ebp-0xc], 0x2
+0x4020E2: 7E D1                                           jle 0xffffffd3
+0x4020E4: C7 45 F4 00 00 00 00                            mov dword ptr [ebp-0xc], 0x0
+0x4020EB: EB 3C                                           jmp 0x3e
+0x4020ED: 8B 45 F4                                        mov eax, dword ptr [ebp-0xc]
+0x4020F0: 89 C2                                           mov edx, eax
+0x4020F2: C1 EA 1F                                        shr edx, 0x1f
+0x4020F5: 01 D0                                           add eax, edx
+0x4020F7: D1 F8                                           sar eax, 0x1
+0x4020F9: 89 C3                                           mov ebx, eax
+0x4020FB: 8B 45 F4                                        mov eax, dword ptr [ebp-0xc]
+0x4020FE: 83 C0 01                                        add eax, 0x1
+0x402101: 8B 14 85 00 70 40 00                            mov edx, dword ptr [eax*4+0x407000]
+0x402108: 8B 45 F4                                        mov eax, dword ptr [ebp-0xc]
+0x40210B: 8B 04 85 00 70 40 00                            mov eax, dword ptr [eax*4+0x407000]
+0x402112: 89 54 24 04                                     mov dword ptr [esp+0x4], edx
+0x402116: 89 04 24                                        mov dword ptr [esp], eax
+0x402119: E8 FF EF FF FF                                  call 0xfffff004
+0x40211E: 89 04 9D 18 70 40 00                            mov dword ptr [ebx*4+0x407018], eax
+0x402125: 83 45 F4 02                                     add dword ptr [ebp-0xc], 0x2
+0x402129: 83 7D F4 03                                     cmp dword ptr [ebp-0xc], 0x3
+0x40212D: 7E BE                                           jle 0xffffffc0
+0x40212F: C7 45 F4 00 00 00 00                            mov dword ptr [ebp-0xc], 0x0
+0x402136: EB 41                                           jmp 0x43
+0x402138: 8B 45 F4                                        mov eax, dword ptr [ebp-0xc]
+0x40213B: 89 C2                                           mov edx, eax
+0x40213D: C1 EA 1F                                        shr edx, 0x1f
+0x402140: 01 D0                                           add eax, edx
+0x402142: D1 F8                                           sar eax, 0x1
+0x402144: 8B 04 85 18 70 40 00                            mov eax, dword ptr [eax*4+0x407018]
+0x40214B: 89 04 24                                        mov dword ptr [esp], eax
+0x40214E: E8 A9 F4 FF FF                                  call 0xfffff4ae
+0x402153: 8B 15 D4 70 40 00                               mov edx, dword ptr [0x4070d4]
+0x402159: 8B 45 F4                                        mov eax, dword ptr [ebp-0xc]
+0x40215C: 89 14 85 24 70 40 00                            mov dword ptr [eax*4+0x407024], edx
+0x402163: 8B 45 F4                                        mov eax, dword ptr [ebp-0xc]
+0x402166: 8D 50 01                                        lea edx, ptr [eax+0x1]
+0x402169: A1 A4 72 40 00                                  mov eax, dword ptr [0x4072a4]
+0x40216E: 89 04 95 24 70 40 00                            mov dword ptr [edx*4+0x407024], eax
+0x402175: 83 45 F4 02                                     add dword ptr [ebp-0xc], 0x2
+0x402179: 83 7D F4 03                                     cmp dword ptr [ebp-0xc], 0x3
+0x40217D: 7E B9                                           jle 0xffffffbb
+0x40217F: 8B 45 F4                                        mov eax, dword ptr [ebp-0xc]
+0x402182: 8B 14 85 24 70 40 00                            mov edx, dword ptr [eax*4+0x407024]
+0x402189: 8B 45 F4                                        mov eax, dword ptr [ebp-0xc]
+0x40218C: 83 C0 01                                        add eax, 0x1
+0x40218F: 8B 04 85 24 70 40 00                            mov eax, dword ptr [eax*4+0x407024]
+0x402196: 01 D0                                           add eax, edx
+0x402198: 83 C0 01                                        add eax, 0x1
+0x40219B: 83 C4 24                                        add esp, 0x24
+0x40219E: 5B                                              pop ebx
+0x40219F: 5D                                              pop ebp
+0x4021A0: C3                                              ret 

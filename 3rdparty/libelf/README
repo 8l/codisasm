@@ -1,0 +1,4 @@
+libelf for supporting ELF file inputs.
+It's possible to use system libelf, with gelf interface.
+
+Downloaded from http://www.mr511.de/software/

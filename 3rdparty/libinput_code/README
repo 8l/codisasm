@@ -1,0 +1,46 @@
+PEFILE
+======
+
+pefile is composed of a library (libpefile) and a binary that allows 
+to parse memory mapping of portable executable binaries.
+
+Building
+--------
+
+The comilation is controled by CMake framework (http://www.cmake.org/)
+To compile this project you need C compiler and CMake. Then, to confi-
+gure the project just type the following commad at the root.
+
+     cmake .
+
+Then type
+     
+     make       // to build the project
+     make test  // to test the softawre
+     make clean // to clean-up
+
+
+Acknowledgements
+----------------
+
+Binary files in this testsuite directory can be detected as malware. 
+Thoses files are delivered without any waranty. In any case you should
+execute those files. We deny any responsabilities for damages caused 
+by missuse of the material provided.
+
+This softawre was written within the context of the High Security Lab
+(http://lhs.loria.fr/) at the Loria (http://www.loria.fr/) -- Nancy 
+University (http://www.nancy-universite.fr/).
+
+
+----
+Matthieu Kaczmarek
+<matthieu.kaczmarek@mines-nancy.fr>
+
+
+
+
+
+
+
+

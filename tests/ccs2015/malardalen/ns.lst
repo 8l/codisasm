@@ -1,0 +1,99 @@
+0x401000: 55                                              push ebp
+0x401001: 89 E5                                           mov ebp, esp
+0x401003: 83 EC 08                                        sub esp, 0x8
+0x401006: E8 23 01 00 00                                  call 0x128
+0x40100B: C9                                              leave 
+0x40100C: C3                                              ret 
+0x40100D: 55                                              push ebp
+0x40100E: 89 E5                                           mov ebp, esp
+0x401010: 56                                              push esi
+0x401011: 53                                              push ebx
+0x401012: 83 EC 10                                        sub esp, 0x10
+0x401015: C7 45 F4 00 00 00 00                            mov dword ptr [ebp-0xc], 0x0
+0x40101C: E9 F7 00 00 00                                  jmp 0xfc
+0x401021: C7 45 F0 00 00 00 00                            mov dword ptr [ebp-0x10], 0x0
+0x401028: E9 DD 00 00 00                                  jmp 0xe2
+0x40102D: C7 45 EC 00 00 00 00                            mov dword ptr [ebp-0x14], 0x0
+0x401034: E9 C3 00 00 00                                  jmp 0xc8
+0x401039: C7 45 E8 00 00 00 00                            mov dword ptr [ebp-0x18], 0x0
+0x401040: E9 A9 00 00 00                                  jmp 0xae
+0x401045: 8B 4D EC                                        mov ecx, dword ptr [ebp-0x14]
+0x401048: 8B 55 F0                                        mov edx, dword ptr [ebp-0x10]
+0x40104B: 8B 5D F4                                        mov ebx, dword ptr [ebp-0xc]
+0x40104E: 89 C8                                           mov eax, ecx
+0x401050: C1 E0 02                                        shl eax, 0x2
+0x401053: 01 C8                                           add eax, ecx
+0x401055: 6B CB 7D                                        imul ecx, ebx, 0x7d
+0x401058: 01 C1                                           add ecx, eax
+0x40105A: 89 D0                                           mov eax, edx
+0x40105C: C1 E0 02                                        shl eax, 0x2
+0x40105F: 01 D0                                           add eax, edx
+0x401061: 8D 14 85 00 00 00 00                            lea edx, ptr [eax*4]
+0x401068: 01 D0                                           add eax, edx
+0x40106A: 8D 14 01                                        lea edx, ptr [ecx+eax*1]
+0x40106D: 8B 45 E8                                        mov eax, dword ptr [ebp-0x18]
+0x401070: 01 D0                                           add eax, edx
+0x401072: 8B 04 85 00 20 40 00                            mov eax, dword ptr [eax*4+0x402000]
+0x401079: 3B 45 08                                        cmp eax, dword ptr [ebp+0x8]
+0x40107C: 75 6C                                           jnz 0x6e
+0x40107E: 8B 4D EC                                        mov ecx, dword ptr [ebp-0x14]
+0x401081: 8B 55 F0                                        mov edx, dword ptr [ebp-0x10]
+0x401084: 8B 5D F4                                        mov ebx, dword ptr [ebp-0xc]
+0x401087: 89 C8                                           mov eax, ecx
+0x401089: C1 E0 02                                        shl eax, 0x2
+0x40108C: 01 C8                                           add eax, ecx
+0x40108E: 6B CB 7D                                        imul ecx, ebx, 0x7d
+0x401091: 01 C1                                           add ecx, eax
+0x401093: 89 D0                                           mov eax, edx
+0x401095: C1 E0 02                                        shl eax, 0x2
+0x401098: 01 D0                                           add eax, edx
+0x40109A: 8D 14 85 00 00 00 00                            lea edx, ptr [eax*4]
+0x4010A1: 01 D0                                           add eax, edx
+0x4010A3: 8D 14 01                                        lea edx, ptr [ecx+eax*1]
+0x4010A6: 8B 45 E8                                        mov eax, dword ptr [ebp-0x18]
+0x4010A9: 01 D0                                           add eax, edx
+0x4010AB: 8B 1C 85 00 2A 40 00                            mov ebx, dword ptr [eax*4+0x402a00]
+0x4010B2: 8B 4D EC                                        mov ecx, dword ptr [ebp-0x14]
+0x4010B5: 8B 55 F0                                        mov edx, dword ptr [ebp-0x10]
+0x4010B8: 8B 75 F4                                        mov esi, dword ptr [ebp-0xc]
+0x4010BB: 89 C8                                           mov eax, ecx
+0x4010BD: C1 E0 02                                        shl eax, 0x2
+0x4010C0: 01 C8                                           add eax, ecx
+0x4010C2: 6B CE 7D                                        imul ecx, esi, 0x7d
+0x4010C5: 01 C1                                           add ecx, eax
+0x4010C7: 89 D0                                           mov eax, edx
+0x4010C9: C1 E0 02                                        shl eax, 0x2
+0x4010CC: 01 D0                                           add eax, edx
+0x4010CE: 8D 14 85 00 00 00 00                            lea edx, ptr [eax*4]
+0x4010D5: 01 D0                                           add eax, edx
+0x4010D7: 8D 14 01                                        lea edx, ptr [ecx+eax*1]
+0x4010DA: 8B 45 E8                                        mov eax, dword ptr [ebp-0x18]
+0x4010DD: 01 D0                                           add eax, edx
+0x4010DF: 8B 04 85 00 20 40 00                            mov eax, dword ptr [eax*4+0x402000]
+0x4010E6: 01 D8                                           add eax, ebx
+0x4010E8: EB 3D                                           jmp 0x3f
+0x4010EA: 83 45 E8 01                                     add dword ptr [ebp-0x18], 0x1
+0x4010EE: 83 7D E8 04                                     cmp dword ptr [ebp-0x18], 0x4
+0x4010F2: 0F 8E 4D FF FF FF                               jle 0xffffff53
+0x4010F8: 83 45 EC 01                                     add dword ptr [ebp-0x14], 0x1
+0x4010FC: 83 7D EC 04                                     cmp dword ptr [ebp-0x14], 0x4
+0x401100: 0F 8E 33 FF FF FF                               jle 0xffffff39
+0x401106: 83 45 F0 01                                     add dword ptr [ebp-0x10], 0x1
+0x40110A: 83 7D F0 04                                     cmp dword ptr [ebp-0x10], 0x4
+0x40110E: 0F 8E 19 FF FF FF                               jle 0xffffff1f
+0x401114: 83 45 F4 01                                     add dword ptr [ebp-0xc], 0x1
+0x401118: 83 7D F4 04                                     cmp dword ptr [ebp-0xc], 0x4
+0x40111C: 0F 8E FF FE FF FF                               jle 0xffffff05
+0x401122: B8 FF FF FF FF                                  mov eax, 0xffffffff
+0x401127: 83 C4 10                                        add esp, 0x10
+0x40112A: 5B                                              pop ebx
+0x40112B: 5E                                              pop esi
+0x40112C: 5D                                              pop ebp
+0x40112D: C3                                              ret 
+0x40112E: 55                                              push ebp
+0x40112F: 89 E5                                           mov ebp, esp
+0x401131: 83 EC 04                                        sub esp, 0x4
+0x401134: C7 04 24 90 01 00 00                            mov dword ptr [esp], 0x190
+0x40113B: E8 CD FE FF FF                                  call 0xfffffed2
+0x401140: C9                                              leave 
+0x401141: C3                                              ret 

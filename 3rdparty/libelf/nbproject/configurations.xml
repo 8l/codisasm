@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf"
+        name="0">
+      <df name="libelf-0.8.13">
+        <df name="lib">
+          <in>32.fsize.c</in>
+          <in>32.getehdr.c</in>
+          <in>32.getphdr.c</in>
+          <in>32.getshdr.c</in>
+          <in>32.newehdr.c</in>
+          <in>32.newphdr.c</in>
+          <in>32.xlatetof.c</in>
+          <in>64.xlatetof.c</in>
+          <in>assert.c</in>
+          <in>begin.c</in>
+          <in>checksum.c</in>
+          <in>cntl.c</in>
+          <in>cook.c</in>
+          <in>data.c</in>
+          <in>end.c</in>
+          <in>errmsg.c</in>
+          <in>errno.c</in>
+          <in>fill.c</in>
+          <in>flag.c</in>
+          <in>gelfehdr.c</in>
+          <in>gelfphdr.c</in>
+          <in>gelfshdr.c</in>
+          <in>gelftrans.c</in>
+          <in>getarhdr.c</in>
+          <in>getaroff.c</in>
+          <in>getarsym.c</in>
+          <in>getbase.c</in>
+          <in>getdata.c</in>
+          <in>getident.c</in>
+          <in>getscn.c</in>
+          <in>hash.c</in>
+          <in>input.c</in>
+          <in>kind.c</in>
+          <in>memset.c</in>
+          <in>ndxscn.c</in>
+          <in>newdata.c</in>
+          <in>newscn.c</in>
+          <in>next.c</in>
+          <in>nextscn.c</in>
+          <in>nlist.c</in>
+          <in>opt.delscn.c</in>
+          <in>rand.c</in>
+          <in>rawdata.c</in>
+          <in>rawfile.c</in>
+          <in>strptr.c</in>
+          <in>swap64.c</in>
+          <in>update.c</in>
+          <in>verdef_32_tof.c</in>
+          <in>verdef_32_tom.c</in>
+          <in>verdef_64_tof.c</in>
+          <in>verdef_64_tom.c</in>
+          <in>version.c</in>
+          <in>x.elfext.c</in>
+          <in>x.movscn.c</in>
+          <in>x.remscn.c</in>
+        </df>
+        <df name="po">
+          <in>gmo2msg.c</in>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/CMakeLists.txt</itemPath>
+      <itemPath>/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf</Elem>
+  </sourceRootList>
+  <projectmakefile>/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/32.fsize.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/32.getehdr.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/32.getphdr.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/32.getshdr.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/32.newehdr.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/32.newphdr.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/32.xlatetof.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/64.xlatetof.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/assert.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/begin.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/checksum.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/cntl.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/cook.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/data.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/end.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/errmsg.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/errno.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/fill.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/flag.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/gelfehdr.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/gelfphdr.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/gelfshdr.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/gelftrans.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/getarhdr.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/getaroff.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/getarsym.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/getbase.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/getdata.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/getident.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/getscn.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/hash.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/input.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/kind.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/memset.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/ndxscn.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/newdata.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/newscn.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/next.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/nextscn.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/nlist.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/opt.delscn.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/rand.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/rawdata.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/rawfile.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/strptr.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/swap64.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/update.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/verdef_32_tof.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/verdef_32_tom.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/verdef_64_tof.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/verdef_64_tom.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>/usr/include/x86_64-linux-gnu</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/version.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/x.elfext.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/x.movscn.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/lib/x.remscn.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="/home/psylox/NetBeansProjects/C-C++/tmdisasm/3rdparty/libelf/libelf-0.8.13/po/gmo2msg.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

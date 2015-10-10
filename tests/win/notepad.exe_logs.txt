@@ -1,0 +1,3773 @@
+Process id=1364 (0x554) Name=notepad.exe
+
+00_0x010073b2 thread: 0x0 BOOL WINAPI GetModuleHandleA(
+_In_opt_  LPCTSTR lpModuleName: [0x00000000]
+);
+Return: 0x1000000
+
+00_0x01007509 thread: 0x0 BOOL WINAPI GetModuleHandleA(
+_In_opt_  LPCTSTR lpModuleName: [0x00000000]
+);
+Return: 0x1000000
+
+00_0x01002956 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x00000000
+_In_  LPCTSTR lpProcName: RegisterPenApp
+);
+Return: 0x00000000
+
+00_0x01003ccd thread: 0x0 LONG WINAPI RegCreateKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x010016a4] Software\Microsoft\Notepad
+_Reserved_ LPDWORD lpReserved: 0
+_In_opt_ LPWSTR lpClass: [0x00000000]
+_In_ DWORD dwOptions: REG_OPTION_NON_VOLATILE
+_In_ REGSAM samDesired: Unknown (0x2000000)
+_In_opt_ LPSECURITY_ATTRIBUTES lpSecurityAttributes: [0x00000000]
+_Out_ PHKEY phkResult: [0x0007fdbc] 0x714
+_Out_opt_ LPDWORD lpdwDisposition: 0
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x01001688] lfEscapement
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 00 00 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x0100166c] lfOrientation
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 00 00 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x01001658] lfWeight
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 90 01 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x01001644] lfItalic
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 00 00 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x0100162c] lfUnderline
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 00 00 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x01001614] lfStrikeOut
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 00 00 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x01001600] lfCharSet
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 00 00 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x010015e0] lfOutPrecision
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 01 00 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x010015c0] lfClipPrecision
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 02 00 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x010015ac] lfQuality
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 01 00 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x01001588] lfPitchAndFamily
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 22 00 00 00                                       | "...
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x01003a0b thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x0100150c] lfFaceName
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_SZ (0x1)
+_Out_opt_ LPBYTE lpData: [0x0100ab3c] 
+0x0100ab3c 4d 00 53 00 20 00 53 00  61 00 6e 00 73 00 20 00  | M.S. .S.a.n.s. .
+0x0100ab4c 53 00 65 00 72 00 69 00  66 00 00 00              | S.e.r.i.f...
+
+_Inout_opt_ LPDWORD lpcbData: 28 (0x1c)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x01001570] iPointSize
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 64 00 00 00                                       | d...
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x01001564] fWrap
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 00 00 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x01001550] StatusBar
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 00 00 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x01001524] fSaveWindowPositions
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 00 00 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x01003a0b thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x010014f8] szHeader
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_SZ (0x1)
+_Out_opt_ LPBYTE lpData: [0x0100a3e0] 
+0x0100a3e0 26 00 46 00 00 00                                 | &.F...
+
+_Inout_opt_ LPDWORD lpcbData: 6 (0x6)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x01003a0b thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x010014e4] szTrailer
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_SZ (0x1)
+_Out_opt_ LPBYTE lpData: [0x0100a430] 
+0x0100a430 50 00 61 00 67 00 65 00  20 00 26 00 70 00 00 00  | P.a.g.e. .&.p...
+
+_Inout_opt_ LPDWORD lpcbData: 16 (0x10)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x010014cc] iMarginTop
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 c4 09 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x010014b0] iMarginBottom
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 c4 09 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x01001498] iMarginLeft
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 d0 07 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x0100147c] iMarginRight
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 d0 07 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x0100142c] iWindowPosY
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 02 00 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x01001444] iWindowPosX
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 a4 02 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x01001410] iWindowPosDX
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 19 04 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x010013f4] iWindowPosDY
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 18 03 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010039c1 thread: 0x0 LONG WINAPI RegQueryValueExW(
+_In_ HKEY hKey: 0x00000714
+_In_opt_  LPWSTR lpValueName: [0x0100145c] fMLE_is_broken
+_Reserved_ DWORD Reserved: 00000000
+_Out_opt_ LPDWORD lpType: REG_DWORD (0x4)
+_Out_opt_ LPBYTE lpData: [0x0007fd98] 
+0x0007fd98 00 00 00 00                                       | ....
+
+_Inout_opt_ LPDWORD lpcbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x01004694 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x7ffdec00] C:\WINDOWS\system32\ntdll.dll
+);
+Return: 0x7c910000
+
+00_0x01004694 thread: 0x0 BOOL WINAPI GetModuleHandleA(
+_In_opt_  LPCTSTR lpModuleName: [0x0007ee78] C:\WINDOWS\system32\ntdll.dll
+);
+Return: 0x7c910000
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7C910000
+_In_  LPCTSTR lpProcName: NtQueryInformationProcess
+);
+Return: 0x7c91d7fe
+
+00_0x01004694 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x7ffdec00] C:\WINDOWS\system32\imm32.dll
+);
+Return: 0x76320000
+
+00_0x01004694 thread: 0x0 BOOL WINAPI GetModuleHandleA(
+_In_opt_  LPCTSTR lpModuleName: [0x0007ee80] C:\WINDOWS\system32\imm32.dll
+);
+Return: 0x76320000
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: CtfImmCoUninitialize
+);
+Return: 0x76333e9f
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: CtfImmLastEnabledWndDestroy
+);
+Return: 0x7633418a
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: CtfImmSetCiceroStartInThread
+);
+Return: 0x763337a6
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: CtfImmIsCiceroStartedInThread
+);
+Return: 0x7633378e
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: CtfImmIsCiceroEnabled
+);
+Return: 0x76333773
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: CtfImmIsTextFrameServiceDisabled
+);
+Return: 0x763338a1
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: CtfImmEnterCoInitCountSkipMode
+);
+Return: 0x763331f0
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: CtfImmLeaveCoInitCountSkipMode
+);
+Return: 0x76333206
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmGetDefaultIMEWnd
+);
+Return: 0x763297be
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmReleaseContext
+);
+Return: 0x763229d3
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmNotifyIME
+);
+Return: 0x76326fd8
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmSetConversionStatus
+);
+Return: 0x763245f7
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmGetConversionStatus
+);
+Return: 0x76323a86
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmGetProperty
+);
+Return: 0x76328b8e
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmGetOpenStatus
+);
+Return: 0x76323ac3
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmGetContext
+);
+Return: 0x763223a1
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmSetOpenStatus
+);
+Return: 0x7632470b
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmInstallIMEA
+);
+Return: 0x763296df
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmGetDescriptionA
+);
+Return: 0x763289a2
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmGetDescriptionW
+);
+Return: 0x763288f5
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmGetIMEFileNameA
+);
+Return: 0x76328af0
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmGetIMEFileNameW
+);
+Return: 0x76328a39
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmSetHotKey
+);
+Return: 0x7e3d3c33
+
+00_0x01004694 thread: 0x0 LONG WINAPI RegOpenKeyExA(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPCTSTR lpSubKey: [0x0007ee90] SOFTWARE\Microsoft\CTF\Compatibility\notepad.exe
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007EC5C] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x01004694 thread: 0x0 LONG WINAPI RegOpenKeyExA(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPCTSTR lpSubKey: [0x74692f74] SOFTWARE\Microsoft\CTF\SystemShared\
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007EF4C] 0x710
+);
+Return: STATUS_SUCCESS
+
+
+00_0x01004694 thread: 0x0 HANDLE WINAPI CreateMutexW(
+_In_opt_  LPSECURITY_ATTRIBUTES lpMutexAttributes: [0x00000000] 
+_In_ BOOL bInitialOwner: FALSE
+_In_opt_  LPWSTR lpName: [0x7ffdec00] CTF.LBES.MutexDefaultS-1-5-21-1482476501-1677128483-682003330-500
+);
+Return: 0x00000710
+
+00_0x01004694 thread: 0x0 HANDLE WINAPI CreateMutexA(
+_In_opt_  LPSECURITY_ATTRIBUTES lpMutexAttributes: [0x00000000] 
+_In_ BOOL bInitialOwner: FALSE
+_In_opt_  LPCTSTR lpName: [0x0007efac] CTF.LBES.MutexDefaultS-1-5-21-1482476501-1677128483-682003330-500
+);
+Return: 0x00000710
+
+00_0x01004694 thread: 0x0 HANDLE WINAPI CreateMutexW(
+_In_opt_  LPSECURITY_ATTRIBUTES lpMutexAttributes: [0x00000000] 
+_In_ BOOL bInitialOwner: FALSE
+_In_opt_  LPWSTR lpName: [0x7ffdec00] CTF.Compart.MutexDefaultS-1-5-21-1482476501-1677128483-682003330-500
+);
+Return: 0x0000070C
+
+00_0x01004694 thread: 0x0 HANDLE WINAPI CreateMutexA(
+_In_opt_  LPSECURITY_ATTRIBUTES lpMutexAttributes: [0x00000000] 
+_In_ BOOL bInitialOwner: FALSE
+_In_opt_  LPCTSTR lpName: [0x0007efac] CTF.Compart.MutexDefaultS-1-5-21-1482476501-1677128483-682003330-500
+);
+Return: 0x0000070C
+
+00_0x01004694 thread: 0x0 HANDLE WINAPI CreateMutexW(
+_In_opt_  LPSECURITY_ATTRIBUTES lpMutexAttributes: [0x00000000] 
+_In_ BOOL bInitialOwner: FALSE
+_In_opt_  LPWSTR lpName: [0x7ffdec00] CTF.Asm.MutexDefaultS-1-5-21-1482476501-1677128483-682003330-500
+);
+Return: 0x00000708
+
+00_0x01004694 thread: 0x0 HANDLE WINAPI CreateMutexA(
+_In_opt_  LPSECURITY_ATTRIBUTES lpMutexAttributes: [0x00000000] 
+_In_ BOOL bInitialOwner: FALSE
+_In_opt_  LPCTSTR lpName: [0x0007efac] CTF.Asm.MutexDefaultS-1-5-21-1482476501-1677128483-682003330-500
+);
+Return: 0x00000708
+
+00_0x01004694 thread: 0x0 HANDLE WINAPI CreateMutexW(
+_In_opt_  LPSECURITY_ATTRIBUTES lpMutexAttributes: [0x00000000] 
+_In_ BOOL bInitialOwner: FALSE
+_In_opt_  LPWSTR lpName: [0x7ffdec00] CTF.Layouts.MutexDefaultS-1-5-21-1482476501-1677128483-682003330-500
+);
+Return: 0x00000704
+
+00_0x01004694 thread: 0x0 HANDLE WINAPI CreateMutexA(
+_In_opt_  LPSECURITY_ATTRIBUTES lpMutexAttributes: [0x00000000] 
+_In_ BOOL bInitialOwner: FALSE
+_In_opt_  LPCTSTR lpName: [0x0007efac] CTF.Layouts.MutexDefaultS-1-5-21-1482476501-1677128483-682003330-500
+);
+Return: 0x00000704
+
+00_0x01004694 thread: 0x0 HANDLE WINAPI CreateMutexW(
+_In_opt_  LPSECURITY_ATTRIBUTES lpMutexAttributes: [0x00000000] 
+_In_ BOOL bInitialOwner: FALSE
+_In_opt_  LPWSTR lpName: [0x7ffdec00] CTF.TMD.MutexDefaultS-1-5-21-1482476501-1677128483-682003330-500
+);
+Return: 0x00000700
+
+00_0x01004694 thread: 0x0 HANDLE WINAPI CreateMutexA(
+_In_opt_  LPSECURITY_ATTRIBUTES lpMutexAttributes: [0x00000000] 
+_In_ BOOL bInitialOwner: FALSE
+_In_opt_  LPCTSTR lpName: [0x0007efac] CTF.TMD.MutexDefaultS-1-5-21-1482476501-1677128483-682003330-500
+);
+Return: 0x00000700
+
+00_0x01004694 thread: 0x0 LONG WINAPI RegOpenKeyExA(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPCTSTR lpSubKey: [0x7469380c] Keyboard Layout\Toggle
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007EF64] 0x6fc
+);
+Return: STATUS_SUCCESS
+
+Return: -1
+
+00_0x01004694 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x7ffdec00] C:\WINDOWS\system32\KERNEL32
+);
+Return: 0x7c800000
+
+00_0x01004694 thread: 0x0 BOOL WINAPI GetModuleHandleA(
+_In_opt_  LPCTSTR lpModuleName: [0x0007edcc] C:\WINDOWS\system32\KERNEL32
+);
+Return: 0x7c800000
+
+00_0x01004694 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7C800000
+_In_  LPCTSTR lpProcName: GetUserDefaultUILanguage
+);
+Return: 0x7c82f6cc
+
+00_0x01004694 thread: 0x0 LONG WINAPI RegOpenKeyExA(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPCTSTR lpSubKey: [0x746926a4] SOFTWARE\Microsoft\CTF\
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007EF90] 0x6fc
+);
+Return: STATUS_SUCCESS
+
+
+00_0x01004694 thread: 0x0 HANDLE WINAPI CreateMutexW(
+_In_opt_  LPSECURITY_ATTRIBUTES lpMutexAttributes: [0x00000000] 
+_In_ BOOL bInitialOwner: FALSE
+_In_opt_  LPWSTR lpName: [0x7ffdec00] CTF.TimListCache.FMPDefaultS-1-5-21-1482476501-1677128483-682003330-500MUTEX.DefaultS-1-5-21-1482476501-1677128483-682003330-500
+);
+Return: 0x000006FC
+
+00_0x01004694 thread: 0x0 HANDLE WINAPI CreateMutexA(
+_In_opt_  LPSECURITY_ATTRIBUTES lpMutexAttributes: [0x00000000] 
+_In_ BOOL bInitialOwner: FALSE
+_In_opt_  LPCTSTR lpName: [0x0007f44c] CTF.TimListCache.FMPDefaultS-1-5-21-1482476501-1677128483-682003330-500MUTEX.DefaultS-1-5-21-1482476501-1677128483-682003330-500
+);
+Return: 0x000006FC
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x76328888] Software\Microsoft\Windows NT\CurrentVersion\IMM
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007F0F0] 0x6f4
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x763286fc] version.dll
+);
+Return: 0x77bd0000
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x77BD0000
+_In_  LPCTSTR lpProcName: GetFileVersionInfoW
+);
+Return: 0x77bd166f
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x77BD0000
+_In_  LPCTSTR lpProcName: GetFileVersionInfoSizeW
+);
+Return: 0x77bd138c
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x77BD0000
+_In_  LPCTSTR lpProcName: VerQueryValueW
+);
+Return: 0x77bd1805
+
+00_0x010037d6 thread: 0x0 HANDLE WINAPI CreateFileW(
+_In_  LPWSTR lpFileName: [0x0007ebd4] C:\WINDOWS\system32\msctfime.ime
+_In_ DWORD dwDesiredAccess (0x80000000): GENERIC_READ 
+_In_ DWORD dwShareMode (0x5): FILE_SHARE_DELETE FILE_SHARE_READ 
+_In_opt_  LPSECURITY_ATTRIBUTES lpSecurityAttributes: [0x00000000] 
+_In_ DWORD dwCreationDisposition (0x3): OPEN_EXISTING
+_In_ DWORD dwFlagsAndAttributes (0x0): 
+_In_opt_ HANDLE hTemplateFile: [0x00000000] 
+);
+Return: 0x000006F0
+
+00_0x010037d6 thread: 0x0 HANDLE WINAPI CreateFileW(
+_In_  LPWSTR lpFileName: [0x0007ebcc] C:\WINDOWS\system32\msctfime.ime
+_In_ DWORD dwDesiredAccess (0x80000000): GENERIC_READ 
+_In_ DWORD dwShareMode (0x5): FILE_SHARE_DELETE FILE_SHARE_READ 
+_In_opt_  LPSECURITY_ATTRIBUTES lpSecurityAttributes: [0x00000000] 
+_In_ DWORD dwCreationDisposition (0x3): OPEN_EXISTING
+_In_ DWORD dwFlagsAndAttributes (0x0): 
+_In_opt_ HANDLE hTemplateFile: [0x00000000] 
+);
+Return: 0x000006F0
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x774A0000
+_In_  LPCTSTR lpProcName: CoCreateInstance
+);
+Return: 0x774bf1d4
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: CtfImeCreateThreadMgr
+);
+Return: 0x75159590
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: CtfImeDestroyThreadMgr
+);
+Return: 0x7515961b
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: CtfImeCreateInputContext
+);
+Return: 0x75159699
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: CtfImeDestroyInputContext
+);
+Return: 0x7515913a
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: CtfImeSetActiveContextAlways
+);
+Return: 0x751596c7
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: CtfImeProcessCicHotkey
+);
+Return: 0x75159979
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: CtfImeDispatchDefImeMessage
+);
+Return: 0x75153818
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: CtfImeIsIME
+);
+Return: 0x7515976b
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x7ffdec00] C:\WINDOWS\system32\ntdll.dll
+);
+Return: 0x7c910000
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleA(
+_In_opt_  LPCTSTR lpModuleName: [0x0007f558] C:\WINDOWS\system32\ntdll.dll
+);
+Return: 0x7c910000
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7C910000
+_In_  LPCTSTR lpProcName: RtlDllShutdownInProgress
+);
+Return: 0x7c923607
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x76333918] SOFTWARE\Microsoft\CTF
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007F478] 0x6ec
+);
+Return: STATUS_SUCCESS
+
+Return: 1
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x76333848] Software\Microsoft\CTF\SystemShared
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007F478] 0x6e8
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: ImeInquire
+);
+Return: 0x751476f9
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: ImeConversionList
+);
+Return: 0x751590c5
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: ImeRegisterWord
+);
+Return: 0x751476f9
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: ImeUnregisterWord
+);
+Return: 0x751476f9
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: ImeGetRegisterWordStyle
+);
+Return: 0x75159120
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: ImeEnumRegisterWord
+);
+Return: 0x751590c5
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: ImeConfigure
+);
+Return: 0x7515940e
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: ImeDestroy
+);
+Return: 0x751590cf
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: ImeEscape
+);
+Return: 0x751476f9
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: ImeProcessKey
+);
+Return: 0x75159899
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: ImeSelect
+);
+Return: 0x75159120
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: ImeSetActiveContext
+);
+Return: 0x75159120
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: ImeToAsciiEx
+);
+Return: 0x751594af
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: NotifyIME
+);
+Return: 0x75159507
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: ImeSetCompositionString
+);
+Return: 0x7515946d
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: ImeGetImeMenuItems
+);
+Return: 0x00000000
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: CtfImeInquireExW
+);
+Return: 0x75159548
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: CtfImeSelectEx
+);
+Return: 0x751592c5
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: CtfImeEscapeEx
+);
+Return: 0x751596fe
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: CtfImeGetGuidAtom
+);
+Return: 0x75159737
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75140000
+_In_  LPCTSTR lpProcName: CtfImeIsGuidMapEnable
+);
+Return: 0x7515931a
+
+00_0x01004771 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x5B090000
+_In_  LPCTSTR lpProcName: OpenThemeData
+);
+Return: 0x5b0973b8
+
+00_0x01004771 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmIsIME
+);
+Return: 0x76328c54
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x5B090000
+_In_  LPCTSTR lpProcName: GetThemeTextMetrics
+);
+Return: 0x5b0ab293
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x5B090000
+_In_  LPCTSTR lpProcName: GetThemeBackgroundExtent
+);
+Return: 0x5b0ab1ad
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x5B090000
+_In_  LPCTSTR lpProcName: GetThemeMargins
+);
+Return: 0x5b09b0d2
+
+00_0x010048a6 thread: 0x0 int WINAPI lstrcmpiW(
+_In_  LPWSTR lpString1: MS Sans Serif
+_In_  LPWSTR lpString2: MS Sans Serif
+);
+Return: 0
+
+00_0x01002a8b thread: 0x0 int WINAPI lstrcmpW(
+_In_  LPWSTR lpString1: Sans titre
+_In_  LPWSTR lpString2: Sans titre
+);
+Return: 0
+Return: 1
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007e9bc] USER32
+);
+Return: 0x7e390000
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007f1c8] C:\WINDOWS\system32\Msimtf.dll
+);
+Return: 0x0
+Return: 1
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmGetContext
+);
+Return: 0x763223a1
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmLockIMC
+);
+Return: 0x76329f2d
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmUnlockIMC
+);
+Return: 0x76329f45
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76320000
+_In_  LPCTSTR lpProcName: ImmReleaseContext
+);
+Return: 0x763229d3
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007f064] C:\WINDOWS\system32\Msimtf.dll
+);
+Return: 0x0
+
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x5B090000
+_In_  LPCTSTR lpProcName: GetThemeInt
+);
+Return: 0x5b09459d
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x5B090000
+_In_  LPCTSTR lpProcName: DrawThemeBackground
+);
+Return: 0x5b092bef
+
+00_0x01002d83 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x0007e814] Software\Microsoft\Windows\CurrentVersion\Policies\Comdlg32
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007E6B4] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x01002d83 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x0007e814] Software\Microsoft\Windows\CurrentVersion\Policies\Comdlg32
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007E6B4] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x01002d83 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x7ffdec00] KERNEL32
+);
+Return: 0x7c800000
+
+00_0x01002d83 thread: 0x0 BOOL WINAPI GetModuleHandleA(
+_In_opt_  LPCTSTR lpModuleName: [0x763462cc] KERNEL32
+);
+Return: 0x7c800000
+
+00_0x01002d83 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7C800000
+_In_  LPCTSTR lpProcName: GetUserDefaultUILanguage
+);
+Return: 0x7c82f6cc
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x5B090000
+_In_  LPCTSTR lpProcName: EnableThemeDialogTexture
+);
+Return: 0x5b09b45b
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x77f44bd8] Software\Microsoft\Windows\CurrentVersion\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007DC78] 0x6ec
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x00000000]
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007DCCC] 0x6e8
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x7c9d9dd0] Control Panel\Desktop\WindowMetrics
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DCFC] 0x6e8
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x7c9d9dd0] Control Panel\Desktop\WindowMetrics
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DCFC] 0x6e8
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x7c9d9dd0] Control Panel\Desktop\WindowMetrics
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DD08] 0x6e8
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x7ffdec00] KERNEL32
+);
+Return: 0x7c800000
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleA(
+_In_opt_  LPCTSTR lpModuleName: [0x7c9d9e34] KERNEL32
+);
+Return: 0x7c800000
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7C800000
+_In_  LPCTSTR lpProcName: GetUserDefaultUILanguage
+);
+Return: 0x7c82f6cc
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x77390000
+_In_  LPCTSTR lpProcName: ImageList_Create
+);
+Return: 0x773a9366
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x77390000
+_In_  LPCTSTR lpProcName: ImageList_SetBkColor
+);
+Return: 0x773a526f
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x7c9d9c34] Shell Icons
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007CF50] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+Return: 0
+Return: 0
+Return: 0
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x77390000
+_In_  LPCTSTR lpProcName: ImageList_GetImageCount
+);
+Return: 0x773a515b
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x77390000
+_In_  LPCTSTR lpProcName: ImageList_ReplaceIcon
+);
+Return: 0x773a5228
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007ca6c] C:\WINDOWS\system32\SHELL32.dll
+);
+Return: 0x7c9d0000
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007ca6c] C:\WINDOWS\system32\SHELL32.dll
+);
+Return: 0x7c9d0000
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007ca6c] C:\WINDOWS\system32\SHELL32.dll
+);
+Return: 0x7c9d0000
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007ca6c] C:\WINDOWS\system32\SHELL32.dll
+);
+Return: 0x7c9d0000
+Return: 0
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x77390000
+_In_  LPCTSTR lpProcName (ordinal): 320 (0x140) => DSA_Create
+);
+Return: 0x773a0a80
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x77390000
+_In_  LPCTSTR lpProcName (ordinal): 324 (0x144) => DSA_InsertItem
+);
+Return: 0x773a0c2d
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x77390000
+_In_  LPCTSTR lpProcName: ImageList_SetOverlayImage
+);
+Return: 0x773a52f6
+Return: 0
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x77390000
+_In_  LPCTSTR lpProcName (ordinal): 323 (0x143) => DSA_GetItemPtr
+);
+Return: 0x773a0b22
+Return: 0
+Return: 0
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007ca6c] C:\WINDOWS\system32\SHELL32.dll
+);
+Return: 0x7c9d0000
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007ca6c] C:\WINDOWS\system32\SHELL32.dll
+);
+Return: 0x7c9d0000
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007ca6c] C:\WINDOWS\system32\SHELL32.dll
+);
+Return: 0x7c9d0000
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007ca6c] C:\WINDOWS\system32\SHELL32.dll
+);
+Return: 0x7c9d0000
+Return: 0
+Return: 0
+Return: 0
+Return: 0
+Return: 0
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007ca6c] C:\WINDOWS\system32\SHELL32.dll
+);
+Return: 0x7c9d0000
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007ca6c] C:\WINDOWS\system32\SHELL32.dll
+);
+Return: 0x7c9d0000
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007ca6c] C:\WINDOWS\system32\SHELL32.dll
+);
+Return: 0x7c9d0000
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007ca6c] C:\WINDOWS\system32\SHELL32.dll
+);
+Return: 0x7c9d0000
+Return: 0
+Return: 0
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x774A0000
+_In_  LPCTSTR lpProcName: CoInitializeEx
+);
+Return: 0x774c149b
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleExW(
+_In_ DWORD dwFlags (0x0): _In_opt_  LPWSTR lpModuleName: [0x0007cdf8] C:\WINDOWS\system32\rpcss.dll
+_Out_ HMODULE hTemplateFile: [0x0007CE44] 
+);
+Return: 0x0
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x7c9d9c70] Software\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007CDF0] 0x6e4
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x0007ce04] Fichiers hors connexion
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007CDE8] 0x6e8
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x0007c898] CLSID\{750FDF0E-2A26-11D1-A3EA-080036587F03}\InProcServer32
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007C894] 0x6ea
+);
+Return: STATUS_SUCCESS
+
+Return: -1
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x77B50000
+_In_  LPCTSTR lpProcName: ApphelpCheckShellObject
+);
+Return: 0x77b56906
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x774A0000
+_In_  LPCTSTR lpProcName: CoCreateInstance
+);
+Return: 0x774bf1d4
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad81c] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007C820] 0x6e8
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x7ffdec00] KERNEL32.DLL
+);
+Return: 0x7c800000
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleA(
+_In_opt_  LPCTSTR lpModuleName: [0x76f83424] KERNEL32.DLL
+);
+Return: 0x7c800000
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7C800000
+_In_  LPCTSTR lpProcName: InitializeCriticalSectionAndSpinCount
+);
+Return: 0x7c80b8c9
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x76f84b24] Software\Microsoft\COM3\Debug
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x000f003f
+_Out_ PHKEY phkResult: [0x0007C094] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x76f84b24] Software\Microsoft\COM3\Debug
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007C094] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x76f85080] SOFTWARE\Microsoft\OLE
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007C098] 0x6e8
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 DWORD WINAPI GetFileAttributesW(
+_In_  LPWSTR lpFileName: [0x76ff7808] C:\WINDOWS\Registration
+);
+Return: 0x10
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76F80000
+_In_  LPCTSTR lpProcName: GetCatalogObject
+);
+Return: 0x76f83f78
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad81c] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007C820] 0x6e8
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76F80000
+_In_  LPCTSTR lpProcName: GetCatalogObject2
+);
+Return: 0x76f84017
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x774ad8fc] ole32.dll
+);
+Return: 0x774a0000
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x774A0000
+_In_  LPCTSTR lpProcName: CLSIDFromOle1Class
+);
+Return: 0x774d8421
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad8a0] Software\Classes
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B59CC] 0x6e8
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad81c] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B59D4] 0x6d8
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad8a0] Software\Classes
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B606C] 0x6c8
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad81c] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B607C] 0x6b8
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad81c] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B60C4] 0x6b0
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad870] Software\Classes\CLSID
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B60CC] 0x6a8
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad8a0] Software\Classes
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B611C] 0x6a0
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad81c] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B6124] 0x698
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad81c] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B6174] 0x688
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad81c] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B61CC] 0x680
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad870] Software\Classes\CLSID
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B61D4] 0x678
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x76f8eeec] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007C40C] 0x670
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x7ffdec00] KERNEL32.DLL
+);
+Return: 0x7c800000
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleA(
+_In_opt_  LPCTSTR lpModuleName: [0x76f83424] KERNEL32.DLL
+);
+Return: 0x7c800000
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7C800000
+_In_  LPCTSTR lpProcName: InitializeCriticalSectionAndSpinCount
+);
+Return: 0x7c80b8c9
+
+00_0x010037d6 thread: 0x0 HANDLE WINAPI CreateFileW(
+_In_  LPWSTR lpFileName: [0x0007c494] C:\WINDOWS\Registration\R000000000007.clb
+_In_ DWORD dwDesiredAccess (0x80000000): GENERIC_READ 
+_In_ DWORD dwShareMode (0x1): FILE_SHARE_READ 
+_In_opt_  LPSECURITY_ATTRIBUTES lpSecurityAttributes: [0x00000000] 
+_In_ DWORD dwCreationDisposition (0x3): OPEN_EXISTING
+_In_ DWORD dwFlagsAndAttributes (0x0): 
+_In_opt_ HANDLE hTemplateFile: [0x00000000] 
+);
+Return: 0x00000670
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x76f8eeec] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007C4AC] 0x670
+);
+Return: STATUS_SUCCESS
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x0007c788] CLSID\{750FDF0E-2A26-11D1-A3EA-080036587F03}
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007C698] 0x672
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac3e0] TreatAs
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007C66C] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x00000000]
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x000BC8B8] 0x66e
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x000bc8e4] CLSID\{750FDF0E-2A26-11D1-A3EA-080036587F03}
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007C770] 0x672
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac400] InprocServer32
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007C708] 0x66a
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac474] InprocServerX86
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007C708] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac458] LocalServer32
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007C728] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac400] InprocServer32
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007C728] 0x66a
+);
+Return: STATUS_SUCCESS
+
+Return: 1
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac420] InprocHandler32
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007C728] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac494] InprocHandlerX86
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007C728] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac458] LocalServer32
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007C728] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac440] LocalServer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007C728] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x000bc8e4] CLSID\{750FDF0E-2A26-11D1-A3EA-080036587F03}
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007C6CC] 0x66a
+);
+Return: STATUS_SUCCESS
+
+Return: 1
+Return: -1
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x000bc8e4] CLSID\{750FDF0E-2A26-11D1-A3EA-080036587F03}
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007BC4C] 0x672
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac400] InprocServer32
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007BC0C] 0x66a
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x0007b860] CLSID\{750FDF0E-2A26-11D1-A3EA-080036587F03}
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007BA84] 0x672
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x775c8130] TreatAs
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007BA68] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+Return: 1
+Return: -1
+
+00_0x010037d6 thread: 0x0 HANDLE WINAPI CreateMutexW(
+_In_opt_  LPSECURITY_ATTRIBUTES lpMutexAttributes: [0x00000000] 
+_In_ BOOL bInitialOwner: FALSE
+_In_opt_  LPWSTR lpName: NULL
+);
+Return: 0x00000668
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x765b1758] Kernel32
+);
+Return: 0x7c800000
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7C800000
+_In_  LPCTSTR lpProcName: CreateActCtxW
+);
+Return: 0x7c8144bc
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x765b1758] Kernel32
+);
+Return: 0x7c800000
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7C800000
+_In_  LPCTSTR lpProcName: ActivateActCtx
+);
+Return: 0x7c80a6e4
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x765b1758] Kernel32
+);
+Return: 0x7c800000
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7C800000
+_In_  LPCTSTR lpProcName: DeactivateActCtx
+);
+Return: 0x7c80a715
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x765B0000
+_In_  LPCTSTR lpProcName: DllGetClassObject
+);
+Return: 0x765b1d1d
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x765B0000
+_In_  LPCTSTR lpProcName: DllCanUnloadNow
+);
+Return: 0x765b172d
+
+00_0x010037d6 thread: 0x0 HANDLE WINAPI CreateFileW(
+_In_  LPWSTR lpFileName: [0x765b1cf0] \\.\shadow
+_In_ DWORD dwDesiredAccess (0x20): FILE_EXECUTE or FILE_TRAVERSE 
+_In_ DWORD dwShareMode (0x3): FILE_SHARE_READ FILE_SHARE_WRITE 
+_In_opt_  LPSECURITY_ATTRIBUTES lpSecurityAttributes: [0x00000000] 
+_In_ DWORD dwCreationDisposition (0x3): OPEN_EXISTING
+_In_ DWORD dwFlagsAndAttributes (0x0): 
+_In_opt_ HANDLE hTemplateFile: [0x00000000] 
+);
+Return: 0x00000670
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x7c9d8818] EXPLORER.EXE
+);
+Return: 0x0
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x77390000
+_In_  LPCTSTR lpProcName (ordinal): 321 (0x141) => DSA_Destroy
+);
+Return: 0x773a0aac
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x774A0000
+_In_  LPCTSTR lpProcName: CoUninitialize
+);
+Return: 0x774c1364
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x765b1758] Kernel32
+);
+Return: 0x7c800000
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7C800000
+_In_  LPCTSTR lpProcName: ReleaseActCtx
+);
+Return: 0x7c82f6bb
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x7c9d9c34] Shell Icons
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007D3F0] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+Return: 0
+Return: 0
+Return: 0
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x5B090000
+_In_  LPCTSTR lpProcName: SetWindowTheme
+);
+Return: 0x5b09b39e
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x5B090000
+_In_  LPCTSTR lpProcName: CloseThemeData
+);
+Return: 0x5b094773
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x77391ce8] Software\Microsoft\Windows NT\CurrentVersion\FontSubstitutes
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007E148] 0x67c
+);
+Return: STATUS_SUCCESS
+
+Return: 1
+Return: 1
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x77391ce8] Software\Microsoft\Windows NT\CurrentVersion\FontSubstitutes
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007E6C8] 0x67c
+);
+Return: STATUS_SUCCESS
+
+Return: -1
+Return: 1
+Return: 1
+Return: 1
+Return: 1
+Return: 1
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x00000000]
+);
+Return: 0x1000000
+Return: -1
+Return: 1
+Return: 1
+Return: -1
+Return: -1
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x774A0000
+_In_  LPCTSTR lpProcName: OleInitialize
+);
+Return: 0x774c1c0a
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x77f44bd8] Software\Microsoft\Windows\CurrentVersion\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007DF00] 0x67c
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x00000000]
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007DF54] 0x680
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x0007dd70] Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DC10] 0x674
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x0007dd70] Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DC10] 0x674
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x0007dd6c] Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DC0C] 0x674
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x0007dd6c] Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DC0C] 0x674
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x7c9e5b38] Software\Microsoft\Windows\CurrentVersion\Policies\System
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DE50] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x0007dd70] Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DC10] 0x674
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x0007dd70] Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DC10] 0x674
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x0007dd70] Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DC10] 0x674
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x0007dd70] Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DC10] 0x674
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x0007dd70] Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DC10] 0x674
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x0007dd70] Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DC10] 0x674
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x0007dd70] Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DC10] 0x674
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x0007dd70] Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DC10] 0x674
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x0007dd70] Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DC10] 0x674
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x0007dd70] Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DC10] 0x674
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x0007dd70] Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DC10] 0x674
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x0007dd70] Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DC10] 0x674
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x7c9d970c] Advanced
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007E1A0] 0x674
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x774A0000
+_In_  LPCTSTR lpProcName: CoCreateInstance
+);
+Return: 0x774bf1d4
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad81c] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007E04C] 0x678
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76F80000
+_In_  LPCTSTR lpProcName: GetCatalogObject
+);
+Return: 0x76f83f78
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad81c] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007E04C] 0x678
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x76F80000
+_In_  LPCTSTR lpProcName: GetCatalogObject2
+);
+Return: 0x76f84017
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad8a0] Software\Classes
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B611C] 0x678
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad81c] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B6124] 0x69c
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad8a0] Software\Classes
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B60C4] 0x68c
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad81c] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B60D4] 0x6a4
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad81c] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B606C] 0x6c4
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad870] Software\Classes\CLSID
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B6074] 0x6bc
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad8a0] Software\Classes
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B59CC] 0x6b4
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad81c] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000B59D4] 0x6dc
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad81c] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000BD744] 0x6cc
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad81c] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000BD79C] 0x66c
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x774ad870] Software\Classes\CLSID
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000BD7A4] 0x664
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x76f8eeec] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007DC38] 0x660
+);
+Return: STATUS_SUCCESS
+
+Return: 0
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x76f8eeec] Software\Microsoft\COM3
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007DCD8] 0x660
+);
+Return: STATUS_SUCCESS
+
+Return: 0
+Return: 1
+Return: 0
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x0007dfb4] CLSID\{603D3800-BD81-11D0-A3A5-00C04FD706EC}
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007DEC4] 0x662
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac3e0] TreatAs
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DE98] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x00000000]
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x000BC8B8] 0x65e
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x000bc8e4] CLSID\{603D3800-BD81-11D0-A3A5-00C04FD706EC}
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007DF9C] 0x662
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac400] InprocServer32
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007DF34] 0x65a
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac474] InprocServerX86
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007DF34] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac458] LocalServer32
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007DF54] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac400] InprocServer32
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007DF54] 0x65a
+);
+Return: STATUS_SUCCESS
+
+Return: 1
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac420] InprocHandler32
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007DF54] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac494] InprocHandlerX86
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007DF54] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac458] LocalServer32
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007DF54] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac440] LocalServer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007DF54] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x000bc8e4] CLSID\{603D3800-BD81-11D0-A3A5-00C04FD706EC}
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007DEF8] 0x65a
+);
+Return: STATUS_SUCCESS
+
+Return: 1
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x000bc8e4] CLSID\{603D3800-BD81-11D0-A3A5-00C04FD706EC}
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007D478] 0x662
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x774ac400] InprocServer32
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007D438] 0x65a
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x0007d08c] CLSID\{603D3800-BD81-11D0-A3A5-00C04FD706EC}
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007D2B0] 0x662
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x775c8130] TreatAs
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007D294] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+Return: 1
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x75f13668] Kernel32
+);
+Return: 0x7c800000
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7C800000
+_In_  LPCTSTR lpProcName: CreateActCtxW
+);
+Return: 0x7c8144bc
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x75f13668] Kernel32
+);
+Return: 0x7c800000
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7C800000
+_In_  LPCTSTR lpProcName: ActivateActCtx
+);
+Return: 0x7c80a6e4
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x75f13668] Kernel32
+);
+Return: 0x7c800000
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7C800000
+_In_  LPCTSTR lpProcName: DeactivateActCtx
+);
+Return: 0x7c80a715
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x7ffdec00] shlwapi.dll
+);
+Return: 0x77f40000
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleA(
+_In_opt_  LPCTSTR lpModuleName: [0x75f15518] shlwapi.dll
+);
+Return: 0x77f40000
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x77F40000
+_In_  LPCTSTR lpProcName: DelayLoadFailureHook
+);
+Return: 0x77fa6bed
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x75f162d4] USER32
+);
+Return: 0x7e390000
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7E390000
+_In_  LPCTSTR lpProcName: GetSystemMetrics
+);
+Return: 0x7e398f9c
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7E390000
+_In_  LPCTSTR lpProcName: MonitorFromWindow
+);
+Return: 0x7e3aa679
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7E390000
+_In_  LPCTSTR lpProcName: MonitorFromRect
+);
+Return: 0x7e3ac713
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7E390000
+_In_  LPCTSTR lpProcName: MonitorFromPoint
+);
+Return: 0x7e3aabf5
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7E390000
+_In_  LPCTSTR lpProcName: EnumDisplayMonitors
+);
+Return: 0x7e3aa77b
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7E390000
+_In_  LPCTSTR lpProcName: EnumDisplayDevicesW
+);
+Return: 0x7e39e03c
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7E390000
+_In_  LPCTSTR lpProcName: GetMonitorInfoW
+);
+Return: 0x7e3aa6d9
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x77390000
+_In_  LPCTSTR lpProcName: InitCommonControlsEx
+);
+Return: 0x77394088
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExA(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPCTSTR lpSubKey: [0x77f44fec] Software\Microsoft\Windows\CurrentVersion\Explorer\Performance
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007CA5C] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75F10000
+_In_  LPCTSTR lpProcName: DllGetClassObject
+);
+Return: 0x75f131e4
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x75F10000
+_In_  LPCTSTR lpProcName: DllCanUnloadNow
+);
+Return: 0x75f1a2e9
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x77390000
+_In_  LPCTSTR lpProcName (ordinal): 328 (0x148) => Ordinal_328
+);
+Return: 0x773a1564
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x0007e048] Software\Microsoft\Windows\CurrentVersion\Policies\Comdlg32
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DEE8] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x0007e048] Software\Microsoft\Windows\CurrentVersion\Policies\Comdlg32
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DEE8] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x0100262c thread: 0x0 int WINAPI lstrcmpiW(
+_In_  LPWSTR lpString1: E:\IvanLefOu\InlineHook\*.txt
+_In_  LPWSTR lpString2: 
+);
+Return: 1
+
+00_0x01002653 thread: 0x0 HANDLE WINAPI CreateFileW(
+_In_  LPWSTR lpFileName: [0x0007df10] E:\IvanLefOu\InlineHook\*.txt
+_In_ DWORD dwDesiredAccess (0x80000000): GENERIC_READ 
+_In_ DWORD dwShareMode (0x1): FILE_SHARE_READ 
+_In_opt_  LPSECURITY_ATTRIBUTES lpSecurityAttributes: [0x00000000] 
+_In_ DWORD dwCreationDisposition (0x3): OPEN_EXISTING
+_In_ DWORD dwFlagsAndAttributes (0x80): FILE_ATTRIBUTE_NORMAL 
+_In_opt_ HANDLE hTemplateFile: [0x00000000] 
+);
+Return: 0xFFFFFFFF
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x0007e474] AppEvents\Schemes\Apps\.Default\CCSelect\.current
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007E258] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+Return: 0
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x00103d18] .txt
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007DC18] 0x534
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x00103d18] .txt
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007DC18] 0x534
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x000c77a0] .txt
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x00103C1C] 0x536
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x00103bf8] txtfile
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007DC54] 0xe
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x77f4a4fc] CurVer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DAF0] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x00000000]
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000DB71C] 0x5c2
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x0007dc04] ShellEx\DataHandler
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007D948] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x0007dc48] ShellEx\DataHandler
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007D98C] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x0007db0c] SystemFileAssociations\.txt
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000D0E3C] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x00103d68] .txt
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007DB48] 0xe
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x0007daf4] SystemFileAssociations\text
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000D0E54] 0xe
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x0007dc24] ShellEx\DataHandler
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007D968] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x77f515ec] *
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000D0E3C] 0x546
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x0007dc24] ShellEx\DataHandler
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007D968] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x000d0e48] .txt
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007D600] 0x544
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x000d0e48] .txt
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007D600] 0x544
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x00103d68] .txt
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000DB71C] 0x546
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x00103c10] txtfile
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007D63C] 0xe
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x77f4a4fc] CurVer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007D4D8] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x00000000]
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x00103C04] 0x5c2
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x0007d5ec] ShellEx\{000214E6-0000-0000-C000-000000000046}
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007D330] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x0007d630] ShellEx\{000214E6-0000-0000-C000-000000000046}
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007D374] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x0007d4f4] SystemFileAssociations\.txt
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x00103D24] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x000c77a0] .txt
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007D530] 0xe
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x0007d4dc] SystemFileAssociations\text
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000D0E6C] 0xe
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x0007d60c] ShellEx\{000214E6-0000-0000-C000-000000000046}
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007D350] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x77f515ec] *
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x00103D24] 0x536
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x0007d60c] ShellEx\{000214E6-0000-0000-C000-000000000046}
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007D350] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+Return: -1
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x774A0000
+_In_  LPCTSTR lpProcName: ReleaseStgMedium
+);
+Return: 0x774eb6eb
+Return: 0
+Return: 0
+
+00_0x0100262c thread: 0x0 int WINAPI lstrcmpiW(
+_In_  LPWSTR lpString1: E:\IvanLefOu\InlineHook\README.txt
+_In_  LPWSTR lpString2: 
+);
+Return: 1
+
+00_0x01002653 thread: 0x0 HANDLE WINAPI CreateFileW(
+_In_  LPWSTR lpFileName: [0x0007dbbc] E:\IvanLefOu\InlineHook\README.txt
+_In_ DWORD dwDesiredAccess (0x80000000): GENERIC_READ 
+_In_ DWORD dwShareMode (0x1): FILE_SHARE_READ 
+_In_opt_  LPSECURITY_ATTRIBUTES lpSecurityAttributes: [0x00000000] 
+_In_ DWORD dwCreationDisposition (0x3): OPEN_EXISTING
+_In_ DWORD dwFlagsAndAttributes (0x80): FILE_ATTRIBUTE_NORMAL 
+_In_opt_ HANDLE hTemplateFile: [0x00000000] 
+);
+Return: 0x00000534
+
+00_0x01009624 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007da2c] C:\WINDOWS\system32\Msimtf.dll
+);
+Return: 0x0
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x5B090000
+_In_  LPCTSTR lpProcName: HitTestThemeBackground
+);
+Return: 0x5b09b999
+Return: -1
+
+00_0x010037d6 thread: 0x0 DWORD WINAPI GetFileAttributesW(
+_In_  LPWSTR lpFileName: [0x000db4e8] E:\IvanLefOu\InlineHook\README.txt
+);
+Return: 0x20
+Return: 0
+
+00_0x010037d6 thread: 0x0 DWORD WINAPI GetFileAttributesW(
+_In_  LPWSTR lpFileName: [0x000db4e8] E:\IvanLefOu\InlineHook\README.txt
+);
+Return: 0x20
+
+00_0x010037d6 thread: 0x0 DWORD WINAPI GetFileAttributesW(
+_In_  LPWSTR lpFileName: [0x000db4e8] E:\IvanLefOu\InlineHook\README.txt
+);
+Return: 0x20
+
+00_0x010037d6 thread: 0x0 DWORD WINAPI GetFileAttributesW(
+_In_  LPWSTR lpFileName: [0x0007db90] C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\
+);
+Return: 0x10
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegCreateKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x0007d074] Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
+_Reserved_ LPDWORD lpReserved: 0
+_In_opt_ LPWSTR lpClass: [0x00000000]
+_In_ DWORD dwOptions: REG_OPTION_NON_VOLATILE
+_In_ REGSAM samDesired: Unknown (0x2000000)
+_In_opt_ LPSECURITY_ATTRIBUTES lpSecurityAttributes: [0x00000000]
+_Out_ PHKEY phkResult: [0x0007d2a8] 0x5bc
+_Out_opt_ LPDWORD lpdwDisposition: 0
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegCreateKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x0007d074] Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
+_Reserved_ LPDWORD lpReserved: 0
+_In_opt_ LPWSTR lpClass: [0x00000000]
+_In_ DWORD dwOptions: REG_OPTION_NON_VOLATILE
+_In_ REGSAM samDesired: Unknown (0x2000000)
+_In_opt_ LPSECURITY_ATTRIBUTES lpSecurityAttributes: [0x00000000]
+_Out_ PHKEY phkResult: [0x0007d2a8] 0x5bc
+_Out_opt_ LPDWORD lpdwDisposition: 0
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x0007ce3c] Software\Microsoft\Windows NT\CurrentVersion\ProfileList\S-1-5-21-1482476501-1677128483-682003330-500
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00020019
+_Out_ PHKEY phkResult: [0x0007CC2C] 0x534
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x7c9d8324] SHELL32
+);
+Return: 0x7c9d0000
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x7c9d8324] SHELL32
+);
+Return: 0x7c9d0000
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegCreateKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x76342e58] Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedMRU\
+_Reserved_ LPDWORD lpReserved: 0
+_In_opt_ LPWSTR lpClass: [0x77392b1c]
+_In_ DWORD dwOptions: REG_OPTION_NON_VOLATILE
+_In_ REGSAM samDesired: Unknown (0x2001f)
+_In_opt_ LPSECURITY_ATTRIBUTES lpSecurityAttributes: [0x00000000]
+_Out_ PHKEY phkResult: [0x0007dd78] 0x5bc
+_Out_opt_ LPDWORD lpdwDisposition: Unknown (0x7dd60)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x00000000]
+);
+Return: 0x1000000
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x000005BC
+_In_opt_  LPWSTR lpValueName: [0x0007dda0] d
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_BINARY (3)
+_In_ const BYTE *lpData: [0x00103b80] 
+0x00103b80 6e 00 6f 00 74 00 65 00  70 00 61 00 64 00 2e 00  | n.o.t.e.p.a.d...
+0x00103b90 65 00 78 00 65 00 00 00  45 00 3a 00 5c 00 49 00  | e.x.e...E.:.\.I.
+0x00103ba0 76 00 61 00 6e 00 4c 00  65 00 66 00 4f 00 75 00  | v.a.n.L.e.f.O.u.
+0x00103bb0 5c 00 49 00 6e 00 6c 00  69 00 6e 00 65 00 48 00  | \.I.n.l.i.n.e.H.
+0x00103bc0 6f 00 6f 00 6b 00 00 00                           | o.o.k...
+
+_In_ DWORD cbData: 72 (0x48)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x000005BC
+_In_opt_  LPWSTR lpValueName: [0x77391ac4] MRUList
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_SZ (1)
+_In_ const BYTE *lpData: [0x000db5c8] 
+0x000db5c8 64 00 62 00 65 00 72 00  73 00 6d 00 71 00 70 00  | d.b.e.r.s.m.q.p.
+0x000db5d8 63 00 6f 00 6e 00 61 00  6c 00 6b 00 6a 00 69 00  | c.o.n.a.l.k.j.i.
+0x000db5e8 68 00 67 00 66 00 00 00                           | h.g.f...
+
+_In_ DWORD cbData: 40 (0x28)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_LOCAL_MACHINE
+_In_opt_  LPWSTR lpSubKey: [0x0007cf40] Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007CDE0] 0x5bc
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x0007cf40] Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007CDE0] 0x5bc
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x0007cc54] Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007CC4C] 0x5bc
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x000c6404] {0ae65eda-d228-40cf-8181-5d6f4ecbaf5e}\
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007CE6C] 0x534
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x7c9fe8f4] Drive\shellex\FolderExtensions
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000008
+_Out_ PHKEY phkResult: [0x0007CECC] 0x536
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x0007cc98] Drive\shellex\FolderExtensions\{fbeb8a05-beee-4442-804e-409d6c4515e9}
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007CB34] 0x5be
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x00103d18] .txt
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007CA5C] 0x534
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x00103d18] .txt
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007CA5C] 0x534
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x000c77a0] .txt
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000D0E6C] 0x536
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x00103bf8] txtfile
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x0007CA98] 0x5be
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x77f4a4fc] CurVer
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007C934] 0x0
+);
+Return: STATUS_FAILURE (0x00000002)
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: Unknown
+_In_opt_  LPWSTR lpSubKey: [0x00000000]
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x02000000
+_Out_ PHKEY phkResult: [0x000DB71C] 0x5c2
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegCreateKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x0007dbac] Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\*
+_Reserved_ LPDWORD lpReserved: 0
+_In_opt_ LPWSTR lpClass: [0x77392b1c]
+_In_ DWORD dwOptions: REG_OPTION_NON_VOLATILE
+_In_ REGSAM samDesired: Unknown (0x2001f)
+_In_opt_ LPSECURITY_ATTRIBUTES lpSecurityAttributes: [0x00000000]
+_Out_ PHKEY phkResult: [0x0007db60] 0x534
+_Out_opt_ LPDWORD lpdwDisposition: Unknown (0x7db48)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegCreateKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x0007dbac] Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU\txt
+_Reserved_ LPDWORD lpReserved: 0
+_In_opt_ LPWSTR lpClass: [0x77392b1c]
+_In_ DWORD dwOptions: REG_OPTION_NON_VOLATILE
+_In_ REGSAM samDesired: Unknown (0x2001f)
+_In_opt_ LPSECURITY_ATTRIBUTES lpSecurityAttributes: [0x00000000]
+_Out_ PHKEY phkResult: [0x0007db60] 0x5c0
+_Out_opt_ LPDWORD lpdwDisposition: Unknown (0x7db48)
+);
+Return: STATUS_SUCCESS
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x000005C0
+_In_opt_  LPWSTR lpValueName: [0x77391ac4] MRUList
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_SZ (1)
+_In_ const BYTE *lpData: [0x00103bf8] 
+0x00103bf8 6a 00 69 00 68 00 67 00  66 00 65 00 64 00 63 00  | j.i.h.g.f.e.d.c.
+0x00103c08 62 00 61 00 00 00                                 | b.a...
+
+_In_ DWORD cbData: 22 (0x16)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000534
+_In_opt_  LPWSTR lpValueName: [0x77391ac4] MRUList
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_SZ (1)
+_In_ const BYTE *lpData: [0x000d0f78] 
+0x000d0f78 68 00 64 00 63 00 6a 00  69 00 66 00 65 00 61 00  | h.d.c.j.i.f.e.a.
+0x000d0f88 67 00 62 00 00 00                                 | g.b...
+
+_In_ DWORD cbData: 22 (0x16)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007d67c] C:\WINDOWS\system32\Msimtf.dll
+);
+Return: 0x0
+Return: -1
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007d570] C:\WINDOWS\system32\Msimtf.dll
+);
+Return: 0x0
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007d40c] C:\WINDOWS\system32\Msimtf.dll
+);
+Return: 0x0
+Return: 0
+
+00_0x01002daa thread: 0x0 HANDLE WINAPI CreateFileW(
+_In_  LPWSTR lpFileName: [0x0007fbb0] E:\IvanLefOu\InlineHook\README.txt
+_In_ DWORD dwDesiredAccess (0x80000000): GENERIC_READ 
+_In_ DWORD dwShareMode (0x3): FILE_SHARE_READ FILE_SHARE_WRITE 
+_In_opt_  LPSECURITY_ATTRIBUTES lpSecurityAttributes: [0x00000000] 
+_In_ DWORD dwCreationDisposition (0x3): OPEN_EXISTING
+_In_ DWORD dwFlagsAndAttributes (0x80): FILE_ATTRIBUTE_NORMAL 
+_In_opt_ HANDLE hTemplateFile: [0x00000000] 
+);
+Return: 0x00000684
+
+00_0x01002a8b thread: 0x0 int WINAPI lstrcmpW(
+_In_  LPWSTR lpString1: E:\IvanLefOu\InlineHook\README.txt
+_In_  LPWSTR lpString2: Sans titre
+);
+Return: -1
+
+00_0x01002aaf thread: 0x0 DWORD WINAPI GetFileAttributesW(
+_In_  LPWSTR lpFileName: [0x0007fbb0] E:\IvanLefOu\InlineHook\README.txt
+);
+Return: 0x20
+
+00_0x01002b0e thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x7c9fe8f4] Drive\shellex\FolderExtensions
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000008
+_Out_ PHKEY phkResult: [0x0007E4A8] 0x592
+);
+Return: STATUS_SUCCESS
+
+
+00_0x01002b0e thread: 0x0 LONG WINAPI RegOpenKeyExW(
+_In_ HKEY hKey: HKEY_CLASSES_ROOT
+_In_opt_  LPWSTR lpSubKey: [0x0007e274] Drive\shellex\FolderExtensions\{fbeb8a05-beee-4442-804e-409d6c4515e9}
+_Reserved_ LPDWORD lpReserved: 0
+_In_ REGSAM samDesired: 0x00000001
+_Out_ PHKEY phkResult: [0x0007E110] 0x576
+);
+Return: STATUS_SUCCESS
+
+Return: 0
+Return: 1
+Return: 0
+
+00_0x010030da thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x7635867c] KERNEL32
+);
+Return: 0x7c800000
+
+00_0x010030da thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x7C800000
+_In_  LPCTSTR lpProcName: GetUserDefaultUILanguage
+);
+Return: 0x7c82f6cc
+
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x7ffdec00] GDI32
+);
+Return: 0x77ef0000
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleA(
+_In_opt_  LPCTSTR lpModuleName: [0x7636e2fc] GDI32
+);
+Return: 0x77ef0000
+
+00_0x010037d6 thread: 0x0 FARPROC WINAPI GetProcAddress(
+_In_ HMODULE hModule: 0x77EF0000
+_In_  LPCTSTR lpProcName: GetLayout
+);
+Return: 0x77ef6b2e
+Return: -1
+Return: -1
+Return: -1
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007e718] C:\WINDOWS\system32\Msimtf.dll
+);
+Return: 0x0
+Return: -1
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007e60c] C:\WINDOWS\system32\Msimtf.dll
+);
+Return: 0x0
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007e4a8] C:\WINDOWS\system32\Msimtf.dll
+);
+Return: 0x0
+
+00_0x01003a4f thread: 0x0 LONG WINAPI RegCreateKeyExW(
+_In_ HKEY hKey: HKEY_CURRENT_USER
+_In_opt_  LPWSTR lpSubKey: [0x010016a4] Software\Microsoft\Notepad
+_Reserved_ LPDWORD lpReserved: 0
+_In_opt_ LPWSTR lpClass: [0x00000000]
+_In_ DWORD dwOptions: REG_OPTION_NON_VOLATILE
+_In_ REGSAM samDesired: Unknown (0x2000000)
+_In_opt_ LPSECURITY_ATTRIBUTES lpSecurityAttributes: [0x00000000]
+_Out_ PHKEY phkResult: [0x0007fdc4] 0x590
+_Out_opt_ LPDWORD lpdwDisposition: 0
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x01001688] lfEscapement
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 00 00 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x0100166c] lfOrientation
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 00 00 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x01001658] lfWeight
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 90 01 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x01001644] lfItalic
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 00 00 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x0100162c] lfUnderline
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 00 00 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x01001614] lfStrikeOut
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 00 00 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x01001600] lfCharSet
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 ff 00 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x010015e0] lfOutPrecision
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 03 00 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x010015c0] lfClipPrecision
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 02 00 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x010015ac] lfQuality
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 01 00 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x01001588] lfPitchAndFamily
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 12 00 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x01001570] iPointSize
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 64 00 00 00                                       | d...
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x01001564] fWrap
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 00 00 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x01001550] StatusBar
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 01 00 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x01001524] fSaveWindowPositions
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 00 00 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100397e thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x0100150c] lfFaceName
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_SZ (1)
+_In_ const BYTE *lpData: [0x0100ab3c] 
+0x0100ab3c 52 00 6f 00 6d 00 61 00  6e 00 00 00              | R.o.m.a.n...
+
+_In_ DWORD cbData: 12 (0xc)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100397e thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x010014f8] szHeader
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_SZ (1)
+_In_ const BYTE *lpData: [0x0100a3e0] 
+0x0100a3e0 26 00 46 00 00 00                                 | &.F...
+
+_In_ DWORD cbData: 6 (0x6)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100397e thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x010014e4] szTrailer
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_SZ (1)
+_In_ const BYTE *lpData: [0x0100a430] 
+0x0100a430 50 00 61 00 67 00 65 00  20 00 26 00 70 00 00 00  | P.a.g.e. .&.p...
+
+_In_ DWORD cbData: 16 (0x10)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x010014cc] iMarginTop
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 c4 09 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x010014b0] iMarginBottom
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 c4 09 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x01001498] iMarginLeft
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 d0 07 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x0100147c] iMarginRight
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 d0 07 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x0100145c] fMLE_is_broken
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 00 00 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x01001444] iWindowPosX
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 a4 02 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x0100142c] iWindowPosY
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 02 00 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x01001410] iWindowPosDX
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 19 04 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+
+00_0x0100394f thread: 0x0 LONG WINAPI RegSetValueExW(
+_In_ HKEY hKey: 0x00000590
+_In_opt_  LPWSTR lpValueName: [0x010013f4] iWindowPosDY
+_Reserved_ DWORD Reserved: 0
+_In_ DWORD dwType: REG_DWORD (4)
+_In_ const BYTE *lpData: [0x0007fd94] 
+0x0007fd94 18 03 00 00                                       | ....
+
+_In_ DWORD cbData: 4 (0x4)
+);
+Return: STATUS_SUCCESS
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007e708] C:\WINDOWS\system32\Msimtf.dll
+);
+Return: 0x0
+Return: -1
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007e5fc] C:\WINDOWS\system32\Msimtf.dll
+);
+Return: 0x0
+
+00_0x010037d6 thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x0007e498] C:\WINDOWS\system32\Msimtf.dll
+);
+Return: 0x0
+
+00_0x0100751c thread: 0x0 BOOL WINAPI GetModuleHandleW(
+_In_opt_  LPWSTR lpModuleName: [0x7ffdec00] mscoree.dll
+);
+Return: 0x0
+
+00_0x0100751c thread: 0x0 BOOL WINAPI GetModuleHandleA(
+_In_opt_  LPCTSTR lpModuleName: [0x77be40a4] mscoree.dll
+);
+Return: 0x0
+
+Execution of process 1364 correctly terminated (elapsed time: 00h00m57s792)

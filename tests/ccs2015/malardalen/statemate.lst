@@ -1,0 +1,1375 @@
+0x401000: 55                                              push ebp
+0x401001: 89 E5                                           mov ebp, esp
+0x401003: 83 EC 08                                        sub esp, 0x8
+0x401006: E8 07 19 00 00                                  call 0x190c
+0x40100B: C9                                              leave 
+0x40100C: C3                                              ret 
+0x40100D: 55                                              push ebp
+0x40100E: 89 E5                                           mov ebp, esp
+0x401010: 83 EC 10                                        sub esp, 0x10
+0x401013: 0F B6 05 04 60 40 00                            movzx eax, byte ptr [0x406004]
+0x40101A: 84 C0                                           test al, al
+0x40101C: 74 0A                                           jz 0xc
+0x40101E: A1 C0 60 40 00                                  mov eax, dword ptr [0x4060c0]
+0x401023: A3 70 60 40 00                                  mov dword ptr [0x406070], eax
+0x401028: 0F B6 05 04 60 40 00                            movzx eax, byte ptr [0x406004]
+0x40102F: 84 C0                                           test al, al
+0x401031: 75 0B                                           jnz 0xd
+0x401033: 0F B6 05 06 60 40 00                            movzx eax, byte ptr [0x406006]
+0x40103A: 84 C0                                           test al, al
+0x40103C: 74 0A                                           jz 0xc
+0x40103E: A1 C0 60 40 00                                  mov eax, dword ptr [0x4060c0]
+0x401043: A3 FC 60 40 00                                  mov dword ptr [0x4060fc], eax
+0x401048: A1 B8 60 40 00                                  mov eax, dword ptr [0x4060b8]
+0x40104D: 85 C0                                           test eax, eax
+0x40104F: 74 41                                           jz 0x43
+0x401051: 8B 15 C0 60 40 00                               mov edx, dword ptr [0x4060c0]
+0x401057: A1 B8 60 40 00                                  mov eax, dword ptr [0x4060b8]
+0x40105C: 29 C2                                           sub edx, eax
+0x40105E: 89 D0                                           mov eax, edx
+0x401060: 89 45 F0                                        mov dword ptr [ebp-0x10], eax
+0x401063: C7 45 F4 00 00 00 00                            mov dword ptr [ebp-0xc], 0x0
+0x40106A: DF 6D F0                                        fild st0, qword ptr [ebp-0x10]
+0x40106D: DD 5D F8                                        fstp qword ptr [ebp-0x8], st0
+0x401070: DD 45 F8                                        fld st0, qword ptr [ebp-0x8]
+0x401073: DD 05 00 30 40 00                               fld st0, qword ptr [0x403000]
+0x401079: D9 C9                                           fxch st0, st1
+0x40107B: DF E9                                           fucomip st0, st1
+0x40107D: DD D8                                           fstp st0, st0
+0x40107F: 72 11                                           jb 0x13
+0x401081: C6 05 16 61 40 00 00                            mov byte ptr [0x406116], 0x0
+0x401088: C7 05 B8 60 40 00 00 00 00 00                   mov dword ptr [0x4060b8], 0x0
+0x401092: A1 60 60 40 00                                  mov eax, dword ptr [0x406060]
+0x401097: 85 C0                                           test eax, eax
+0x401099: 74 41                                           jz 0x43
+0x40109B: 8B 15 C0 60 40 00                               mov edx, dword ptr [0x4060c0]
+0x4010A1: A1 60 60 40 00                                  mov eax, dword ptr [0x406060]
+0x4010A6: 29 C2                                           sub edx, eax
+0x4010A8: 89 D0                                           mov eax, edx
+0x4010AA: 89 45 F0                                        mov dword ptr [ebp-0x10], eax
+0x4010AD: C7 45 F4 00 00 00 00                            mov dword ptr [ebp-0xc], 0x0
+0x4010B4: DF 6D F0                                        fild st0, qword ptr [ebp-0x10]
+0x4010B7: DD 5D F8                                        fstp qword ptr [ebp-0x8], st0
+0x4010BA: DD 45 F8                                        fld st0, qword ptr [ebp-0x8]
+0x4010BD: DD 05 00 30 40 00                               fld st0, qword ptr [0x403000]
+0x4010C3: D9 C9                                           fxch st0, st1
+0x4010C5: DF E9                                           fucomip st0, st1
+0x4010C7: DD D8                                           fstp st0, st0
+0x4010C9: 72 11                                           jb 0x13
+0x4010CB: C6 05 ED 60 40 00 00                            mov byte ptr [0x4060ed], 0x0
+0x4010D2: C7 05 60 60 40 00 00 00 00 00                   mov dword ptr [0x406060], 0x0
+0x4010DC: A1 B0 60 40 00                                  mov eax, dword ptr [0x4060b0]
+0x4010E1: 85 C0                                           test eax, eax
+0x4010E3: 74 41                                           jz 0x43
+0x4010E5: 8B 15 C0 60 40 00                               mov edx, dword ptr [0x4060c0]
+0x4010EB: A1 B0 60 40 00                                  mov eax, dword ptr [0x4060b0]
+0x4010F0: 29 C2                                           sub edx, eax
+0x4010F2: 89 D0                                           mov eax, edx
+0x4010F4: 89 45 F0                                        mov dword ptr [ebp-0x10], eax
+0x4010F7: C7 45 F4 00 00 00 00                            mov dword ptr [ebp-0xc], 0x0
+0x4010FE: DF 6D F0                                        fild st0, qword ptr [ebp-0x10]
+0x401101: DD 5D F8                                        fstp qword ptr [ebp-0x8], st0
+0x401104: DD 45 F8                                        fld st0, qword ptr [ebp-0x8]
+0x401107: DD 05 00 30 40 00                               fld st0, qword ptr [0x403000]
+0x40110D: D9 C9                                           fxch st0, st1
+0x40110F: DF E9                                           fucomip st0, st1
+0x401111: DD D8                                           fstp st0, st0
+0x401113: 72 11                                           jb 0x13
+0x401115: C6 05 ED 60 40 00 00                            mov byte ptr [0x4060ed], 0x0
+0x40111C: C7 05 B0 60 40 00 00 00 00 00                   mov dword ptr [0x4060b0], 0x0
+0x401126: A1 40 60 40 00                                  mov eax, dword ptr [0x406040]
+0x40112B: 85 C0                                           test eax, eax
+0x40112D: 74 3A                                           jz 0x3c
+0x40112F: 8B 15 C0 60 40 00                               mov edx, dword ptr [0x4060c0]
+0x401135: A1 40 60 40 00                                  mov eax, dword ptr [0x406040]
+0x40113A: 29 C2                                           sub edx, eax
+0x40113C: 89 D0                                           mov eax, edx
+0x40113E: 89 45 F0                                        mov dword ptr [ebp-0x10], eax
+0x401141: C7 45 F4 00 00 00 00                            mov dword ptr [ebp-0xc], 0x0
+0x401148: DF 6D F0                                        fild st0, qword ptr [ebp-0x10]
+0x40114B: DD 5D F8                                        fstp qword ptr [ebp-0x8], st0
+0x40114E: DD 45 F8                                        fld st0, qword ptr [ebp-0x8]
+0x401151: DD 05 00 30 40 00                               fld st0, qword ptr [0x403000]
+0x401157: D9 C9                                           fxch st0, st1
+0x401159: DF E9                                           fucomip st0, st1
+0x40115B: DD D8                                           fstp st0, st0
+0x40115D: 72 0A                                           jb 0xc
+0x40115F: C7 05 40 60 40 00 00 00 00 00                   mov dword ptr [0x406040], 0x0
+0x401169: A1 A0 60 40 00                                  mov eax, dword ptr [0x4060a0]
+0x40116E: 85 C0                                           test eax, eax
+0x401170: 74 3A                                           jz 0x3c
+0x401172: 8B 15 C0 60 40 00                               mov edx, dword ptr [0x4060c0]
+0x401178: A1 A0 60 40 00                                  mov eax, dword ptr [0x4060a0]
+0x40117D: 29 C2                                           sub edx, eax
+0x40117F: 89 D0                                           mov eax, edx
+0x401181: 89 45 F0                                        mov dword ptr [ebp-0x10], eax
+0x401184: C7 45 F4 00 00 00 00                            mov dword ptr [ebp-0xc], 0x0
+0x40118B: DF 6D F0                                        fild st0, qword ptr [ebp-0x10]
+0x40118E: DD 5D F8                                        fstp qword ptr [ebp-0x8], st0
+0x401191: DD 45 F8                                        fld st0, qword ptr [ebp-0x8]
+0x401194: DD 05 00 30 40 00                               fld st0, qword ptr [0x403000]
+0x40119A: D9 C9                                           fxch st0, st1
+0x40119C: DF E9                                           fucomip st0, st1
+0x40119E: DD D8                                           fstp st0, st0
+0x4011A0: 72 0A                                           jb 0xc
+0x4011A2: C7 05 A0 60 40 00 00 00 00 00                   mov dword ptr [0x4060a0], 0x0
+0x4011AC: 0F B6 05 00 60 40 00                            movzx eax, byte ptr [0x406000]
+0x4011B3: 84 C0                                           test al, al
+0x4011B5: 75 0F                                           jnz 0x11
+0x4011B7: 8B 15 4C 60 40 00                               mov edx, dword ptr [0x40604c]
+0x4011BD: A1 9C 60 40 00                                  mov eax, dword ptr [0x40609c]
+0x4011C2: 39 C2                                           cmp edx, eax
+0x4011C4: 74 0A                                           jz 0xc
+0x4011C6: A1 C0 60 40 00                                  mov eax, dword ptr [0x4060c0]
+0x4011CB: A3 0C 61 40 00                                  mov dword ptr [0x40610c], eax
+0x4011D0: C9                                              leave 
+0x4011D1: C3                                              ret 
+0x4011D2: 55                                              push ebp
+0x4011D3: 89 E5                                           mov ebp, esp
+0x4011D5: C7 05 0C 61 40 00 00 00 00 00                   mov dword ptr [0x40610c], 0x0
+0x4011DF: C7 05 FC 60 40 00 00 00 00 00                   mov dword ptr [0x4060fc], 0x0
+0x4011E9: C7 05 70 60 40 00 00 00 00 00                   mov dword ptr [0x406070], 0x0
+0x4011F3: C6 05 F8 60 40 00 00                            mov byte ptr [0x4060f8], 0x0
+0x4011FA: C6 05 E9 60 40 00 00                            mov byte ptr [0x4060e9], 0x0
+0x401201: C6 05 96 60 40 00 00                            mov byte ptr [0x406096], 0x0
+0x401208: C6 05 F6 60 40 00 00                            mov byte ptr [0x4060f6], 0x0
+0x40120F: C6 05 D8 60 40 00 00                            mov byte ptr [0x4060d8], 0x0
+0x401216: C6 05 EA 60 40 00 00                            mov byte ptr [0x4060ea], 0x0
+0x40121D: C6 05 78 60 40 00 00                            mov byte ptr [0x406078], 0x0
+0x401224: C6 05 45 60 40 00 00                            mov byte ptr [0x406045], 0x0
+0x40122B: C6 05 44 60 40 00 00                            mov byte ptr [0x406044], 0x0
+0x401232: C6 05 C7 60 40 00 00                            mov byte ptr [0x4060c7], 0x0
+0x401239: C6 05 81 60 40 00 00                            mov byte ptr [0x406081], 0x0
+0x401240: C6 05 11 61 40 00 00                            mov byte ptr [0x406111], 0x0
+0x401247: C6 05 FA 60 40 00 00                            mov byte ptr [0x4060fa], 0x0
+0x40124E: C6 05 14 61 40 00 00                            mov byte ptr [0x406114], 0x0
+0x401255: C6 05 02 61 40 00 00                            mov byte ptr [0x406102], 0x0
+0x40125C: C6 05 A9 60 40 00 00                            mov byte ptr [0x4060a9], 0x0
+0x401263: 5D                                              pop ebp
+0x401264: C3                                              ret 
+0x401265: 55                                              push ebp
+0x401266: 89 E5                                           mov ebp, esp
+0x401268: 0F B6 05 0A 60 40 00                            movzx eax, byte ptr [0x40600a]
+0x40126F: 84 C0                                           test al, al
+0x401271: 0F 84 C0 03 00 00                               jz 0x3c6
+0x401277: 0F B6 05 F6 60 40 00                            movzx eax, byte ptr [0x4060f6]
+0x40127E: 0F BE C0                                        movsx eax, al
+0x401281: 83 F8 02                                        cmp eax, 0x2
+0x401284: 0F 84 29 01 00 00                               jz 0x12f
+0x40128A: 83 F8 03                                        cmp eax, 0x3
+0x40128D: 0F 84 37 02 00 00                               jz 0x23d
+0x401293: 83 F8 01                                        cmp eax, 0x1
+0x401296: 0F 85 8C 03 00 00                               jnz 0x392
+0x40129C: 0F B6 05 98 60 40 00                            movzx eax, byte ptr [0x406098]
+0x4012A3: 84 C0                                           test al, al
+0x4012A5: 75 33                                           jnz 0x35
+0x4012A7: 0F B6 05 47 60 40 00                            movzx eax, byte ptr [0x406047]
+0x4012AE: 84 C0                                           test al, al
+0x4012B0: 75 28                                           jnz 0x2a
+0x4012B2: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4012B9: C6 05 FB 60 40 00 00                            mov byte ptr [0x4060fb], 0x0
+0x4012C0: C6 05 C6 60 40 00 00                            mov byte ptr [0x4060c6], 0x0
+0x4012C7: C6 05 F6 60 40 00 03                            mov byte ptr [0x4060f6], 0x3
+0x4012CE: C6 05 E9 60 40 00 00                            mov byte ptr [0x4060e9], 0x0
+0x4012D5: E9 5D 03 00 00                                  jmp 0x362
+0x4012DA: 0F B6 05 E9 60 40 00                            movzx eax, byte ptr [0x4060e9]
+0x4012E1: 0F BE C0                                        movsx eax, al
+0x4012E4: 83 F8 01                                        cmp eax, 0x1
+0x4012E7: 0F 85 B9 00 00 00                               jnz 0xbf
+0x4012ED: 0F B6 05 98 60 40 00                            movzx eax, byte ptr [0x406098]
+0x4012F4: 84 C0                                           test al, al
+0x4012F6: 74 25                                           jz 0x27
+0x4012F8: 0F B6 05 C8 60 40 00                            movzx eax, byte ptr [0x4060c8]
+0x4012FF: 84 C0                                           test al, al
+0x401301: 75 1A                                           jnz 0x1c
+0x401303: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x40130A: C6 05 C6 60 40 00 01                            mov byte ptr [0x4060c6], 0x1
+0x401311: C6 05 E9 60 40 00 01                            mov byte ptr [0x4060e9], 0x1
+0x401318: E9 91 00 00 00                                  jmp 0x96
+0x40131D: 0F B6 05 47 60 40 00                            movzx eax, byte ptr [0x406047]
+0x401324: 84 C0                                           test al, al
+0x401326: 74 22                                           jz 0x24
+0x401328: 0F B6 05 97 60 40 00                            movzx eax, byte ptr [0x406097]
+0x40132F: 84 C0                                           test al, al
+0x401331: 75 17                                           jnz 0x19
+0x401333: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x40133A: C6 05 FB 60 40 00 01                            mov byte ptr [0x4060fb], 0x1
+0x401341: C6 05 E9 60 40 00 01                            mov byte ptr [0x4060e9], 0x1
+0x401348: EB 64                                           jmp 0x66
+0x40134A: 0F B6 05 98 60 40 00                            movzx eax, byte ptr [0x406098]
+0x401351: 84 C0                                           test al, al
+0x401353: 75 22                                           jnz 0x24
+0x401355: 0F B6 05 C8 60 40 00                            movzx eax, byte ptr [0x4060c8]
+0x40135C: 84 C0                                           test al, al
+0x40135E: 74 17                                           jz 0x19
+0x401360: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401367: C6 05 C6 60 40 00 00                            mov byte ptr [0x4060c6], 0x0
+0x40136E: C6 05 E9 60 40 00 01                            mov byte ptr [0x4060e9], 0x1
+0x401375: EB 37                                           jmp 0x39
+0x401377: 0F B6 05 47 60 40 00                            movzx eax, byte ptr [0x406047]
+0x40137E: 84 C0                                           test al, al
+0x401380: 75 22                                           jnz 0x24
+0x401382: 0F B6 05 97 60 40 00                            movzx eax, byte ptr [0x406097]
+0x401389: 84 C0                                           test al, al
+0x40138B: 74 17                                           jz 0x19
+0x40138D: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401394: C6 05 FB 60 40 00 00                            mov byte ptr [0x4060fb], 0x0
+0x40139B: C6 05 E9 60 40 00 01                            mov byte ptr [0x4060e9], 0x1
+0x4013A2: EB 0A                                           jmp 0xc
+0x4013A4: EB 08                                           jmp 0xa
+0x4013A6: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4013AD: 90                                              nop 
+0x4013AE: E9 84 02 00 00                                  jmp 0x289
+0x4013B3: 0F B6 05 A5 60 40 00                            movzx eax, byte ptr [0x4060a5]
+0x4013BA: 84 C0                                           test al, al
+0x4013BC: 75 33                                           jnz 0x35
+0x4013BE: 0F B6 05 C5 60 40 00                            movzx eax, byte ptr [0x4060c5]
+0x4013C5: 84 C0                                           test al, al
+0x4013C7: 75 28                                           jnz 0x2a
+0x4013C9: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4013D0: C6 05 FB 60 40 00 00                            mov byte ptr [0x4060fb], 0x0
+0x4013D7: C6 05 C6 60 40 00 00                            mov byte ptr [0x4060c6], 0x0
+0x4013DE: C6 05 F6 60 40 00 03                            mov byte ptr [0x4060f6], 0x3
+0x4013E5: C6 05 96 60 40 00 00                            mov byte ptr [0x406096], 0x0
+0x4013EC: E9 46 02 00 00                                  jmp 0x24b
+0x4013F1: 0F B6 05 96 60 40 00                            movzx eax, byte ptr [0x406096]
+0x4013F8: 0F BE C0                                        movsx eax, al
+0x4013FB: 83 F8 01                                        cmp eax, 0x1
+0x4013FE: 0F 85 B9 00 00 00                               jnz 0xbf
+0x401404: 0F B6 05 A5 60 40 00                            movzx eax, byte ptr [0x4060a5]
+0x40140B: 84 C0                                           test al, al
+0x40140D: 74 25                                           jz 0x27
+0x40140F: 0F B6 05 F5 60 40 00                            movzx eax, byte ptr [0x4060f5]
+0x401416: 84 C0                                           test al, al
+0x401418: 75 1A                                           jnz 0x1c
+0x40141A: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401421: C6 05 C6 60 40 00 01                            mov byte ptr [0x4060c6], 0x1
+0x401428: C6 05 96 60 40 00 01                            mov byte ptr [0x406096], 0x1
+0x40142F: E9 91 00 00 00                                  jmp 0x96
+0x401434: 0F B6 05 C5 60 40 00                            movzx eax, byte ptr [0x4060c5]
+0x40143B: 84 C0                                           test al, al
+0x40143D: 74 22                                           jz 0x24
+0x40143F: 0F B6 05 99 60 40 00                            movzx eax, byte ptr [0x406099]
+0x401446: 84 C0                                           test al, al
+0x401448: 75 17                                           jnz 0x19
+0x40144A: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401451: C6 05 FB 60 40 00 01                            mov byte ptr [0x4060fb], 0x1
+0x401458: C6 05 96 60 40 00 01                            mov byte ptr [0x406096], 0x1
+0x40145F: EB 64                                           jmp 0x66
+0x401461: 0F B6 05 A5 60 40 00                            movzx eax, byte ptr [0x4060a5]
+0x401468: 84 C0                                           test al, al
+0x40146A: 75 22                                           jnz 0x24
+0x40146C: 0F B6 05 F5 60 40 00                            movzx eax, byte ptr [0x4060f5]
+0x401473: 84 C0                                           test al, al
+0x401475: 74 17                                           jz 0x19
+0x401477: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x40147E: C6 05 C6 60 40 00 00                            mov byte ptr [0x4060c6], 0x0
+0x401485: C6 05 96 60 40 00 01                            mov byte ptr [0x406096], 0x1
+0x40148C: EB 37                                           jmp 0x39
+0x40148E: 0F B6 05 C5 60 40 00                            movzx eax, byte ptr [0x4060c5]
+0x401495: 84 C0                                           test al, al
+0x401497: 75 22                                           jnz 0x24
+0x401499: 0F B6 05 99 60 40 00                            movzx eax, byte ptr [0x406099]
+0x4014A0: 84 C0                                           test al, al
+0x4014A2: 74 17                                           jz 0x19
+0x4014A4: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4014AB: C6 05 FB 60 40 00 00                            mov byte ptr [0x4060fb], 0x0
+0x4014B2: C6 05 96 60 40 00 01                            mov byte ptr [0x406096], 0x1
+0x4014B9: EB 0A                                           jmp 0xc
+0x4014BB: EB 08                                           jmp 0xa
+0x4014BD: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4014C4: 90                                              nop 
+0x4014C5: E9 6D 01 00 00                                  jmp 0x172
+0x4014CA: 0F B6 05 F7 60 40 00                            movzx eax, byte ptr [0x4060f7]
+0x4014D1: 84 C0                                           test al, al
+0x4014D3: 75 37                                           jnz 0x39
+0x4014D5: 0F B6 05 C5 60 40 00                            movzx eax, byte ptr [0x4060c5]
+0x4014DC: 84 C0                                           test al, al
+0x4014DE: 74 2C                                           jz 0x2e
+0x4014E0: 0F B6 05 A5 60 40 00                            movzx eax, byte ptr [0x4060a5]
+0x4014E7: 84 C0                                           test al, al
+0x4014E9: 74 21                                           jz 0x23
+0x4014EB: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4014F2: C6 05 FB 60 40 00 01                            mov byte ptr [0x4060fb], 0x1
+0x4014F9: C6 05 C6 60 40 00 01                            mov byte ptr [0x4060c6], 0x1
+0x401500: C6 05 F6 60 40 00 02                            mov byte ptr [0x4060f6], 0x2
+0x401507: E9 2B 01 00 00                                  jmp 0x130
+0x40150C: 0F B6 05 F7 60 40 00                            movzx eax, byte ptr [0x4060f7]
+0x401513: 84 C0                                           test al, al
+0x401515: 75 30                                           jnz 0x32
+0x401517: 0F B6 05 C5 60 40 00                            movzx eax, byte ptr [0x4060c5]
+0x40151E: 84 C0                                           test al, al
+0x401520: 74 25                                           jz 0x27
+0x401522: 0F B6 05 A5 60 40 00                            movzx eax, byte ptr [0x4060a5]
+0x401529: 84 C0                                           test al, al
+0x40152B: 75 1A                                           jnz 0x1c
+0x40152D: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401534: C6 05 FB 60 40 00 01                            mov byte ptr [0x4060fb], 0x1
+0x40153B: C6 05 F6 60 40 00 02                            mov byte ptr [0x4060f6], 0x2
+0x401542: E9 F0 00 00 00                                  jmp 0xf5
+0x401547: 0F B6 05 F7 60 40 00                            movzx eax, byte ptr [0x4060f7]
+0x40154E: 84 C0                                           test al, al
+0x401550: 75 30                                           jnz 0x32
+0x401552: 0F B6 05 C5 60 40 00                            movzx eax, byte ptr [0x4060c5]
+0x401559: 84 C0                                           test al, al
+0x40155B: 75 25                                           jnz 0x27
+0x40155D: 0F B6 05 A5 60 40 00                            movzx eax, byte ptr [0x4060a5]
+0x401564: 84 C0                                           test al, al
+0x401566: 74 1A                                           jz 0x1c
+0x401568: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x40156F: C6 05 C6 60 40 00 01                            mov byte ptr [0x4060c6], 0x1
+0x401576: C6 05 F6 60 40 00 02                            mov byte ptr [0x4060f6], 0x2
+0x40157D: E9 B5 00 00 00                                  jmp 0xba
+0x401582: 0F B6 05 47 60 40 00                            movzx eax, byte ptr [0x406047]
+0x401589: 84 C0                                           test al, al
+0x40158B: 75 2D                                           jnz 0x2f
+0x40158D: 0F B6 05 98 60 40 00                            movzx eax, byte ptr [0x406098]
+0x401594: 84 C0                                           test al, al
+0x401596: 74 22                                           jz 0x24
+0x401598: 0F B6 05 F7 60 40 00                            movzx eax, byte ptr [0x4060f7]
+0x40159F: 84 C0                                           test al, al
+0x4015A1: 75 17                                           jnz 0x19
+0x4015A3: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4015AA: C6 05 C6 60 40 00 01                            mov byte ptr [0x4060c6], 0x1
+0x4015B1: C6 05 F6 60 40 00 01                            mov byte ptr [0x4060f6], 0x1
+0x4015B8: EB 7D                                           jmp 0x7f
+0x4015BA: 0F B6 05 47 60 40 00                            movzx eax, byte ptr [0x406047]
+0x4015C1: 84 C0                                           test al, al
+0x4015C3: 74 29                                           jz 0x2b
+0x4015C5: 0F B6 05 98 60 40 00                            movzx eax, byte ptr [0x406098]
+0x4015CC: 84 C0                                           test al, al
+0x4015CE: 74 1E                                           jz 0x20
+0x4015D0: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4015D7: C6 05 C6 60 40 00 01                            mov byte ptr [0x4060c6], 0x1
+0x4015DE: C6 05 FB 60 40 00 01                            mov byte ptr [0x4060fb], 0x1
+0x4015E5: C6 05 F6 60 40 00 01                            mov byte ptr [0x4060f6], 0x1
+0x4015EC: EB 49                                           jmp 0x4b
+0x4015EE: 0F B6 05 47 60 40 00                            movzx eax, byte ptr [0x406047]
+0x4015F5: 84 C0                                           test al, al
+0x4015F7: 74 2D                                           jz 0x2f
+0x4015F9: 0F B6 05 98 60 40 00                            movzx eax, byte ptr [0x406098]
+0x401600: 84 C0                                           test al, al
+0x401602: 75 22                                           jnz 0x24
+0x401604: 0F B6 05 F7 60 40 00                            movzx eax, byte ptr [0x4060f7]
+0x40160B: 84 C0                                           test al, al
+0x40160D: 75 17                                           jnz 0x19
+0x40160F: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401616: C6 05 FB 60 40 00 01                            mov byte ptr [0x4060fb], 0x1
+0x40161D: C6 05 F6 60 40 00 01                            mov byte ptr [0x4060f6], 0x1
+0x401624: EB 11                                           jmp 0x13
+0x401626: EB 0F                                           jmp 0x11
+0x401628: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x40162F: C6 05 F6 60 40 00 03                            mov byte ptr [0x4060f6], 0x3
+0x401636: 90                                              nop 
+0x401637: 5D                                              pop ebp
+0x401638: C3                                              ret 
+0x401639: 55                                              push ebp
+0x40163A: 89 E5                                           mov ebp, esp
+0x40163C: 0F B6 05 0D 60 40 00                            movzx eax, byte ptr [0x40600d]
+0x401643: 84 C0                                           test al, al
+0x401645: 75 24                                           jnz 0x26
+0x401647: 0F B6 05 0F 60 40 00                            movzx eax, byte ptr [0x40600f]
+0x40164E: 84 C0                                           test al, al
+0x401650: 74 19                                           jz 0x1b
+0x401652: 0F B6 05 0E 60 40 00                            movzx eax, byte ptr [0x40600e]
+0x401659: 84 C0                                           test al, al
+0x40165B: 75 0E                                           jnz 0x10
+0x40165D: C6 05 04 60 40 00 00                            mov byte ptr [0x406004], 0x0
+0x401664: C6 05 06 60 40 00 00                            mov byte ptr [0x406006], 0x0
+0x40166B: 0F B6 05 0D 60 40 00                            movzx eax, byte ptr [0x40600d]
+0x401672: 84 C0                                           test al, al
+0x401674: 0F 84 3A 08 00 00                               jz 0x840
+0x40167A: 0F B6 05 0A 60 40 00                            movzx eax, byte ptr [0x40600a]
+0x401681: 84 C0                                           test al, al
+0x401683: 75 07                                           jnz 0x9
+0x401685: C6 05 F6 60 40 00 03                            mov byte ptr [0x4060f6], 0x3
+0x40168C: C6 05 0B 60 40 00 00                            mov byte ptr [0x40600b], 0x0
+0x401693: 0F B6 05 13 60 40 00                            movzx eax, byte ptr [0x406013]
+0x40169A: 84 C0                                           test al, al
+0x40169C: 75 0E                                           jnz 0x10
+0x40169E: C6 05 00 60 40 00 00                            mov byte ptr [0x406000], 0x0
+0x4016A5: C6 05 A9 60 40 00 01                            mov byte ptr [0x4060a9], 0x1
+0x4016AC: C6 05 14 60 40 00 00                            mov byte ptr [0x406014], 0x0
+0x4016B3: C6 05 0B 60 40 00 01                            mov byte ptr [0x40600b], 0x1
+0x4016BA: C6 05 14 60 40 00 01                            mov byte ptr [0x406014], 0x1
+0x4016C1: 0F B6 05 D8 60 40 00                            movzx eax, byte ptr [0x4060d8]
+0x4016C8: 0F BE C0                                        movsx eax, al
+0x4016CB: 83 F8 02                                        cmp eax, 0x2
+0x4016CE: 74 45                                           jz 0x47
+0x4016D0: 83 F8 03                                        cmp eax, 0x3
+0x4016D3: 0F 84 47 01 00 00                               jz 0x14d
+0x4016D9: 83 F8 01                                        cmp eax, 0x1
+0x4016DC: 0F 85 71 06 00 00                               jnz 0x677
+0x4016E2: A1 58 60 40 00                                  mov eax, dword ptr [0x406058]
+0x4016E7: 83 F8 3B                                        cmp eax, 0x3b
+0x4016EA: 75 24                                           jnz 0x26
+0x4016EC: A1 D4 60 40 00                                  mov eax, dword ptr [0x4060d4]
+0x4016F1: 83 F8 3B                                        cmp eax, 0x3b
+0x4016F4: 74 1A                                           jz 0x1c
+0x4016F6: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4016FD: C6 05 D8 60 40 00 03                            mov byte ptr [0x4060d8], 0x3
+0x401704: C6 05 45 60 40 00 03                            mov byte ptr [0x406045], 0x3
+0x40170B: E9 52 06 00 00                                  jmp 0x657
+0x401710: E9 4D 06 00 00                                  jmp 0x652
+0x401715: 0F B6 05 94 60 40 00                            movzx eax, byte ptr [0x406094]
+0x40171C: 84 C0                                           test al, al
+0x40171E: 74 41                                           jz 0x43
+0x401720: 0F B6 05 AB 60 40 00                            movzx eax, byte ptr [0x4060ab]
+0x401727: 84 C0                                           test al, al
+0x401729: 75 36                                           jnz 0x38
+0x40172B: 0F B6 05 B5 60 40 00                            movzx eax, byte ptr [0x4060b5]
+0x401732: 84 C0                                           test al, al
+0x401734: 74 2B                                           jz 0x2d
+0x401736: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x40173D: C6 05 ED 60 40 00 00                            mov byte ptr [0x4060ed], 0x0
+0x401744: A1 C0 60 40 00                                  mov eax, dword ptr [0x4060c0]
+0x401749: A3 B0 60 40 00                                  mov dword ptr [0x4060b0], eax
+0x40174E: C6 05 D8 60 40 00 03                            mov byte ptr [0x4060d8], 0x3
+0x401755: C6 05 45 60 40 00 03                            mov byte ptr [0x406045], 0x3
+0x40175C: E9 01 06 00 00                                  jmp 0x606
+0x401761: 0F B6 05 F8 60 40 00                            movzx eax, byte ptr [0x4060f8]
+0x401768: 0F BE C0                                        movsx eax, al
+0x40176B: 83 F8 02                                        cmp eax, 0x2
+0x40176E: 74 32                                           jz 0x34
+0x401770: 83 F8 03                                        cmp eax, 0x3
+0x401773: 74 51                                           jz 0x53
+0x401775: 83 F8 01                                        cmp eax, 0x1
+0x401778: 0F 85 8E 00 00 00                               jnz 0x94
+0x40177E: 0F B6 05 F4 60 40 00                            movzx eax, byte ptr [0x4060f4]
+0x401785: 84 C0                                           test al, al
+0x401787: 75 17                                           jnz 0x19
+0x401789: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401790: C6 05 ED 60 40 00 00                            mov byte ptr [0x4060ed], 0x0
+0x401797: C6 05 F8 60 40 00 03                            mov byte ptr [0x4060f8], 0x3
+0x40179E: EB 7B                                           jmp 0x7d
+0x4017A0: EB 79                                           jmp 0x7b
+0x4017A2: 0F B6 05 83 60 40 00                            movzx eax, byte ptr [0x406083]
+0x4017A9: 84 C0                                           test al, al
+0x4017AB: 75 17                                           jnz 0x19
+0x4017AD: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4017B4: C6 05 16 61 40 00 00                            mov byte ptr [0x406116], 0x0
+0x4017BB: C6 05 F8 60 40 00 03                            mov byte ptr [0x4060f8], 0x3
+0x4017C2: EB 57                                           jmp 0x59
+0x4017C4: EB 55                                           jmp 0x57
+0x4017C6: 0F B6 05 83 60 40 00                            movzx eax, byte ptr [0x406083]
+0x4017CD: 84 C0                                           test al, al
+0x4017CF: 74 17                                           jz 0x19
+0x4017D1: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4017D8: C6 05 16 61 40 00 01                            mov byte ptr [0x406116], 0x1
+0x4017DF: C6 05 F8 60 40 00 02                            mov byte ptr [0x4060f8], 0x2
+0x4017E6: EB 33                                           jmp 0x35
+0x4017E8: 0F B6 05 F4 60 40 00                            movzx eax, byte ptr [0x4060f4]
+0x4017EF: 84 C0                                           test al, al
+0x4017F1: 74 17                                           jz 0x19
+0x4017F3: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4017FA: C6 05 ED 60 40 00 01                            mov byte ptr [0x4060ed], 0x1
+0x401801: C6 05 F8 60 40 00 01                            mov byte ptr [0x4060f8], 0x1
+0x401808: EB 11                                           jmp 0x13
+0x40180A: EB 0F                                           jmp 0x11
+0x40180C: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401813: C6 05 F8 60 40 00 03                            mov byte ptr [0x4060f8], 0x3
+0x40181A: 90                                              nop 
+0x40181B: E9 42 05 00 00                                  jmp 0x547
+0x401820: A1 58 60 40 00                                  mov eax, dword ptr [0x406058]
+0x401825: 83 F8 3C                                        cmp eax, 0x3c
+0x401828: 7E 41                                           jle 0x43
+0x40182A: A1 D4 60 40 00                                  mov eax, dword ptr [0x4060d4]
+0x40182F: 83 F8 3C                                        cmp eax, 0x3c
+0x401832: 7F 37                                           jnle 0x39
+0x401834: 0F B6 05 50 60 40 00                            movzx eax, byte ptr [0x406050]
+0x40183B: 84 C0                                           test al, al
+0x40183D: 75 2C                                           jnz 0x2e
+0x40183F: 0F B6 05 6E 60 40 00                            movzx eax, byte ptr [0x40606e]
+0x401846: 84 C0                                           test al, al
+0x401848: 75 21                                           jnz 0x23
+0x40184A: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401851: C6 05 ED 60 40 00 00                            mov byte ptr [0x4060ed], 0x0
+0x401858: C6 05 16 61 40 00 00                            mov byte ptr [0x406116], 0x0
+0x40185F: C6 05 D8 60 40 00 01                            mov byte ptr [0x4060d8], 0x1
+0x401866: E9 F7 04 00 00                                  jmp 0x4fc
+0x40186B: 0F B6 05 94 60 40 00                            movzx eax, byte ptr [0x406094]
+0x401872: 84 C0                                           test al, al
+0x401874: 74 41                                           jz 0x43
+0x401876: 0F B6 05 AB 60 40 00                            movzx eax, byte ptr [0x4060ab]
+0x40187D: 84 C0                                           test al, al
+0x40187F: 75 36                                           jnz 0x38
+0x401881: 0F B6 05 08 61 40 00                            movzx eax, byte ptr [0x406108]
+0x401888: 84 C0                                           test al, al
+0x40188A: 74 2B                                           jz 0x2d
+0x40188C: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401893: C6 05 16 61 40 00 00                            mov byte ptr [0x406116], 0x0
+0x40189A: A1 C0 60 40 00                                  mov eax, dword ptr [0x4060c0]
+0x40189F: A3 B8 60 40 00                                  mov dword ptr [0x4060b8], eax
+0x4018A4: C6 05 D8 60 40 00 02                            mov byte ptr [0x4060d8], 0x2
+0x4018AB: C6 05 F8 60 40 00 03                            mov byte ptr [0x4060f8], 0x3
+0x4018B2: E9 AB 04 00 00                                  jmp 0x4b0
+0x4018B7: 0F B6 05 94 60 40 00                            movzx eax, byte ptr [0x406094]
+0x4018BE: 84 C0                                           test al, al
+0x4018C0: 74 41                                           jz 0x43
+0x4018C2: 0F B6 05 AB 60 40 00                            movzx eax, byte ptr [0x4060ab]
+0x4018C9: 84 C0                                           test al, al
+0x4018CB: 75 36                                           jnz 0x38
+0x4018CD: 0F B6 05 B5 60 40 00                            movzx eax, byte ptr [0x4060b5]
+0x4018D4: 84 C0                                           test al, al
+0x4018D6: 74 2B                                           jz 0x2d
+0x4018D8: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4018DF: C6 05 ED 60 40 00 00                            mov byte ptr [0x4060ed], 0x0
+0x4018E6: A1 C0 60 40 00                                  mov eax, dword ptr [0x4060c0]
+0x4018EB: A3 60 60 40 00                                  mov dword ptr [0x406060], eax
+0x4018F0: C6 05 D8 60 40 00 02                            mov byte ptr [0x4060d8], 0x2
+0x4018F7: C6 05 F8 60 40 00 03                            mov byte ptr [0x4060f8], 0x3
+0x4018FE: E9 5F 04 00 00                                  jmp 0x464
+0x401903: 0F B6 05 45 60 40 00                            movzx eax, byte ptr [0x406045]
+0x40190A: 0F BE C0                                        movsx eax, al
+0x40190D: 83 F8 02                                        cmp eax, 0x2
+0x401910: 0F 84 0D 01 00 00                               jz 0x113
+0x401916: 83 F8 03                                        cmp eax, 0x3
+0x401919: 0F 84 96 03 00 00                               jz 0x39c
+0x40191F: 83 F8 01                                        cmp eax, 0x1
+0x401922: 0F 85 1A 04 00 00                               jnz 0x420
+0x401928: A1 F0 60 40 00                                  mov eax, dword ptr [0x4060f0]
+0x40192D: 3D 94 01 00 00                                  cmp eax, 0x194
+0x401932: 7E 1A                                           jle 0x1c
+0x401934: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x40193B: C6 05 16 61 40 00 00                            mov byte ptr [0x406116], 0x0
+0x401942: C6 05 45 60 40 00 03                            mov byte ptr [0x406045], 0x3
+0x401949: E9 03 04 00 00                                  jmp 0x408
+0x40194E: 0F B6 05 81 60 40 00                            movzx eax, byte ptr [0x406081]
+0x401955: 0F BE C0                                        movsx eax, al
+0x401958: 83 F8 01                                        cmp eax, 0x1
+0x40195B: 74 0A                                           jz 0xc
+0x40195D: 83 F8 02                                        cmp eax, 0x2
+0x401960: 74 51                                           jz 0x53
+0x401962: E9 A8 00 00 00                                  jmp 0xad
+0x401967: 0F B6 05 F4 60 40 00                            movzx eax, byte ptr [0x4060f4]
+0x40196E: 84 C0                                           test al, al
+0x401970: 74 0B                                           jz 0xd
+0x401972: 0F B6 05 6D 60 40 00                            movzx eax, byte ptr [0x40606d]
+0x401979: 84 C0                                           test al, al
+0x40197B: 74 16                                           jz 0x18
+0x40197D: 0F B6 05 83 60 40 00                            movzx eax, byte ptr [0x406083]
+0x401984: 84 C0                                           test al, al
+0x401986: 74 29                                           jz 0x2b
+0x401988: 0F B6 05 84 60 40 00                            movzx eax, byte ptr [0x406084]
+0x40198F: 84 C0                                           test al, al
+0x401991: 75 1E                                           jnz 0x20
+0x401993: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x40199A: C6 05 16 61 40 00 00                            mov byte ptr [0x406116], 0x0
+0x4019A1: C6 05 45 60 40 00 03                            mov byte ptr [0x406045], 0x3
+0x4019A8: C6 05 81 60 40 00 00                            mov byte ptr [0x406081], 0x0
+0x4019AF: EB 6D                                           jmp 0x6f
+0x4019B1: EB 6B                                           jmp 0x6d
+0x4019B3: 0F B6 05 F4 60 40 00                            movzx eax, byte ptr [0x4060f4]
+0x4019BA: 84 C0                                           test al, al
+0x4019BC: 74 1B                                           jz 0x1d
+0x4019BE: 0F B6 05 6D 60 40 00                            movzx eax, byte ptr [0x40606d]
+0x4019C5: 84 C0                                           test al, al
+0x4019C7: 75 10                                           jnz 0x12
+0x4019C9: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4019D0: C6 05 81 60 40 00 01                            mov byte ptr [0x406081], 0x1
+0x4019D7: EB 45                                           jmp 0x47
+0x4019D9: 0F B6 05 83 60 40 00                            movzx eax, byte ptr [0x406083]
+0x4019E0: 84 C0                                           test al, al
+0x4019E2: 75 29                                           jnz 0x2b
+0x4019E4: 0F B6 05 84 60 40 00                            movzx eax, byte ptr [0x406084]
+0x4019EB: 84 C0                                           test al, al
+0x4019ED: 74 1E                                           jz 0x20
+0x4019EF: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4019F6: C6 05 16 61 40 00 00                            mov byte ptr [0x406116], 0x0
+0x4019FD: C6 05 45 60 40 00 03                            mov byte ptr [0x406045], 0x3
+0x401A04: C6 05 81 60 40 00 00                            mov byte ptr [0x406081], 0x0
+0x401A0B: EB 11                                           jmp 0x13
+0x401A0D: EB 0F                                           jmp 0x11
+0x401A0F: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401A16: C6 05 81 60 40 00 02                            mov byte ptr [0x406081], 0x2
+0x401A1D: 90                                              nop 
+0x401A1E: E9 2E 03 00 00                                  jmp 0x333
+0x401A23: A1 F0 60 40 00                                  mov eax, dword ptr [0x4060f0]
+0x401A28: 85 C0                                           test eax, eax
+0x401A2A: 7F 1A                                           jnle 0x1c
+0x401A2C: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401A33: C6 05 ED 60 40 00 00                            mov byte ptr [0x4060ed], 0x0
+0x401A3A: C6 05 45 60 40 00 03                            mov byte ptr [0x406045], 0x3
+0x401A41: E9 0B 03 00 00                                  jmp 0x310
+0x401A46: 0F B6 05 11 61 40 00                            movzx eax, byte ptr [0x406111]
+0x401A4D: 0F BE C0                                        movsx eax, al
+0x401A50: 83 F8 01                                        cmp eax, 0x1
+0x401A53: 74 0E                                           jz 0x10
+0x401A55: 83 F8 02                                        cmp eax, 0x2
+0x401A58: 0F 84 09 01 00 00                               jz 0x10f
+0x401A5E: E9 29 02 00 00                                  jmp 0x22e
+0x401A63: 0F B6 05 83 60 40 00                            movzx eax, byte ptr [0x406083]
+0x401A6A: 84 C0                                           test al, al
+0x401A6C: 74 0B                                           jz 0xd
+0x401A6E: 0F B6 05 84 60 40 00                            movzx eax, byte ptr [0x406084]
+0x401A75: 84 C0                                           test al, al
+0x401A77: 74 16                                           jz 0x18
+0x401A79: 0F B6 05 F4 60 40 00                            movzx eax, byte ptr [0x4060f4]
+0x401A80: 84 C0                                           test al, al
+0x401A82: 74 25                                           jz 0x27
+0x401A84: 0F B6 05 6D 60 40 00                            movzx eax, byte ptr [0x40606d]
+0x401A8B: 84 C0                                           test al, al
+0x401A8D: 75 1A                                           jnz 0x1c
+0x401A8F: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401A96: C6 05 ED 60 40 00 00                            mov byte ptr [0x4060ed], 0x0
+0x401A9D: C6 05 45 60 40 00 03                            mov byte ptr [0x406045], 0x3
+0x401AA4: E9 07 02 00 00                                  jmp 0x20c
+0x401AA9: 0F B6 05 44 60 40 00                            movzx eax, byte ptr [0x406044]
+0x401AB0: 0F BE C0                                        movsx eax, al
+0x401AB3: 83 F8 01                                        cmp eax, 0x1
+0x401AB6: 74 0A                                           jz 0xc
+0x401AB8: 83 F8 02                                        cmp eax, 0x2
+0x401ABB: 74 45                                           jz 0x47
+0x401ABD: E9 8A 00 00 00                                  jmp 0x8f
+0x401AC2: C6 05 17 60 40 00 00                            mov byte ptr [0x406017], 0x0
+0x401AC9: 0F B6 05 16 60 40 00                            movzx eax, byte ptr [0x406016]
+0x401AD0: 84 C0                                           test al, al
+0x401AD2: 74 2C                                           jz 0x2e
+0x401AD4: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401ADB: C6 05 ED 60 40 00 01                            mov byte ptr [0x4060ed], 0x1
+0x401AE2: C6 05 6C 60 40 00 00                            mov byte ptr [0x40606c], 0x0
+0x401AE9: C6 05 44 60 40 00 02                            mov byte ptr [0x406044], 0x2
+0x401AF0: C6 05 16 61 40 00 00                            mov byte ptr [0x406116], 0x0
+0x401AF7: C6 05 11 60 40 00 01                            mov byte ptr [0x406011], 0x1
+0x401AFE: EB 62                                           jmp 0x64
+0x401B00: EB 60                                           jmp 0x62
+0x401B02: 0F B6 05 18 60 40 00                            movzx eax, byte ptr [0x406018]
+0x401B09: 84 C0                                           test al, al
+0x401B0B: 74 3D                                           jz 0x3f
+0x401B0D: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401B14: C6 05 6C 60 40 00 01                            mov byte ptr [0x40606c], 0x1
+0x401B1B: C6 05 17 60 40 00 01                            mov byte ptr [0x406017], 0x1
+0x401B22: C6 05 44 60 40 00 01                            mov byte ptr [0x406044], 0x1
+0x401B29: C6 05 11 60 40 00 00                            mov byte ptr [0x406011], 0x0
+0x401B30: C6 05 ED 60 40 00 00                            mov byte ptr [0x4060ed], 0x0
+0x401B37: A1 C0 60 40 00                                  mov eax, dword ptr [0x4060c0]
+0x401B3C: A3 40 60 40 00                                  mov dword ptr [0x406040], eax
+0x401B41: C6 05 16 61 40 00 01                            mov byte ptr [0x406116], 0x1
+0x401B48: EB 18                                           jmp 0x1a
+0x401B4A: EB 16                                           jmp 0x18
+0x401B4C: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401B53: C6 05 44 60 40 00 02                            mov byte ptr [0x406044], 0x2
+0x401B5A: C6 05 11 60 40 00 01                            mov byte ptr [0x406011], 0x1
+0x401B61: 90                                              nop 
+0x401B62: E9 49 01 00 00                                  jmp 0x14e
+0x401B67: 0F B6 05 F4 60 40 00                            movzx eax, byte ptr [0x4060f4]
+0x401B6E: 84 C0                                           test al, al
+0x401B70: 75 25                                           jnz 0x27
+0x401B72: 0F B6 05 6D 60 40 00                            movzx eax, byte ptr [0x40606d]
+0x401B79: 84 C0                                           test al, al
+0x401B7B: 74 1A                                           jz 0x1c
+0x401B7D: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401B84: C6 05 ED 60 40 00 00                            mov byte ptr [0x4060ed], 0x0
+0x401B8B: C6 05 45 60 40 00 03                            mov byte ptr [0x406045], 0x3
+0x401B92: E9 19 01 00 00                                  jmp 0x11e
+0x401B97: 0F B6 05 C7 60 40 00                            movzx eax, byte ptr [0x4060c7]
+0x401B9E: 0F BE C0                                        movsx eax, al
+0x401BA1: 83 F8 01                                        cmp eax, 0x1
+0x401BA4: 74 0A                                           jz 0xc
+0x401BA6: 83 F8 02                                        cmp eax, 0x2
+0x401BA9: 74 4B                                           jz 0x4d
+0x401BAB: E9 BD 00 00 00                                  jmp 0xc2
+0x401BB0: C6 05 17 60 40 00 00                            mov byte ptr [0x406017], 0x0
+0x401BB7: 0F B6 05 16 60 40 00                            movzx eax, byte ptr [0x406016]
+0x401BBE: 84 C0                                           test al, al
+0x401BC0: 74 2F                                           jz 0x31
+0x401BC2: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401BC9: C6 05 95 60 40 00 00                            mov byte ptr [0x406095], 0x0
+0x401BD0: C6 05 C7 60 40 00 02                            mov byte ptr [0x4060c7], 0x2
+0x401BD7: C6 05 16 61 40 00 00                            mov byte ptr [0x406116], 0x0
+0x401BDE: C6 05 11 60 40 00 01                            mov byte ptr [0x406011], 0x1
+0x401BE5: C6 05 ED 60 40 00 01                            mov byte ptr [0x4060ed], 0x1
+0x401BEC: E9 99 00 00 00                                  jmp 0x9e
+0x401BF1: E9 94 00 00 00                                  jmp 0x99
+0x401BF6: 0F B6 05 18 60 40 00                            movzx eax, byte ptr [0x406018]
+0x401BFD: 84 C0                                           test al, al
+0x401BFF: 74 3D                                           jz 0x3f
+0x401C01: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401C08: C6 05 ED 60 40 00 00                            mov byte ptr [0x4060ed], 0x0
+0x401C0F: C6 05 95 60 40 00 01                            mov byte ptr [0x406095], 0x1
+0x401C16: C6 05 17 60 40 00 01                            mov byte ptr [0x406017], 0x1
+0x401C1D: C6 05 C7 60 40 00 01                            mov byte ptr [0x4060c7], 0x1
+0x401C24: C6 05 11 60 40 00 00                            mov byte ptr [0x406011], 0x0
+0x401C2B: A1 C0 60 40 00                                  mov eax, dword ptr [0x4060c0]
+0x401C30: A3 A0 60 40 00                                  mov dword ptr [0x4060a0], eax
+0x401C35: C6 05 16 61 40 00 01                            mov byte ptr [0x406116], 0x1
+0x401C3C: EB 4C                                           jmp 0x4e
+0x401C3E: 0F B6 05 83 60 40 00                            movzx eax, byte ptr [0x406083]
+0x401C45: 84 C0                                           test al, al
+0x401C47: 74 22                                           jz 0x24
+0x401C49: 0F B6 05 84 60 40 00                            movzx eax, byte ptr [0x406084]
+0x401C50: 84 C0                                           test al, al
+0x401C52: 75 17                                           jnz 0x19
+0x401C54: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401C5B: C6 05 11 61 40 00 01                            mov byte ptr [0x406111], 0x1
+0x401C62: C6 05 C7 60 40 00 00                            mov byte ptr [0x4060c7], 0x0
+0x401C69: EB 1F                                           jmp 0x21
+0x401C6B: EB 1D                                           jmp 0x1f
+0x401C6D: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401C74: C6 05 C7 60 40 00 02                            mov byte ptr [0x4060c7], 0x2
+0x401C7B: C6 05 11 60 40 00 01                            mov byte ptr [0x406011], 0x1
+0x401C82: C6 05 ED 60 40 00 01                            mov byte ptr [0x4060ed], 0x1
+0x401C89: 90                                              nop 
+0x401C8A: EB 24                                           jmp 0x26
+0x401C8C: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401C93: C6 05 11 61 40 00 02                            mov byte ptr [0x406111], 0x2
+0x401C9A: C6 05 C7 60 40 00 02                            mov byte ptr [0x4060c7], 0x2
+0x401CA1: C6 05 11 60 40 00 01                            mov byte ptr [0x406011], 0x1
+0x401CA8: C6 05 ED 60 40 00 01                            mov byte ptr [0x4060ed], 0x1
+0x401CAF: 90                                              nop 
+0x401CB0: E9 9C 00 00 00                                  jmp 0xa1
+0x401CB5: 0F B6 05 F4 60 40 00                            movzx eax, byte ptr [0x4060f4]
+0x401CBC: 84 C0                                           test al, al
+0x401CBE: 74 40                                           jz 0x42
+0x401CC0: 0F B6 05 6D 60 40 00                            movzx eax, byte ptr [0x40606d]
+0x401CC7: 84 C0                                           test al, al
+0x401CC9: 75 35                                           jnz 0x37
+0x401CCB: A1 F0 60 40 00                                  mov eax, dword ptr [0x4060f0]
+0x401CD0: 85 C0                                           test eax, eax
+0x401CD2: 7E 2C                                           jle 0x2e
+0x401CD4: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401CDB: C6 05 45 60 40 00 02                            mov byte ptr [0x406045], 0x2
+0x401CE2: C6 05 11 61 40 00 02                            mov byte ptr [0x406111], 0x2
+0x401CE9: C6 05 C7 60 40 00 02                            mov byte ptr [0x4060c7], 0x2
+0x401CF0: C6 05 11 60 40 00 01                            mov byte ptr [0x406011], 0x1
+0x401CF7: C6 05 ED 60 40 00 01                            mov byte ptr [0x4060ed], 0x1
+0x401CFE: EB 51                                           jmp 0x53
+0x401D00: 0F B6 05 83 60 40 00                            movzx eax, byte ptr [0x406083]
+0x401D07: 84 C0                                           test al, al
+0x401D09: 74 35                                           jz 0x37
+0x401D0B: 0F B6 05 84 60 40 00                            movzx eax, byte ptr [0x406084]
+0x401D12: 84 C0                                           test al, al
+0x401D14: 75 2A                                           jnz 0x2c
+0x401D16: A1 F0 60 40 00                                  mov eax, dword ptr [0x4060f0]
+0x401D1B: 3D 94 01 00 00                                  cmp eax, 0x194
+0x401D20: 7F 1E                                           jnle 0x20
+0x401D22: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401D29: C6 05 16 61 40 00 01                            mov byte ptr [0x406116], 0x1
+0x401D30: C6 05 45 60 40 00 01                            mov byte ptr [0x406045], 0x1
+0x401D37: C6 05 81 60 40 00 02                            mov byte ptr [0x406081], 0x2
+0x401D3E: EB 11                                           jmp 0x13
+0x401D40: EB 0F                                           jmp 0x11
+0x401D42: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401D49: C6 05 45 60 40 00 03                            mov byte ptr [0x406045], 0x3
+0x401D50: 90                                              nop 
+0x401D51: EB 0F                                           jmp 0x11
+0x401D53: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401D5A: C6 05 D8 60 40 00 02                            mov byte ptr [0x4060d8], 0x2
+0x401D61: 90                                              nop 
+0x401D62: 0F B6 05 EA 60 40 00                            movzx eax, byte ptr [0x4060ea]
+0x401D69: 0F BE C0                                        movsx eax, al
+0x401D6C: 83 F8 01                                        cmp eax, 0x1
+0x401D6F: 0F 85 00 01 00 00                               jnz 0x106
+0x401D75: C6 05 05 60 40 00 00                            mov byte ptr [0x406005], 0x0
+0x401D7C: 0F B6 05 AE 60 40 00                            movzx eax, byte ptr [0x4060ae]
+0x401D83: 3C 01                                           cmp al, 0x1
+0x401D85: 75 61                                           jnz 0x63
+0x401D87: A1 FC 60 40 00                                  mov eax, dword ptr [0x4060fc]
+0x401D8C: 85 C0                                           test eax, eax
+0x401D8E: 74 58                                           jz 0x5a
+0x401D90: 8B 15 C0 60 40 00                               mov edx, dword ptr [0x4060c0]
+0x401D96: A1 FC 60 40 00                                  mov eax, dword ptr [0x4060fc]
+0x401D9B: 29 C2                                           sub edx, eax
+0x401D9D: 89 D0                                           mov eax, edx
+0x401D9F: 83 F8 01                                        cmp eax, 0x1
+0x401DA2: 75 44                                           jnz 0x46
+0x401DA4: 0F B6 05 B5 60 40 00                            movzx eax, byte ptr [0x4060b5]
+0x401DAB: 84 C0                                           test al, al
+0x401DAD: 75 0B                                           jnz 0xd
+0x401DAF: 0F B6 05 08 61 40 00                            movzx eax, byte ptr [0x406108]
+0x401DB6: 84 C0                                           test al, al
+0x401DB8: 74 2E                                           jz 0x30
+0x401DBA: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401DC1: A1 58 60 40 00                                  mov eax, dword ptr [0x406058]
+0x401DC6: 83 C0 01                                        add eax, 0x1
+0x401DC9: A3 58 60 40 00                                  mov dword ptr [0x406058], eax
+0x401DCE: C6 05 EA 60 40 00 01                            mov byte ptr [0x4060ea], 0x1
+0x401DD5: C6 05 05 60 40 00 01                            mov byte ptr [0x406005], 0x1
+0x401DDC: C6 05 78 60 40 00 01                            mov byte ptr [0x406078], 0x1
+0x401DE3: E9 B4 00 00 00                                  jmp 0xb9
+0x401DE8: 0F B6 05 78 60 40 00                            movzx eax, byte ptr [0x406078]
+0x401DEF: 0F BE C0                                        movsx eax, al
+0x401DF2: 83 F8 01                                        cmp eax, 0x1
+0x401DF5: 75 66                                           jnz 0x68
+0x401DF7: 0F B6 05 AE 60 40 00                            movzx eax, byte ptr [0x4060ae]
+0x401DFE: 3C 01                                           cmp al, 0x1
+0x401E00: 75 59                                           jnz 0x5b
+0x401E02: A1 70 60 40 00                                  mov eax, dword ptr [0x406070]
+0x401E07: 85 C0                                           test eax, eax
+0x401E09: 74 50                                           jz 0x52
+0x401E0B: 8B 15 C0 60 40 00                               mov edx, dword ptr [0x4060c0]
+0x401E11: A1 70 60 40 00                                  mov eax, dword ptr [0x406070]
+0x401E16: 29 C2                                           sub edx, eax
+0x401E18: 89 D0                                           mov eax, edx
+0x401E1A: 83 F8 03                                        cmp eax, 0x3
+0x401E1D: 75 3C                                           jnz 0x3e
+0x401E1F: 0F B6 05 B5 60 40 00                            movzx eax, byte ptr [0x4060b5]
+0x401E26: 84 C0                                           test al, al
+0x401E28: 75 31                                           jnz 0x33
+0x401E2A: 0F B6 05 08 61 40 00                            movzx eax, byte ptr [0x406108]
+0x401E31: 84 C0                                           test al, al
+0x401E33: 75 26                                           jnz 0x28
+0x401E35: A1 58 60 40 00                                  mov eax, dword ptr [0x406058]
+0x401E3A: 85 C0                                           test eax, eax
+0x401E3C: 7E 1D                                           jle 0x1f
+0x401E3E: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401E45: A1 58 60 40 00                                  mov eax, dword ptr [0x406058]
+0x401E4A: 83 E8 01                                        sub eax, 0x1
+0x401E4D: A3 58 60 40 00                                  mov dword ptr [0x406058], eax
+0x401E52: C6 05 78 60 40 00 01                            mov byte ptr [0x406078], 0x1
+0x401E59: EB 18                                           jmp 0x1a
+0x401E5B: EB 16                                           jmp 0x18
+0x401E5D: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401E64: C6 05 05 60 40 00 01                            mov byte ptr [0x406005], 0x1
+0x401E6B: C6 05 78 60 40 00 01                            mov byte ptr [0x406078], 0x1
+0x401E72: 90                                              nop 
+0x401E73: EB 27                                           jmp 0x29
+0x401E75: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401E7C: C7 05 58 60 40 00 00 00 00 00                   mov dword ptr [0x406058], 0x0
+0x401E86: C6 05 EA 60 40 00 01                            mov byte ptr [0x4060ea], 0x1
+0x401E8D: C6 05 05 60 40 00 01                            mov byte ptr [0x406005], 0x1
+0x401E94: C6 05 78 60 40 00 01                            mov byte ptr [0x406078], 0x1
+0x401E9B: 90                                              nop 
+0x401E9C: 0F B6 05 04 60 40 00                            movzx eax, byte ptr [0x406004]
+0x401EA3: A2 05 60 40 00                                  mov byte ptr [0x406005], al
+0x401EA8: 0F B6 05 06 60 40 00                            movzx eax, byte ptr [0x406006]
+0x401EAF: A2 07 60 40 00                                  mov byte ptr [0x406007], al
+0x401EB4: 5D                                              pop ebp
+0x401EB5: C3                                              ret 
+0x401EB6: 55                                              push ebp
+0x401EB7: 89 E5                                           mov ebp, esp
+0x401EB9: 0F B6 05 10 60 40 00                            movzx eax, byte ptr [0x406010]
+0x401EC0: 84 C0                                           test al, al
+0x401EC2: 0F 84 99 00 00 00                               jz 0x9f
+0x401EC8: 0F B6 05 14 61 40 00                            movzx eax, byte ptr [0x406114]
+0x401ECF: 0F BE C0                                        movsx eax, al
+0x401ED2: 83 F8 01                                        cmp eax, 0x1
+0x401ED5: 74 07                                           jz 0x9
+0x401ED7: 83 F8 02                                        cmp eax, 0x2
+0x401EDA: 74 47                                           jz 0x49
+0x401EDC: EB 74                                           jmp 0x76
+0x401EDE: 0F B6 05 AF 60 40 00                            movzx eax, byte ptr [0x4060af]
+0x401EE5: 84 C0                                           test al, al
+0x401EE7: 74 38                                           jz 0x3a
+0x401EE9: 0F B6 05 E8 60 40 00                            movzx eax, byte ptr [0x4060e8]
+0x401EF0: 84 C0                                           test al, al
+0x401EF2: 75 2D                                           jnz 0x2f
+0x401EF4: 0F B6 05 F4 60 40 00                            movzx eax, byte ptr [0x4060f4]
+0x401EFB: 84 C0                                           test al, al
+0x401EFD: 74 0B                                           jz 0xd
+0x401EFF: 0F B6 05 83 60 40 00                            movzx eax, byte ptr [0x406083]
+0x401F06: 84 C0                                           test al, al
+0x401F08: 75 17                                           jnz 0x19
+0x401F0A: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401F11: C6 05 18 60 40 00 01                            mov byte ptr [0x406018], 0x1
+0x401F18: C6 05 14 61 40 00 02                            mov byte ptr [0x406114], 0x2
+0x401F1F: EB 40                                           jmp 0x42
+0x401F21: EB 3E                                           jmp 0x40
+0x401F23: C6 05 18 60 40 00 00                            mov byte ptr [0x406018], 0x0
+0x401F2A: 0F B6 05 AF 60 40 00                            movzx eax, byte ptr [0x4060af]
+0x401F31: 84 C0                                           test al, al
+0x401F33: 75 1B                                           jnz 0x1d
+0x401F35: 0F B6 05 E8 60 40 00                            movzx eax, byte ptr [0x4060e8]
+0x401F3C: 84 C0                                           test al, al
+0x401F3E: 74 10                                           jz 0x12
+0x401F40: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401F47: C6 05 14 61 40 00 01                            mov byte ptr [0x406114], 0x1
+0x401F4E: EB 11                                           jmp 0x13
+0x401F50: EB 0F                                           jmp 0x11
+0x401F52: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401F59: C6 05 14 61 40 00 01                            mov byte ptr [0x406114], 0x1
+0x401F60: 90                                              nop 
+0x401F61: 5D                                              pop ebp
+0x401F62: C3                                              ret 
+0x401F63: 55                                              push ebp
+0x401F64: 89 E5                                           mov ebp, esp
+0x401F66: 83 EC 10                                        sub esp, 0x10
+0x401F69: 0F B6 05 13 60 40 00                            movzx eax, byte ptr [0x406013]
+0x401F70: 84 C0                                           test al, al
+0x401F72: 75 1D                                           jnz 0x1f
+0x401F74: 0F B6 05 15 60 40 00                            movzx eax, byte ptr [0x406015]
+0x401F7B: 84 C0                                           test al, al
+0x401F7D: 74 12                                           jz 0x14
+0x401F7F: 0F B6 05 14 60 40 00                            movzx eax, byte ptr [0x406014]
+0x401F86: 84 C0                                           test al, al
+0x401F88: 75 07                                           jnz 0x9
+0x401F8A: C6 05 00 60 40 00 00                            mov byte ptr [0x406000], 0x0
+0x401F91: 0F B6 05 13 60 40 00                            movzx eax, byte ptr [0x406013]
+0x401F98: 84 C0                                           test al, al
+0x401F9A: 0F 84 FD 01 00 00                               jz 0x203
+0x401FA0: 0F B6 05 A9 60 40 00                            movzx eax, byte ptr [0x4060a9]
+0x401FA7: 0F BE C0                                        movsx eax, al
+0x401FAA: 83 F8 01                                        cmp eax, 0x1
+0x401FAD: 74 0A                                           jz 0xc
+0x401FAF: 83 F8 02                                        cmp eax, 0x2
+0x401FB2: 74 5E                                           jz 0x60
+0x401FB4: E9 D5 01 00 00                                  jmp 0x1da
+0x401FB9: 8B 15 54 60 40 00                               mov edx, dword ptr [0x406054]
+0x401FBF: A1 DC 60 40 00                                  mov eax, dword ptr [0x4060dc]
+0x401FC4: 39 C2                                           cmp edx, eax
+0x401FC6: 74 45                                           jz 0x47
+0x401FC8: A1 54 60 40 00                                  mov eax, dword ptr [0x406054]
+0x401FCD: 85 C0                                           test eax, eax
+0x401FCF: 7E 3C                                           jle 0x3e
+0x401FD1: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x401FD8: C6 05 A8 60 40 00 00                            mov byte ptr [0x4060a8], 0x0
+0x401FDF: C6 05 A9 60 40 00 02                            mov byte ptr [0x4060a9], 0x2
+0x401FE6: C7 05 4C 60 40 00 00 00 00 00                   mov dword ptr [0x40604c], 0x0
+0x401FF0: C7 05 7C 60 40 00 02 00 00 00                   mov dword ptr [0x40607c], 0x2
+0x401FFA: C6 05 02 61 40 00 03                            mov byte ptr [0x406102], 0x3
+0x402001: C6 05 00 60 40 00 01                            mov byte ptr [0x406000], 0x1
+0x402008: E9 90 01 00 00                                  jmp 0x195
+0x40200D: E9 8B 01 00 00                                  jmp 0x190
+0x402012: 0F B6 05 08 61 40 00                            movzx eax, byte ptr [0x406108]
+0x402019: 84 C0                                           test al, al
+0x40201B: 75 0B                                           jnz 0xd
+0x40201D: 0F B6 05 A6 60 40 00                            movzx eax, byte ptr [0x4060a6]
+0x402024: 84 C0                                           test al, al
+0x402026: 75 16                                           jnz 0x18
+0x402028: 0F B6 05 B5 60 40 00                            movzx eax, byte ptr [0x4060b5]
+0x40202F: 84 C0                                           test al, al
+0x402031: 75 25                                           jnz 0x27
+0x402033: 0F B6 05 5C 60 40 00                            movzx eax, byte ptr [0x40605c]
+0x40203A: 84 C0                                           test al, al
+0x40203C: 74 1A                                           jz 0x1c
+0x40203E: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x402045: C6 05 A9 60 40 00 01                            mov byte ptr [0x4060a9], 0x1
+0x40204C: C6 05 02 61 40 00 00                            mov byte ptr [0x406102], 0x0
+0x402053: E9 45 01 00 00                                  jmp 0x14a
+0x402058: 0F B6 05 02 61 40 00                            movzx eax, byte ptr [0x406102]
+0x40205F: 0F BE C0                                        movsx eax, al
+0x402062: 83 F8 02                                        cmp eax, 0x2
+0x402065: 74 13                                           jz 0x15
+0x402067: 83 F8 03                                        cmp eax, 0x3
+0x40206A: 74 3E                                           jz 0x40
+0x40206C: 83 F8 01                                        cmp eax, 0x1
+0x40206F: 0F 84 11 01 00 00                               jz 0x117
+0x402075: E9 E1 00 00 00                                  jmp 0xe6
+0x40207A: A1 7C 60 40 00                                  mov eax, dword ptr [0x40607c]
+0x40207F: 8D 50 FE                                        lea edx, ptr [eax-0x2]
+0x402082: A1 54 60 40 00                                  mov eax, dword ptr [0x406054]
+0x402087: 39 C2                                           cmp edx, eax
+0x402089: 7D 1A                                           jnl 0x1c
+0x40208B: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x402092: C6 05 A8 60 40 00 01                            mov byte ptr [0x4060a8], 0x1
+0x402099: C6 05 02 61 40 00 01                            mov byte ptr [0x406102], 0x1
+0x4020A0: E9 E7 00 00 00                                  jmp 0xec
+0x4020A5: E9 E2 00 00 00                                  jmp 0xe7
+0x4020AA: C6 05 00 60 40 00 00                            mov byte ptr [0x406000], 0x0
+0x4020B1: A1 4C 60 40 00                                  mov eax, dword ptr [0x40604c]
+0x4020B6: 83 F8 0B                                        cmp eax, 0xb
+0x4020B9: 75 1D                                           jnz 0x1f
+0x4020BB: A1 9C 60 40 00                                  mov eax, dword ptr [0x40609c]
+0x4020C0: 83 F8 0B                                        cmp eax, 0xb
+0x4020C3: 74 13                                           jz 0x15
+0x4020C5: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4020CC: C6 05 02 61 40 00 02                            mov byte ptr [0x406102], 0x2
+0x4020D3: E9 B4 00 00 00                                  jmp 0xb9
+0x4020D8: 0F B6 05 02 61 40 00                            movzx eax, byte ptr [0x406102]
+0x4020DF: 3C 03                                           cmp al, 0x3
+0x4020E1: 75 76                                           jnz 0x78
+0x4020E3: 0F B6 05 AE 60 40 00                            movzx eax, byte ptr [0x4060ae]
+0x4020EA: 3C 01                                           cmp al, 0x1
+0x4020EC: 75 6B                                           jnz 0x6d
+0x4020EE: A1 0C 61 40 00                                  mov eax, dword ptr [0x40610c]
+0x4020F3: 85 C0                                           test eax, eax
+0x4020F5: 74 62                                           jz 0x64
+0x4020F7: 8B 15 C0 60 40 00                               mov edx, dword ptr [0x4060c0]
+0x4020FD: A1 0C 61 40 00                                  mov eax, dword ptr [0x40610c]
+0x402102: 29 C2                                           sub edx, eax
+0x402104: 89 D0                                           mov eax, edx
+0x402106: 89 45 F0                                        mov dword ptr [ebp-0x10], eax
+0x402109: C7 45 F4 00 00 00 00                            mov dword ptr [ebp-0xc], 0x0
+0x402110: DF 6D F0                                        fild st0, qword ptr [ebp-0x10]
+0x402113: DD 5D F8                                        fstp qword ptr [ebp-0x8], st0
+0x402116: DD 45 F8                                        fld st0, qword ptr [ebp-0x8]
+0x402119: DD 05 08 30 40 00                               fld st0, qword ptr [0x403008]
+0x40211F: DF E9                                           fucomip st0, st1
+0x402121: 7A 66                                           jp 0x68
+0x402123: DD 05 08 30 40 00                               fld st0, qword ptr [0x403008]
+0x402129: DF E9                                           fucomip st0, st1
+0x40212B: DD D8                                           fstp st0, st0
+0x40212D: 74 02                                           jz 0x4
+0x40212F: EB 5A                                           jmp 0x5c
+0x402131: A1 4C 60 40 00                                  mov eax, dword ptr [0x40604c]
+0x402136: 83 C0 01                                        add eax, 0x1
+0x402139: A3 4C 60 40 00                                  mov dword ptr [0x40604c], eax
+0x40213E: 8B 15 54 60 40 00                               mov edx, dword ptr [0x406054]
+0x402144: A1 7C 60 40 00                                  mov eax, dword ptr [0x40607c]
+0x402149: 39 C2                                           cmp edx, eax
+0x40214B: 7E 0C                                           jle 0xe
+0x40214D: A1 54 60 40 00                                  mov eax, dword ptr [0x406054]
+0x402152: A3 7C 60 40 00                                  mov dword ptr [0x40607c], eax
+0x402157: EB 32                                           jmp 0x34
+0x402159: EB 30                                           jmp 0x32
+0x40215B: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x402162: C7 05 4C 60 40 00 00 00 00 00                   mov dword ptr [0x40604c], 0x0
+0x40216C: C7 05 7C 60 40 00 02 00 00 00                   mov dword ptr [0x40607c], 0x2
+0x402176: C6 05 02 61 40 00 03                            mov byte ptr [0x406102], 0x3
+0x40217D: C6 05 00 60 40 00 01                            mov byte ptr [0x406000], 0x1
+0x402184: EB 06                                           jmp 0x8
+0x402186: 90                                              nop 
+0x402187: EB 14                                           jmp 0x16
+0x402189: DD D8                                           fstp st0, st0
+0x40218B: 90                                              nop 
+0x40218C: EB 0F                                           jmp 0x11
+0x40218E: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x402195: C6 05 A9 60 40 00 01                            mov byte ptr [0x4060a9], 0x1
+0x40219C: 90                                              nop 
+0x40219D: C9                                              leave 
+0x40219E: C3                                              ret 
+0x40219F: 55                                              push ebp
+0x4021A0: 89 E5                                           mov ebp, esp
+0x4021A2: C7 05 C0 60 40 00 01 00 00 00                   mov dword ptr [0x4060c0], 0x1
+0x4021AC: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4021B3: C6 05 AE 60 40 00 00                            mov byte ptr [0x4060ae], 0x0
+0x4021BA: E9 42 07 00 00                                  jmp 0x747
+0x4021BF: C6 05 A4 60 40 00 01                            mov byte ptr [0x4060a4], 0x1
+0x4021C6: 0F B6 05 AE 60 40 00                            movzx eax, byte ptr [0x4060ae]
+0x4021CD: 83 C0 01                                        add eax, 0x1
+0x4021D0: A2 AE 60 40 00                                  mov byte ptr [0x4060ae], al
+0x4021D5: 0F B6 05 FA 60 40 00                            movzx eax, byte ptr [0x4060fa]
+0x4021DC: 0F BE C0                                        movsx eax, al
+0x4021DF: 83 F8 02                                        cmp eax, 0x2
+0x4021E2: 74 4A                                           jz 0x4c
+0x4021E4: 83 F8 03                                        cmp eax, 0x3
+0x4021E7: 0F 84 A3 00 00 00                               jz 0xa9
+0x4021ED: 83 F8 01                                        cmp eax, 0x1
+0x4021F0: 0F 85 CC 00 00 00                               jnz 0xd2
+0x4021F6: 0F B6 05 A7 60 40 00                            movzx eax, byte ptr [0x4060a7]
+0x4021FD: 84 C0                                           test al, al
+0x4021FF: 75 28                                           jnz 0x2a
+0x402201: 0F B6 05 10 61 40 00                            movzx eax, byte ptr [0x406110]
+0x402208: 84 C0                                           test al, al
+0x40220A: 74 1D                                           jz 0x1f
+0x40220C: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x402213: C7 05 90 60 40 00 00 00 00 00                   mov dword ptr [0x406090], 0x0
+0x40221D: C6 05 FA 60 40 00 02                            mov byte ptr [0x4060fa], 0x2
+0x402224: E9 B2 00 00 00                                  jmp 0xb7
+0x402229: E9 AD 00 00 00                                  jmp 0xb2
+0x40222E: 0F B6 05 A7 60 40 00                            movzx eax, byte ptr [0x4060a7]
+0x402235: 84 C0                                           test al, al
+0x402237: 74 25                                           jz 0x27
+0x402239: 0F B6 05 10 61 40 00                            movzx eax, byte ptr [0x406110]
+0x402240: 84 C0                                           test al, al
+0x402242: 75 1A                                           jnz 0x1c
+0x402244: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x40224B: C7 05 90 60 40 00 9C FF FF FF                   mov dword ptr [0x406090], 0xffffff9c
+0x402255: C6 05 FA 60 40 00 01                            mov byte ptr [0x4060fa], 0x1
+0x40225C: EB 7D                                           jmp 0x7f
+0x40225E: 0F B6 05 5D 60 40 00                            movzx eax, byte ptr [0x40605d]
+0x402265: 84 C0                                           test al, al
+0x402267: 74 25                                           jz 0x27
+0x402269: 0F B6 05 C4 60 40 00                            movzx eax, byte ptr [0x4060c4]
+0x402270: 84 C0                                           test al, al
+0x402272: 75 1A                                           jnz 0x1c
+0x402274: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x40227B: C7 05 90 60 40 00 64 00 00 00                   mov dword ptr [0x406090], 0x64
+0x402285: C6 05 FA 60 40 00 03                            mov byte ptr [0x4060fa], 0x3
+0x40228C: EB 4D                                           jmp 0x4f
+0x40228E: EB 4B                                           jmp 0x4d
+0x402290: 0F B6 05 5D 60 40 00                            movzx eax, byte ptr [0x40605d]
+0x402297: 84 C0                                           test al, al
+0x402299: 75 25                                           jnz 0x27
+0x40229B: 0F B6 05 C4 60 40 00                            movzx eax, byte ptr [0x4060c4]
+0x4022A2: 84 C0                                           test al, al
+0x4022A4: 74 1A                                           jz 0x1c
+0x4022A6: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4022AD: C7 05 90 60 40 00 00 00 00 00                   mov dword ptr [0x406090], 0x0
+0x4022B7: C6 05 FA 60 40 00 02                            mov byte ptr [0x4060fa], 0x2
+0x4022BE: EB 1B                                           jmp 0x1d
+0x4022C0: EB 19                                           jmp 0x1b
+0x4022C2: C6 05 A4 60 40 00 00                            mov byte ptr [0x4060a4], 0x0
+0x4022C9: C7 05 90 60 40 00 00 00 00 00                   mov dword ptr [0x406090], 0x0
+0x4022D3: C6 05 FA 60 40 00 02                            mov byte ptr [0x4060fa], 0x2
+0x4022DA: 90                                              nop 
+0x4022DB: 0F B6 05 0A 60 40 00                            movzx eax, byte ptr [0x40600a]
+0x4022E2: 84 C0                                           test al, al
+0x4022E4: 75 07                                           jnz 0x9
+0x4022E6: C6 05 F6 60 40 00 03                            mov byte ptr [0x4060f6], 0x3
+0x4022ED: C6 05 0B 60 40 00 00                            mov byte ptr [0x40600b], 0x0
+0x4022F4: 0F B6 05 10 60 40 00                            movzx eax, byte ptr [0x406010]
+0x4022FB: 84 C0                                           test al, al
+0x4022FD: 75 07                                           jnz 0x9
+0x4022FF: C6 05 14 61 40 00 01                            mov byte ptr [0x406114], 0x1
+0x402306: C6 05 11 60 40 00 00                            mov byte ptr [0x406011], 0x0
+0x40230D: 0F B6 05 13 60 40 00                            movzx eax, byte ptr [0x406013]
+0x402314: 84 C0                                           test al, al
+0x402316: 75 0E                                           jnz 0x10
+0x402318: C6 05 00 60 40 00 00                            mov byte ptr [0x406000], 0x0
+0x40231F: C6 05 A9 60 40 00 01                            mov byte ptr [0x4060a9], 0x1
+0x402326: C6 05 14 60 40 00 00                            mov byte ptr [0x406014], 0x0
+0x40232D: 0F B6 05 0D 60 40 00                            movzx eax, byte ptr [0x40600d]
+0x402334: 84 C0                                           test al, al
+0x402336: 75 34                                           jnz 0x36
+0x402338: C6 05 04 60 40 00 00                            mov byte ptr [0x406004], 0x0
+0x40233F: C6 05 06 60 40 00 00                            mov byte ptr [0x406006], 0x0
+0x402346: C6 05 D8 60 40 00 02                            mov byte ptr [0x4060d8], 0x2
+0x40234D: C7 05 58 60 40 00 00 00 00 00                   mov dword ptr [0x406058], 0x0
+0x402357: C6 05 EA 60 40 00 01                            mov byte ptr [0x4060ea], 0x1
+0x40235E: C6 05 05 60 40 00 01                            mov byte ptr [0x406005], 0x1
+0x402365: C6 05 78 60 40 00 01                            mov byte ptr [0x406078], 0x1
+0x40236C: C6 05 0E 60 40 00 00                            mov byte ptr [0x40600e], 0x0
+0x402373: C6 05 0B 60 40 00 01                            mov byte ptr [0x40600b], 0x1
+0x40237A: C6 05 11 60 40 00 01                            mov byte ptr [0x406011], 0x1
+0x402381: C6 05 14 60 40 00 01                            mov byte ptr [0x406014], 0x1
+0x402388: C6 05 0E 60 40 00 01                            mov byte ptr [0x40600e], 0x1
+0x40238F: 0F B6 15 12 61 40 00                            movzx edx, byte ptr [0x406112]
+0x402396: 0F B6 05 C9 60 40 00                            movzx eax, byte ptr [0x4060c9]
+0x40239D: 38 C2                                           cmp dl, al
+0x40239F: 74 17                                           jz 0x19
+0x4023A1: 0F B6 05 8C 60 40 00                            movzx eax, byte ptr [0x40608c]
+0x4023A8: 84 C0                                           test al, al
+0x4023AA: 75 0C                                           jnz 0xe
+0x4023AC: 0F B6 05 12 61 40 00                            movzx eax, byte ptr [0x406112]
+0x4023B3: A2 46 60 40 00                                  mov byte ptr [0x406046], al
+0x4023B8: 0F B6 15 E0 60 40 00                            movzx edx, byte ptr [0x4060e0]
+0x4023BF: 0F B6 05 B4 60 40 00                            movzx eax, byte ptr [0x4060b4]
+0x4023C6: 38 C2                                           cmp dl, al
+0x4023C8: 74 17                                           jz 0x19
+0x4023CA: 0F B6 05 8C 60 40 00                            movzx eax, byte ptr [0x40608c]
+0x4023D1: 84 C0                                           test al, al
+0x4023D3: 74 0C                                           jz 0xe
+0x4023D5: 0F B6 05 E0 60 40 00                            movzx eax, byte ptr [0x4060e0]
+0x4023DC: A2 12 61 40 00                                  mov byte ptr [0x406112], al
+0x4023E1: 0F B6 15 EC 60 40 00                            movzx edx, byte ptr [0x4060ec]
+0x4023E8: 0F B6 05 48 60 40 00                            movzx eax, byte ptr [0x406048]
+0x4023EF: 38 C2                                           cmp dl, al
+0x4023F1: 74 17                                           jz 0x19
+0x4023F3: 0F B6 05 8C 60 40 00                            movzx eax, byte ptr [0x40608c]
+0x4023FA: 84 C0                                           test al, al
+0x4023FC: 75 0C                                           jnz 0xe
+0x4023FE: 0F B6 05 EC 60 40 00                            movzx eax, byte ptr [0x4060ec]
+0x402405: A2 15 61 40 00                                  mov byte ptr [0x406115], al
+0x40240A: 0F B6 15 AD 60 40 00                            movzx edx, byte ptr [0x4060ad]
+0x402411: 0F B6 05 01 61 40 00                            movzx eax, byte ptr [0x406101]
+0x402418: 38 C2                                           cmp dl, al
+0x40241A: 74 17                                           jz 0x19
+0x40241C: 0F B6 05 8C 60 40 00                            movzx eax, byte ptr [0x40608c]
+0x402423: 84 C0                                           test al, al
+0x402425: 74 0C                                           jz 0xe
+0x402427: 0F B6 05 AD 60 40 00                            movzx eax, byte ptr [0x4060ad]
+0x40242E: A2 EC 60 40 00                                  mov byte ptr [0x4060ec], al
+0x402433: 0F B6 05 0C 60 40 00                            movzx eax, byte ptr [0x40600c]
+0x40243A: A2 0A 60 40 00                                  mov byte ptr [0x40600a], al
+0x40243F: 0F B6 05 0F 60 40 00                            movzx eax, byte ptr [0x40600f]
+0x402446: A2 0D 60 40 00                                  mov byte ptr [0x40600d], al
+0x40244B: 0F B6 05 12 60 40 00                            movzx eax, byte ptr [0x406012]
+0x402452: A2 10 60 40 00                                  mov byte ptr [0x406010], al
+0x402457: 0F B6 05 15 60 40 00                            movzx eax, byte ptr [0x406015]
+0x40245E: A2 13 60 40 00                                  mov byte ptr [0x406013], al
+0x402463: 0F B6 05 D0 60 40 00                            movzx eax, byte ptr [0x4060d0]
+0x40246A: A2 A5 60 40 00                                  mov byte ptr [0x4060a5], al
+0x40246F: 0F B6 05 15 61 40 00                            movzx eax, byte ptr [0x406115]
+0x402476: A2 98 60 40 00                                  mov byte ptr [0x406098], al
+0x40247B: 0F B6 05 49 60 40 00                            movzx eax, byte ptr [0x406049]
+0x402482: A2 C5 60 40 00                                  mov byte ptr [0x4060c5], al
+0x402487: 0F B6 05 46 60 40 00                            movzx eax, byte ptr [0x406046]
+0x40248E: A2 47 60 40 00                                  mov byte ptr [0x406047], al
+0x402493: E8 CD ED FF FF                                  call 0xffffedd2
+0x402498: 0F B6 05 08 61 40 00                            movzx eax, byte ptr [0x406108]
+0x40249F: A2 5D 60 40 00                                  mov byte ptr [0x40605d], al
+0x4024A4: 0F B6 05 B5 60 40 00                            movzx eax, byte ptr [0x4060b5]
+0x4024AB: A2 A7 60 40 00                                  mov byte ptr [0x4060a7], al
+0x4024B0: A1 54 60 40 00                                  mov eax, dword ptr [0x406054]
+0x4024B5: A3 88 60 40 00                                  mov dword ptr [0x406088], eax
+0x4024BA: 0F B6 05 AF 60 40 00                            movzx eax, byte ptr [0x4060af]
+0x4024C1: A2 82 60 40 00                                  mov byte ptr [0x406082], al
+0x4024C6: A1 F0 60 40 00                                  mov eax, dword ptr [0x4060f0]
+0x4024CB: A3 68 60 40 00                                  mov dword ptr [0x406068], eax
+0x4024D0: 0F B6 05 5E 60 40 00                            movzx eax, byte ptr [0x40605e]
+0x4024D7: A2 9A 60 40 00                                  mov byte ptr [0x40609a], al
+0x4024DC: 0F B6 05 A5 60 40 00                            movzx eax, byte ptr [0x4060a5]
+0x4024E3: A2 D0 60 40 00                                  mov byte ptr [0x4060d0], al
+0x4024E8: 0F B6 05 98 60 40 00                            movzx eax, byte ptr [0x406098]
+0x4024EF: A2 15 61 40 00                                  mov byte ptr [0x406115], al
+0x4024F4: 0F B6 05 C5 60 40 00                            movzx eax, byte ptr [0x4060c5]
+0x4024FB: A2 49 60 40 00                                  mov byte ptr [0x406049], al
+0x402500: 0F B6 05 47 60 40 00                            movzx eax, byte ptr [0x406047]
+0x402507: A2 46 60 40 00                                  mov byte ptr [0x406046], al
+0x40250C: 0F B6 05 F7 60 40 00                            movzx eax, byte ptr [0x4060f7]
+0x402513: A2 80 60 40 00                                  mov byte ptr [0x406080], al
+0x402518: 0F B6 05 94 60 40 00                            movzx eax, byte ptr [0x406094]
+0x40251F: A2 00 61 40 00                                  mov byte ptr [0x406100], al
+0x402524: 0F B6 05 D0 60 40 00                            movzx eax, byte ptr [0x4060d0]
+0x40252B: A2 A5 60 40 00                                  mov byte ptr [0x4060a5], al
+0x402530: 0F B6 05 15 61 40 00                            movzx eax, byte ptr [0x406115]
+0x402537: A2 98 60 40 00                                  mov byte ptr [0x406098], al
+0x40253C: 0F B6 05 49 60 40 00                            movzx eax, byte ptr [0x406049]
+0x402543: A2 C5 60 40 00                                  mov byte ptr [0x4060c5], al
+0x402548: 0F B6 05 46 60 40 00                            movzx eax, byte ptr [0x406046]
+0x40254F: A2 47 60 40 00                                  mov byte ptr [0x406047], al
+0x402554: E8 E0 F0 FF FF                                  call 0xfffff0e5
+0x402559: 0F B6 05 08 61 40 00                            movzx eax, byte ptr [0x406108]
+0x402560: A2 5D 60 40 00                                  mov byte ptr [0x40605d], al
+0x402565: 0F B6 05 B5 60 40 00                            movzx eax, byte ptr [0x4060b5]
+0x40256C: A2 A7 60 40 00                                  mov byte ptr [0x4060a7], al
+0x402571: A1 54 60 40 00                                  mov eax, dword ptr [0x406054]
+0x402576: A3 88 60 40 00                                  mov dword ptr [0x406088], eax
+0x40257B: 0F B6 05 AF 60 40 00                            movzx eax, byte ptr [0x4060af]
+0x402582: A2 82 60 40 00                                  mov byte ptr [0x406082], al
+0x402587: A1 F0 60 40 00                                  mov eax, dword ptr [0x4060f0]
+0x40258C: A3 68 60 40 00                                  mov dword ptr [0x406068], eax
+0x402591: 0F B6 05 5E 60 40 00                            movzx eax, byte ptr [0x40605e]
+0x402598: A2 9A 60 40 00                                  mov byte ptr [0x40609a], al
+0x40259D: 0F B6 05 A5 60 40 00                            movzx eax, byte ptr [0x4060a5]
+0x4025A4: A2 D0 60 40 00                                  mov byte ptr [0x4060d0], al
+0x4025A9: 0F B6 05 98 60 40 00                            movzx eax, byte ptr [0x406098]
+0x4025B0: A2 15 61 40 00                                  mov byte ptr [0x406115], al
+0x4025B5: 0F B6 05 C5 60 40 00                            movzx eax, byte ptr [0x4060c5]
+0x4025BC: A2 49 60 40 00                                  mov byte ptr [0x406049], al
+0x4025C1: 0F B6 05 47 60 40 00                            movzx eax, byte ptr [0x406047]
+0x4025C8: A2 46 60 40 00                                  mov byte ptr [0x406046], al
+0x4025CD: 0F B6 05 F7 60 40 00                            movzx eax, byte ptr [0x4060f7]
+0x4025D4: A2 80 60 40 00                                  mov byte ptr [0x406080], al
+0x4025D9: 0F B6 05 94 60 40 00                            movzx eax, byte ptr [0x406094]
+0x4025E0: A2 00 61 40 00                                  mov byte ptr [0x406100], al
+0x4025E5: 0F B6 05 D0 60 40 00                            movzx eax, byte ptr [0x4060d0]
+0x4025EC: A2 A5 60 40 00                                  mov byte ptr [0x4060a5], al
+0x4025F1: 0F B6 05 15 61 40 00                            movzx eax, byte ptr [0x406115]
+0x4025F8: A2 98 60 40 00                                  mov byte ptr [0x406098], al
+0x4025FD: 0F B6 05 49 60 40 00                            movzx eax, byte ptr [0x406049]
+0x402604: A2 C5 60 40 00                                  mov byte ptr [0x4060c5], al
+0x402609: 0F B6 05 46 60 40 00                            movzx eax, byte ptr [0x406046]
+0x402610: A2 47 60 40 00                                  mov byte ptr [0x406047], al
+0x402615: E8 9C F8 FF FF                                  call 0xfffff8a1
+0x40261A: 0F B6 05 08 61 40 00                            movzx eax, byte ptr [0x406108]
+0x402621: A2 5D 60 40 00                                  mov byte ptr [0x40605d], al
+0x402626: 0F B6 05 B5 60 40 00                            movzx eax, byte ptr [0x4060b5]
+0x40262D: A2 A7 60 40 00                                  mov byte ptr [0x4060a7], al
+0x402632: A1 54 60 40 00                                  mov eax, dword ptr [0x406054]
+0x402637: A3 88 60 40 00                                  mov dword ptr [0x406088], eax
+0x40263C: 0F B6 05 AF 60 40 00                            movzx eax, byte ptr [0x4060af]
+0x402643: A2 82 60 40 00                                  mov byte ptr [0x406082], al
+0x402648: A1 F0 60 40 00                                  mov eax, dword ptr [0x4060f0]
+0x40264D: A3 68 60 40 00                                  mov dword ptr [0x406068], eax
+0x402652: 0F B6 05 5E 60 40 00                            movzx eax, byte ptr [0x40605e]
+0x402659: A2 9A 60 40 00                                  mov byte ptr [0x40609a], al
+0x40265E: 0F B6 05 A5 60 40 00                            movzx eax, byte ptr [0x4060a5]
+0x402665: A2 D0 60 40 00                                  mov byte ptr [0x4060d0], al
+0x40266A: 0F B6 05 98 60 40 00                            movzx eax, byte ptr [0x406098]
+0x402671: A2 15 61 40 00                                  mov byte ptr [0x406115], al
+0x402676: 0F B6 05 C5 60 40 00                            movzx eax, byte ptr [0x4060c5]
+0x40267D: A2 49 60 40 00                                  mov byte ptr [0x406049], al
+0x402682: 0F B6 05 47 60 40 00                            movzx eax, byte ptr [0x406047]
+0x402689: A2 46 60 40 00                                  mov byte ptr [0x406046], al
+0x40268E: 0F B6 05 F7 60 40 00                            movzx eax, byte ptr [0x4060f7]
+0x402695: A2 80 60 40 00                                  mov byte ptr [0x406080], al
+0x40269A: 0F B6 05 94 60 40 00                            movzx eax, byte ptr [0x406094]
+0x4026A1: A2 00 61 40 00                                  mov byte ptr [0x406100], al
+0x4026A6: 0F B6 05 D0 60 40 00                            movzx eax, byte ptr [0x4060d0]
+0x4026AD: A2 A5 60 40 00                                  mov byte ptr [0x4060a5], al
+0x4026B2: 0F B6 05 15 61 40 00                            movzx eax, byte ptr [0x406115]
+0x4026B9: A2 98 60 40 00                                  mov byte ptr [0x406098], al
+0x4026BE: 0F B6 05 49 60 40 00                            movzx eax, byte ptr [0x406049]
+0x4026C5: A2 C5 60 40 00                                  mov byte ptr [0x4060c5], al
+0x4026CA: 0F B6 05 46 60 40 00                            movzx eax, byte ptr [0x406046]
+0x4026D1: A2 47 60 40 00                                  mov byte ptr [0x406047], al
+0x4026D6: E8 88 F8 FF FF                                  call 0xfffff88d
+0x4026DB: 0F B6 05 08 61 40 00                            movzx eax, byte ptr [0x406108]
+0x4026E2: A2 5D 60 40 00                                  mov byte ptr [0x40605d], al
+0x4026E7: 0F B6 05 B5 60 40 00                            movzx eax, byte ptr [0x4060b5]
+0x4026EE: A2 A7 60 40 00                                  mov byte ptr [0x4060a7], al
+0x4026F3: A1 54 60 40 00                                  mov eax, dword ptr [0x406054]
+0x4026F8: A3 88 60 40 00                                  mov dword ptr [0x406088], eax
+0x4026FD: 0F B6 05 AF 60 40 00                            movzx eax, byte ptr [0x4060af]
+0x402704: A2 82 60 40 00                                  mov byte ptr [0x406082], al
+0x402709: A1 F0 60 40 00                                  mov eax, dword ptr [0x4060f0]
+0x40270E: A3 68 60 40 00                                  mov dword ptr [0x406068], eax
+0x402713: 0F B6 05 5E 60 40 00                            movzx eax, byte ptr [0x40605e]
+0x40271A: A2 9A 60 40 00                                  mov byte ptr [0x40609a], al
+0x40271F: 0F B6 05 A5 60 40 00                            movzx eax, byte ptr [0x4060a5]
+0x402726: A2 D0 60 40 00                                  mov byte ptr [0x4060d0], al
+0x40272B: 0F B6 05 98 60 40 00                            movzx eax, byte ptr [0x406098]
+0x402732: A2 15 61 40 00                                  mov byte ptr [0x406115], al
+0x402737: 0F B6 05 C5 60 40 00                            movzx eax, byte ptr [0x4060c5]
+0x40273E: A2 49 60 40 00                                  mov byte ptr [0x406049], al
+0x402743: 0F B6 05 47 60 40 00                            movzx eax, byte ptr [0x406047]
+0x40274A: A2 46 60 40 00                                  mov byte ptr [0x406046], al
+0x40274F: 0F B6 05 F7 60 40 00                            movzx eax, byte ptr [0x4060f7]
+0x402756: A2 80 60 40 00                                  mov byte ptr [0x406080], al
+0x40275B: 0F B6 05 94 60 40 00                            movzx eax, byte ptr [0x406094]
+0x402762: A2 00 61 40 00                                  mov byte ptr [0x406100], al
+0x402767: 0F B6 05 0A 60 40 00                            movzx eax, byte ptr [0x40600a]
+0x40276E: A2 0B 60 40 00                                  mov byte ptr [0x40600b], al
+0x402773: 0F B6 05 0D 60 40 00                            movzx eax, byte ptr [0x40600d]
+0x40277A: A2 0E 60 40 00                                  mov byte ptr [0x40600e], al
+0x40277F: 0F B6 05 10 60 40 00                            movzx eax, byte ptr [0x406010]
+0x402786: A2 11 60 40 00                                  mov byte ptr [0x406011], al
+0x40278B: 0F B6 05 13 60 40 00                            movzx eax, byte ptr [0x406013]
+0x402792: A2 14 60 40 00                                  mov byte ptr [0x406014], al
+0x402797: A1 58 60 40 00                                  mov eax, dword ptr [0x406058]
+0x40279C: A3 D4 60 40 00                                  mov dword ptr [0x4060d4], eax
+0x4027A1: A1 54 60 40 00                                  mov eax, dword ptr [0x406054]
+0x4027A6: A3 DC 60 40 00                                  mov dword ptr [0x4060dc], eax
+0x4027AB: A1 BC 60 40 00                                  mov eax, dword ptr [0x4060bc]
+0x4027B0: A3 90 60 40 00                                  mov dword ptr [0x406090], eax
+0x4027B5: A1 88 60 40 00                                  mov eax, dword ptr [0x406088]
+0x4027BA: A3 74 60 40 00                                  mov dword ptr [0x406074], eax
+0x4027BF: A1 4C 60 40 00                                  mov eax, dword ptr [0x40604c]
+0x4027C4: A3 9C 60 40 00                                  mov dword ptr [0x40609c], eax
+0x4027C9: 0F B6 05 47 60 40 00                            movzx eax, byte ptr [0x406047]
+0x4027D0: A2 97 60 40 00                                  mov byte ptr [0x406097], al
+0x4027D5: 0F B6 05 C5 60 40 00                            movzx eax, byte ptr [0x4060c5]
+0x4027DC: A2 99 60 40 00                                  mov byte ptr [0x406099], al
+0x4027E1: 0F B6 05 98 60 40 00                            movzx eax, byte ptr [0x406098]
+0x4027E8: A2 C8 60 40 00                                  mov byte ptr [0x4060c8], al
+0x4027ED: 0F B6 05 A5 60 40 00                            movzx eax, byte ptr [0x4060a5]
+0x4027F4: A2 F5 60 40 00                                  mov byte ptr [0x4060f5], al
+0x4027F9: 0F B6 05 A8 60 40 00                            movzx eax, byte ptr [0x4060a8]
+0x402800: A2 94 60 40 00                                  mov byte ptr [0x406094], al
+0x402805: 0F B6 05 94 60 40 00                            movzx eax, byte ptr [0x406094]
+0x40280C: A2 AB 60 40 00                                  mov byte ptr [0x4060ab], al
+0x402811: 0F B6 05 FB 60 40 00                            movzx eax, byte ptr [0x4060fb]
+0x402818: A2 F4 60 40 00                                  mov byte ptr [0x4060f4], al
+0x40281D: 0F B6 05 F4 60 40 00                            movzx eax, byte ptr [0x4060f4]
+0x402824: A2 6D 60 40 00                                  mov byte ptr [0x40606d], al
+0x402829: 0F B6 05 C6 60 40 00                            movzx eax, byte ptr [0x4060c6]
+0x402830: A2 83 60 40 00                                  mov byte ptr [0x406083], al
+0x402835: 0F B6 05 83 60 40 00                            movzx eax, byte ptr [0x406083]
+0x40283C: A2 84 60 40 00                                  mov byte ptr [0x406084], al
+0x402841: 0F B6 05 ED 60 40 00                            movzx eax, byte ptr [0x4060ed]
+0x402848: A2 B5 60 40 00                                  mov byte ptr [0x4060b5], al
+0x40284D: 0F B6 05 B5 60 40 00                            movzx eax, byte ptr [0x4060b5]
+0x402854: A2 5C 60 40 00                                  mov byte ptr [0x40605c], al
+0x402859: 0F B6 05 16 61 40 00                            movzx eax, byte ptr [0x406116]
+0x402860: A2 08 61 40 00                                  mov byte ptr [0x406108], al
+0x402865: 0F B6 05 08 61 40 00                            movzx eax, byte ptr [0x406108]
+0x40286C: A2 A6 60 40 00                                  mov byte ptr [0x4060a6], al
+0x402871: 0F B6 05 AF 60 40 00                            movzx eax, byte ptr [0x4060af]
+0x402878: A2 E8 60 40 00                                  mov byte ptr [0x4060e8], al
+0x40287D: 0F B6 05 82 60 40 00                            movzx eax, byte ptr [0x406082]
+0x402884: A2 EE 60 40 00                                  mov byte ptr [0x4060ee], al
+0x402889: 0F B6 05 EC 60 40 00                            movzx eax, byte ptr [0x4060ec]
+0x402890: A2 48 60 40 00                                  mov byte ptr [0x406048], al
+0x402895: 0F B6 05 12 61 40 00                            movzx eax, byte ptr [0x406112]
+0x40289C: A2 C9 60 40 00                                  mov byte ptr [0x4060c9], al
+0x4028A1: 0F B6 05 E0 60 40 00                            movzx eax, byte ptr [0x4060e0]
+0x4028A8: A2 B4 60 40 00                                  mov byte ptr [0x4060b4], al
+0x4028AD: 0F B6 05 AD 60 40 00                            movzx eax, byte ptr [0x4060ad]
+0x4028B4: A2 01 61 40 00                                  mov byte ptr [0x406101], al
+0x4028B9: 0F B6 05 F9 60 40 00                            movzx eax, byte ptr [0x4060f9]
+0x4028C0: A2 00 61 40 00                                  mov byte ptr [0x406100], al
+0x4028C5: 0F B6 05 00 61 40 00                            movzx eax, byte ptr [0x406100]
+0x4028CC: A2 51 60 40 00                                  mov byte ptr [0x406051], al
+0x4028D1: 0F B6 05 13 61 40 00                            movzx eax, byte ptr [0x406113]
+0x4028D8: A2 A7 60 40 00                                  mov byte ptr [0x4060a7], al
+0x4028DD: 0F B6 05 A7 60 40 00                            movzx eax, byte ptr [0x4060a7]
+0x4028E4: A2 10 61 40 00                                  mov byte ptr [0x406110], al
+0x4028E9: 0F B6 05 AA 60 40 00                            movzx eax, byte ptr [0x4060aa]
+0x4028F0: A2 5D 60 40 00                                  mov byte ptr [0x40605d], al
+0x4028F5: 0F B6 05 5D 60 40 00                            movzx eax, byte ptr [0x40605d]
+0x4028FC: A2 C4 60 40 00                                  mov byte ptr [0x4060c4], al
+0x402901: 0F B6 05 A4 60 40 00                            movzx eax, byte ptr [0x4060a4]
+0x402908: 84 C0                                           test al, al
+0x40290A: 0F 84 AF F8 FF FF                               jz 0xfffff8b5
+0x402910: 5D                                              pop ebp
+0x402911: C3                                              ret 
+0x402912: 55                                              push ebp
+0x402913: 89 E5                                           mov ebp, esp
+0x402915: E8 B8 E8 FF FF                                  call 0xffffe8bd
+0x40291A: E8 EE E6 FF FF                                  call 0xffffe6f3
+0x40291F: E8 7B F8 FF FF                                  call 0xfffff880
+0x402924: B8 00 00 00 00                                  mov eax, 0x0
+0x402929: 5D                                              pop ebp
+0x40292A: C3                                              ret 
