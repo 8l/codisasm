@@ -39,41 +39,46 @@
 
 To compile:
 ==========
-# Go to 
-cd codisasmv2/Build
-# Use cmake first by
+# Create Build directory
+cd codisasm
+mkdir Build
+# Use cmake first 
+cd Build 
 cmake ..
-
-# Finally you can build by
+# Then build using make
 make
-# And access executable in codisasmv2/Build/
+# And the disassembler is in codisasm/Build/
+./codisasmv2 -help
 
-#—————————————————————————if it works …
+#—————————————————————————
+
 ---------------------------------------------------
 
 Build the doc:
 =============
-In codisasmv2/docs you can find htlm file about
+In codisasm/docs you can find htlm file about
 the implementation and data structure.
 
 # The developer documentation is generated using DOxygen: 
-cd codisasmv2/Build
-cmake .. 
-# Tape 
 make docs
 # This will create a html and latex dir
-browser codisasmv2/docs/html/index.html
+browser codisasm/Build/docs/html/index.html
 
 
 ---------------------------------------------------
----------------------------------------------------
+
 
 How to use:
 ==========
-
-# Generate first wave listing file:
-./codisasmv2 -i ../codisasmv2/tests/ccs2015/malardalen/statemate.exe -l ../codisasmv2/tests/ccs2015/malardalen/statemate.exe.lst
+# There are examples in codisasm/tests/
+#———————————————————————————————————————————————————————————
+#Example 1
+# Malaedalen directory contains example of CCS paper
+# Generate a asm file
+#———————————————————————————————————————————————————————————
+./codisasmv2 -i ../tests/ccs2015/malardalen/statemate.exe -l ../tests/ccs2015/malardalen/statemate.exe.asm
 ---------------- 
+Te output should be
 Total inst in trace: 0
 Total static disas inst: 1375
 Total decoded inst: 1375
@@ -86,23 +91,30 @@ Unaligned:
 	(6443)
 Time: 0.207212
 
-# Generate first wave CFG file:
-./codisasmv2 -i ../codisasmv2/tests/ccs2015/malardalen/statemate.exe -x ../codisasmv2/tests/ccs2015/malardalen/statemate.exe.dot
----------------- 
-Total inst in trace: 0
-Total static disas inst: 1375
-Total decoded inst: 1375
-Nb used addr : 6443
-Total layers: 1
-	Layer 1 : 1375 instructions
-	(1375)
-Unaligned: 
-	6443 addresses used by 1 instructions
-	(6443)
-Time: 0.261514
+And the file -l ../tests/ccs2015/malardalen/statemate.exe.asm
+contains the assembly of statemate.exe.
+
+#———————————————————————————————————————————————————————————
+#Example 2
+# Generate a dot file 
+#———————————————————————————————————————————————————————————
+
+./codisasmv2 -i ../tests/ccs2015/malardalen/statemate.exe -x ../tests/ccs2015/malardalen/statemate.exe.dot
+
+
+#———————————————————————————————————————————————————————————
+#Example 2
+# Generate the assembly of a wave from a memory dump and a sub-trace.
+# In this example, we produce the assembly code of the second wave of 
+# hostname packed with aspack from 
+# the memory dump aspack-hostname.exe.bin_wave2 extracted at the beginning of the 2nd wave,
+# and the sub-trace of the wave 2 aspack-hostname.exe.bin_wave2_CFG.out compacted as  CFG.
+# Memory dumps and traces can be obtained from a windows x86-binary
+# http://codisasm.lhs.loria.fr/
+#———————————————————————————————————————————————————————————
 
 # Generate CFG file of 3rd wave:
-./codisasmv2 -i ../codisasmv2/tests/ccs2015/Packed_hostname/aspack-hostname.exe.bin_wave2 -c ../codisasmv2/tests/ccs2015/Packed_hostname/aspack-hostname.exe.bin_wave2_CFG.out -x aspack-hostname.exe.bin_wave2.dot
+./codisasmv2 -i ../tests/ccs2015/Packed_hostname/aspack-hostname.exe.bin_wave2 -c ../tests/ccs2015/Packed_hostname/aspack-hostname.exe.bin_wave2_CFG.out -l ../tests/ccs2015/Packed_hostname/aspack-hostname.exe.bin_wave2.asm
 ---------------- 
 Total inst in trace: 156
 Total static disas inst: 201
